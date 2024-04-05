@@ -1,0 +1,7 @@
+html[data-theme="light"] {
+    --text-main-color: black;
+}
+
+html[data-theme="dark"] {
+    --text-main-color: white;
+}
