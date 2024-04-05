@@ -1,7 +1,9 @@
 html[data-theme="light"] {
     --text-main-color: black;
+    --bg-main-color: green;
 }
 
 html[data-theme="dark"] {
     --text-main-color: white;
+    --bg-main-color: rgb(3, 33, 94);
 }
