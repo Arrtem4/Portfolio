@@ -6,8 +6,10 @@
         "Playfair Display SC", "Vollkorn SC" sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background-color 1s, color 1s;
-    scrollbar-width: none;
+    transition: color 1s;
+    transition: background-color 1s;
+
+    // scrollbar-width: none;
     // &::-webkit-scrollbar {
     //     width: 0;
     //     height: 0;

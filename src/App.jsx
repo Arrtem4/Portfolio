@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import MainLayout from "./components/MainLayout";
 import Main from "./pages/Main";
 import About from "./pages/About";
@@ -6,7 +6,7 @@ import Contacts from "./pages/Contacts";
 import NotFound from "./pages/NotFound";
 export default function App() {
     return (
-        <BrowserRouter basename="/Portfolio">
+        <HashRouter>
             <section className="app">
                 <Routes>
                     <Route path="/" element={<MainLayout />}>
@@ -17,6 +17,6 @@ export default function App() {
                     <Route path="*" element={<NotFound />}></Route>
                 </Routes>
             </section>
-        </BrowserRouter>
+        </HashRouter>
     );
 }

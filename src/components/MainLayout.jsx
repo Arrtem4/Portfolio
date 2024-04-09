@@ -3,9 +3,11 @@ import Header from "./Header";
 
 export default function MainLayout() {
     return (
-        <>
+        <section className="main-layout">
             <Header />
-            <Outlet />
-        </>
+            <section className="outlet">
+                <Outlet />
+            </section>
+        </section>
     );
 }

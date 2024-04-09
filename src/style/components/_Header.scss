@@ -1,5 +1,12 @@
 .header {
     width: 100%;
-    padding: 20px 10px;
-    background-color: red;
+    display: flex;
+    &_space {
+        flex-grow: 1;
+    }
+    &_logo {
+        color: var(--text-main-color);
+        font-family: "Montserrat";
+        
+    }
 }

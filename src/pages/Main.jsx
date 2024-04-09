@@ -1,3 +1,5 @@
 export default function Main() {
-    return <div>Main</div>;
+    return <section className="main">
+        
+    </section>;
 }
