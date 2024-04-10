@@ -9,10 +9,10 @@ export default function Header() {
         <section className="header">
             <div className="header_logo">
                 <div className="header_logo_circle">
-                    <p>YA</p>
+                    <p>IA</p>
                 </div>
                 <div className="header_logo-_title">
-                    <p>ARTEM YAKOVENKO</p>
+                    <p>IAKOVENKO ARTEM</p>
                 </div>
                 <div className="header_logo_subtitle">
                     <p>FULLSTACK DEVELOPER</p>
