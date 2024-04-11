@@ -21,12 +21,11 @@ export default function Header() {
                 </div>
             </div>
             <div className="header_space"></div>
-            <ButtonLanguage />
-            <ButtonTheme />
-
             <NavLink to="/">1</NavLink>
             <NavLink to="contacts">2</NavLink>
             <NavLink to="about">3</NavLink>
+            <ButtonLanguage />
+            <ButtonTheme />
         </section>
     );
 }

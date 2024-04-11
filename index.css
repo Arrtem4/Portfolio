@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", "Noto Sans Display", "PT Sans Caption", "Playfair Display SC", "Vollkorn SC" sans-serif;
+  font-family: "Noto Sans Display", "PT Sans Caption", "Playfair Display SC", "Vollkorn SC" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: color 1s;
