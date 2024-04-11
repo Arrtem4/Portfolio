@@ -42,6 +42,9 @@
 .header {
   width: 100%;
   display: flex;
+  align-items: center;
+  padding: clamp(10px, 1.5cqw, 20px);
+  min-width: max-content;
 }
 .header_space {
   flex-grow: 1;
@@ -49,4 +52,53 @@
 .header_logo {
   color: var(--text-main-color);
   font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header_logo_circle {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(35px, 4.7cqw, 75px);
+  height: clamp(35px, 4.7cqw, 75px);
+  border-radius: 50%;
+  border: 2px solid var(--text-main-color);
+  margin-right: 1.5cqw;
+}
+.header_logo_circle p {
+  font-size: clamp(20px, 3cqw, 50px);
+  text-align: center;
+}
+.header_logo_title {
+  width: clamp(170px, 23cqw, 500px);
+  container-type: inline-size;
+}
+.header_logo_title_header {
+  font-size: 8.2cqw;
+  font-weight: 600;
+  word-spacing: 1cqw;
+  letter-spacing: 0.6cqw;
+  margin-bottom: 0.8cqh;
+}
+.header_logo_title_subtitle {
+  font-weight: 300;
+  font-size: 6cqw;
+  word-spacing: 2cqw;
+  letter-spacing: 0.9cqw;
+}
+
+@container (max-width: 1300px) {
+  .header_logo_circle {
+    border: 1px solid var(--text-main-color);
+  }
+}
+@container (max-width: 400px) {
+  .header {
+    padding: 10px;
+  }
+  .header_logo_circle {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

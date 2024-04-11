@@ -11,11 +11,13 @@ export default function Header() {
                 <div className="header_logo_circle">
                     <p>IA</p>
                 </div>
-                <div className="header_logo-_title">
-                    <p>IAKOVENKO ARTEM</p>
-                </div>
-                <div className="header_logo_subtitle">
-                    <p>FULLSTACK DEVELOPER</p>
+                <div className="header_logo_title">
+                    <div className="header_logo_title_header">
+                        <p>IAKOVENKO ARTEM</p>
+                    </div>
+                    <div className="header_logo_title_subtitle">
+                        <p>FULLSTACK DEVELOPER</p>
+                    </div>
                 </div>
             </div>
             <div className="header_space"></div>
