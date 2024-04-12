@@ -5,6 +5,7 @@
     container-type: inline-size;
     display: flex;
     flex-direction: column;
+    user-select: none;
     & .outlet {
         flex-grow: 1;
         overflow-y: auto;

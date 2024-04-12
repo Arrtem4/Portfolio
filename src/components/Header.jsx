@@ -1,10 +1,18 @@
-import { NavLink } from "react-router-dom";
-import ButtonLanguage from "./buttons/ButtonLanguage";
-import ButtonTheme from "./buttons/ButtonTheme";
+import Menu from "./Menu";
+import { useEffect, useState } from "react";
 
-// import { useTranslation } from "react-i18next";
 export default function Header() {
-    // const { t } = useTranslation();
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
     return (
         <section className="header">
             <div className="header_logo">
@@ -21,11 +29,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="header_space"></div>
-            <NavLink to="/">1</NavLink>
-            <NavLink to="contacts">2</NavLink>
-            <NavLink to="about">3</NavLink>
-            <ButtonLanguage />
-            <ButtonTheme />
+            {windowWidth > 700 ? <Menu size="large" /> : <Menu size="small" />}
         </section>
     );
 }

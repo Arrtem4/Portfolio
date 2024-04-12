@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: clamp(10px, 1.5cqw,20px);
+    padding: clamp(10px, 1.5cqw, 20px);
     min-width: max-content;
     &_space {
         flex-grow: 1;
@@ -13,6 +13,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
         &_circle {
             font-weight: 600;
             display: flex;
