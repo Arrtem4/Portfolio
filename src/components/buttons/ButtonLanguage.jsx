@@ -11,19 +11,13 @@ export default function ButtonLanguage() {
         i18n.changeLanguage(lang);
     };
 
-    // const autoClose = () => {
-    //     setActive(!active);
-    //     setTimeout(() => {
-    //         setActive(false);
-    //     }, 3000);
-    // };
     return (
-        <div className="button-language" onClick={()=>setActive(!active)}>
+        <div className="button-language" onClick={() => setActive(!active)}>
             <p className="button-language_value-text">
                 {language === "en" ? "EN" : "RU"}
             </p>
             <AiOutlineCaretDown className="button-language_caret" />
-            <ul className={`button-language_list ${active ? "hidden" : ""}`}>
+            <ul className={`button-language_list ${active ? "visible" : ""}`}>
                 <li
                     className="button-language_list-item"
                     onClick={() => handleChange("en")}

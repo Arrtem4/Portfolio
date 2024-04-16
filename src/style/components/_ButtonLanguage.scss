@@ -13,17 +13,19 @@
         font-size: 11px;
     }
     &_list {
-        opacity: 1;
+        pointer-events: none;
         transition: opacity 0.2s ease, transform 0.2s ease;
-
+        opacity: 0;
+        transform: translateY(-50%);
         list-style: none;
         position: absolute;
         top: 23px;
         left: -10px;
         font-size: 14px;
-        &.hidden {
-            transform: translateY(-30%);
-            opacity: 0;
+        &.visible {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: all;
         }
         &-item {
             padding: 3px 10px;
@@ -32,24 +34,24 @@
     }
 }
 
-@keyframes slideInDown {
-    0% {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+// @keyframes slideInDown {
+//     0% {
+//         transform: translateY(-50%);
+//         opacity: 0;
+//     }
+//     100% {
+//         transform: translateY(0);
+//         opacity: 1;
+//     }
+// }
 
-@keyframes slideOutUp {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-50%);
-        opacity: 0;
-    }
-}
+// @keyframes slideOutUp {
+//     0% {
+//         transform: translateY(0);
+//         opacity: 1;
+//     }
+//     100% {
+//         transform: translateY(-50%);
+//         opacity: 0;
+//     }
+// }
