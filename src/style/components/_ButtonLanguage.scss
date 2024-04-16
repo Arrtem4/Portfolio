@@ -13,17 +13,43 @@
         font-size: 11px;
     }
     &_list {
+        opacity: 1;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+
         list-style: none;
         position: absolute;
         top: 23px;
         left: -10px;
         font-size: 14px;
         &.hidden {
-            display: none;
+            transform: translateY(-30%);
+            opacity: 0;
         }
         &-item {
             padding: 3px 10px;
             color: var(--text-main-color);
         }
+    }
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50%);
+        opacity: 0;
     }
 }

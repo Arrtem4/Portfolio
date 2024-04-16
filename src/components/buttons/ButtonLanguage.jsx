@@ -6,37 +6,33 @@ import { useState } from "react";
 export default function ButtonLanguage() {
     const [language, setLanguage] = useLanguage("language", "en");
     const [active, setActive] = useState(false);
-    const handleChange = () => {
-        if (language === "en") {
-            setLanguage("ru");
-            i18n.changeLanguage("ru");
-        } else {
-            setLanguage("en");
-            i18n.changeLanguage("en");
-        }
+    const handleChange = (lang) => {
+        setLanguage(lang);
+        i18n.changeLanguage(lang);
     };
-    const autoClose = () => {
-        setActive(!active);
-        setTimeout(() => {
-            setActive(false);
-        }, 3000);
-    };
+
+    // const autoClose = () => {
+    //     setActive(!active);
+    //     setTimeout(() => {
+    //         setActive(false);
+    //     }, 3000);
+    // };
     return (
-        <div className="button-language" onClick={autoClose}>
+        <div className="button-language" onClick={()=>setActive(!active)}>
             <p className="button-language_value-text">
                 {language === "en" ? "EN" : "RU"}
             </p>
             <AiOutlineCaretDown className="button-language_caret" />
-            <ul className={`button-language_list ${active ? "" : "hidden"}`}>
+            <ul className={`button-language_list ${active ? "hidden" : ""}`}>
                 <li
                     className="button-language_list-item"
-                    onClick={handleChange}
+                    onClick={() => handleChange("en")}
                 >
                     EN
                 </li>
                 <li
                     className="button-language_list-item"
-                    onClick={handleChange}
+                    onClick={() => handleChange("ru")}
                 >
                     RU
                 </li>

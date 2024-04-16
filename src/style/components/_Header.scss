@@ -23,7 +23,9 @@
             width: clamp(35px, 4.7cqw, 75px);
             height: clamp(35px, 4.7cqw, 75px);
             border-radius: 50%;
-            border: 2px solid var(--text-main-color);
+            border-width: 3px;
+            border-style: solid;
+            border-color: var(--text-main-color);
             margin-right: 1.5cqw;
             p {
                 font-size: clamp(20px, 3cqw, 50px);
@@ -54,7 +56,9 @@
     .header {
         &_logo {
             &_circle {
-                border: 1px solid var(--text-main-color);
+                border-width: 2px;
+                border-style: solid;
+                border-color: var(--text-main-color);
             }
         }
     }

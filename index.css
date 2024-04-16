@@ -71,7 +71,9 @@ button {
   width: clamp(35px, 4.7cqw, 75px);
   height: clamp(35px, 4.7cqw, 75px);
   border-radius: 50%;
-  border: 2px solid var(--text-main-color);
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--text-main-color);
   margin-right: 1.5cqw;
 }
 .header_logo_circle p {
@@ -98,7 +100,9 @@ button {
 
 @container (max-width: 1300px) {
   .header_logo_circle {
-    border: 1px solid var(--text-main-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--text-main-color);
   }
 }
 @container (max-width: 400px) {
@@ -163,6 +167,8 @@ button {
   font-size: 11px;
 }
 .button-language_list {
+  opacity: 1;
+  transition: opacity 0.2s ease, transform 0.2s ease;
   list-style: none;
   position: absolute;
   top: 23px;
@@ -170,9 +176,31 @@ button {
   font-size: 14px;
 }
 .button-language_list.hidden {
-  display: none;
+  transform: translateY(-30%);
+  opacity: 0;
 }
 .button-language_list-item {
   padding: 3px 10px;
   color: var(--text-main-color);
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOutUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
