@@ -1,0 +1,29 @@
+.button-language {
+    font-family: "Noto Sans Display";
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    &_value-text {
+        color: var(--text-main-color);
+        font-weight: 500;
+        font-size: 15px;
+    }
+    &_caret {
+        font-size: 11px;
+    }
+    &_list {
+        list-style: none;
+        position: absolute;
+        top: 23px;
+        left: -10px;
+        font-size: 14px;
+        &.hidden {
+            display: none;
+        }
+        &-item {
+            padding: 3px 10px;
+            color: var(--text-main-color);
+        }
+    }
+}

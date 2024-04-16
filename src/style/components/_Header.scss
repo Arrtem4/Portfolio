@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     padding: clamp(10px, 1.5cqw, 20px);
+    padding-right: clamp(10px, 3cqw, 35px);
     min-width: max-content;
     &_space {
         flex-grow: 1;

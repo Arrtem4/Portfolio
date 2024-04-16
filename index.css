@@ -49,6 +49,7 @@ button {
   display: flex;
   align-items: center;
   padding: clamp(10px, 1.5cqw, 20px);
+  padding-right: clamp(10px, 3cqw, 35px);
   min-width: max-content;
 }
 .header_space {
@@ -121,6 +122,11 @@ button {
 .menu-small.hidden {
   display: none;
 }
+.menu-small_icon {
+  font-size: clamp(30px, 8cqw, 40px);
+  color: var(--text-main-color);
+  cursor: pointer;
+}
 .menu-small_wrapper {
   position: absolute;
   top: 0;
@@ -139,4 +145,34 @@ button {
 .menu-small_links {
   display: flex;
   flex-direction: column;
+}
+
+.button-language {
+  font-family: "Noto Sans Display";
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+.button-language_value-text {
+  color: var(--text-main-color);
+  font-weight: 500;
+  font-size: 15px;
+}
+.button-language_caret {
+  font-size: 11px;
+}
+.button-language_list {
+  list-style: none;
+  position: absolute;
+  top: 23px;
+  left: -10px;
+  font-size: 14px;
+}
+.button-language_list.hidden {
+  display: none;
+}
+.button-language_list-item {
+  padding: 3px 10px;
+  color: var(--text-main-color);
 }/*# sourceMappingURL=index.css.map */
