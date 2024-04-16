@@ -13,10 +13,12 @@ export default function ButtonLanguage() {
 
     return (
         <div className="button-language" onClick={() => setActive(!active)}>
+            {active && <div className="button-language_background-for-close"></div>}
             <p className="button-language_value-text">
                 {language === "en" ? "EN" : "RU"}
             </p>
             <AiOutlineCaretDown className="button-language_caret" />
+
             <ul className={`button-language_list ${active ? "visible" : ""}`}>
                 <li
                     className="button-language_list-item"
