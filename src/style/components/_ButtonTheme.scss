@@ -1,0 +1,15 @@
+.button-theme {
+    width: clamp(40px, 3cqw, 50px);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-main-color);
+    overflow: hidden;
+    &_icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

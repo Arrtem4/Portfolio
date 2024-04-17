@@ -19,7 +19,7 @@ export default function Menu({ size }) {
                         <NavLink to="about">3</NavLink>
                     </section> */}
                     <section className="menu-large_buttons">
-                        {/* <ButtonTheme /> */}
+                        <ButtonTheme />
                         <ButtonLanguage />
                     </section>
                 </section>

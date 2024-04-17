@@ -118,6 +118,7 @@ button {
 }
 .menu-large_buttons {
   display: flex;
+  align-items: center;
 }
 .menu-large_links {
   display: flex;
@@ -165,6 +166,7 @@ button {
 }
 .button-language_caret {
   font-size: 11px;
+  color: var(--text-main-color);
 }
 .button-language_list {
   pointer-events: none;
@@ -195,4 +197,20 @@ button {
   width: 100%;
   height: 100%;
   cursor: auto;
+}
+
+.button-theme {
+  width: clamp(40px, 3cqw, 50px);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-main-color);
+  overflow: hidden;
+}
+.button-theme_icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
