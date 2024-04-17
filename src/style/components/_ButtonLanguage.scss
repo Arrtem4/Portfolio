@@ -44,3 +44,19 @@
         cursor: auto;
     }
 }
+
+@container (max-width: 700px) {
+    .button-language {
+        &_value-text {
+            font-size: 40px;
+        }
+        &_caret {
+            font-size: 20px;
+        }
+        &_list {
+            font-size: 40px;
+            top: 50px;
+            left: -10px;
+        }
+    }
+}
