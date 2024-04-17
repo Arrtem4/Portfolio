@@ -1,4 +1,6 @@
 .main-layout {
+    font-family: "Noto Sans Display", "PT Sans Caption", "Playfair Display SC",
+        "Vollkorn SC" sans-serif;
     width: 100%;
     height: 100dvh;
     background-color: var(--bg-main-color);
@@ -6,6 +8,7 @@
     display: flex;
     flex-direction: column;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
     & .outlet {
         flex-grow: 1;
         overflow-y: auto;

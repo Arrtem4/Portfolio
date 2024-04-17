@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans Display", "PT Sans Caption", "Playfair Display SC", "Vollkorn SC" sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: color 1s;
@@ -15,6 +14,7 @@ button {
 }
 
 .main-layout {
+  font-family: "Noto Sans Display", "PT Sans Caption", "Playfair Display SC", "Vollkorn SC" sans-serif;
   width: 100%;
   height: 100dvh;
   background-color: var(--bg-main-color);
@@ -22,6 +22,7 @@ button {
   display: flex;
   flex-direction: column;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .main-layout .outlet {
   flex-grow: 1;
