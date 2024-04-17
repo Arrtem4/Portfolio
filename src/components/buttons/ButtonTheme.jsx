@@ -11,13 +11,13 @@ export default function ButtonTheme() {
     const icon1Props = useSpring({
         opacity: clicked ? 0 : 1,
         transform: clicked ? "translateY(30px)" : "translateY(0)",
-        config: { duration: 250 },
+        config: { duration: 450 },
     });
 
     const icon2Props = useSpring({
         opacity: clicked ? 1 : 0,
         transform: clicked ? "translateY(0)" : "translateY(-30px)",
-        config: { duration: 250 },
+        config: { duration: 450 },
     });
     const handleDivClick = () => {
         setClicked(!clicked);
@@ -39,11 +39,7 @@ export default function ButtonTheme() {
                     ),
                 }}
             >
-                {theme === "light" ? (
-                    <BsFillSunFill />
-                ) : (
-                    <BsFillMoonStarsFill />
-                )}
+                {theme === "light" ? <></> : <BsFillMoonStarsFill />}
             </animated.div>
             <animated.div
                 className="button-theme_icon-wrapper"
@@ -55,11 +51,7 @@ export default function ButtonTheme() {
                     ),
                 }}
             >
-                {theme === "light" ? (
-                    <BsFillSunFill />
-                ) : (
-                    <BsFillMoonStarsFill />
-                )}
+                {theme === "light" ? <BsFillSunFill /> : <></>}
             </animated.div>
         </div>
     );
