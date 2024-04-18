@@ -29,6 +29,16 @@ button {
   overflow-y: auto;
 }
 
+@keyframes button-theme-in {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .about {
   height: 100%;
 }
@@ -221,18 +231,15 @@ button {
 }
 .button-theme {
   width: 50px;
+  color: var(--text-main-color);
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: var(--text-main-color);
-  overflow: hidden;
 }
 .button-theme_icon-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  animation: button-theme-in 0.5s ease forwards;
 }
 
 @container (max-width: 700px) {
