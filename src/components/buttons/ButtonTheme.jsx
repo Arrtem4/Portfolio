@@ -16,13 +16,17 @@ export default function ButtonTheme() {
     };
 
     return (
-        <div className="button-theme" onClick={handleDivClick}>
+        <div
+            className="button-theme"
+            onClick={handleDivClick}
+            onAnimationEnd={() => setAnimationStarted(false)}
+        >
             {theme === "light" && (
                 <>
                     <div
                         className={`${
                             animationStarted ? "button-theme_icon-wrapper" : ""
-                        }`}
+                        } button-theme_icon-wrapper-static`}
                     >
                         <BsFillSunFill />
                     </div>
@@ -42,7 +46,7 @@ export default function ButtonTheme() {
                     <div
                         className={`${
                             animationStarted ? "button-theme_icon-wrapper" : ""
-                        }`}
+                        } button-theme_icon-wrapper-static`}
                     >
                         <BsFillMoonStarsFill />
                     </div>

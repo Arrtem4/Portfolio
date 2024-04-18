@@ -16,6 +16,11 @@
                 opacity: 0;
             }
         }
+        &-static {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 

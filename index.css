@@ -259,6 +259,11 @@ button {
   pointer-events: none;
   opacity: 0;
 }
+.button-theme_icon-wrapper-static {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @container (max-width: 700px) {
   .button-theme {
