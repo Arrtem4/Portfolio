@@ -1,4 +1,9 @@
 {
+    "not-found": {
+        "text": "Page not found",
+        "button-to-home": "Go to main page",
+        "button-back": "Back to previous page"
+    },
     "header": {
         "first": "first"
     }
