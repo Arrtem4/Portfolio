@@ -87,8 +87,8 @@
 
 @keyframes roll-in-left {
     0% {
-        -webkit-transform: translateX(-150px) rotate(-540deg);
-        transform: translateX(-150px) rotate(-540deg);
+        -webkit-transform: translateX(-150px) rotate(-180deg);
+        transform: translateX(-150px) rotate(-180deg);
         opacity: 0;
     }
     100% {

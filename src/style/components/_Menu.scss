@@ -7,7 +7,7 @@
         align-items: center;
         &.link_5 {
             animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                2.4s both;
+                1.7s both;
         }
     }
     &_links {
@@ -59,21 +59,21 @@
                 font-weight: 600;
                 text-decoration: underline;
             }
-            &.link_a {
+            &.link_1 {
                 animation: scale-in-center 0.5s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
             }
-            &.link_b {
+            &.link_2 {
                 animation: scale-in-center 0.5s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.1s both;
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.4s both;
             }
             &.link_3 {
                 animation: scale-in-center 0.5s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.2s both;
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
             }
             &.link_4 {
                 animation: scale-in-center 0.5s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.3s both;
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.6s both;
             }
         }
     }
@@ -87,6 +87,12 @@
         font-size: clamp(30px, 8cqw, 40px);
         color: var(--text-main-color);
         cursor: pointer;
+        animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            0.5s both;
+        @media screen and (max-width: 400px) {
+            animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                0.7s both;
+        }
     }
     &_wrapper {
         position: absolute;

@@ -23,15 +23,21 @@ export default function Menu({ size }) {
                 <section className="menu-large_wrapper">
                     <section className="menu-large_links">
                         <NavLink
-                            className="menu-large_links_link link_a"
+                            className="menu-large_links_link link_1"
                             to="projects"
                         >
                             {t("header.projects")}
                         </NavLink>
-                        <NavLink className="menu-large_links_link link_b" to="skills">
+                        <NavLink
+                            className="menu-large_links_link link_2"
+                            to="skills"
+                        >
                             {t("header.skills")}
                         </NavLink>
-                        <NavLink className="menu-large_links_link link_3" to="about">
+                        <NavLink
+                            className="menu-large_links_link link_3"
+                            to="about"
+                        >
                             {t("header.about")}
                         </NavLink>
                         <NavLink

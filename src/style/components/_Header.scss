@@ -41,25 +41,32 @@
         }
         &_title {
             width: clamp(170px, 23cqw, 500px);
-
             container-type: inline-size;
             &_header {
-                animation: tracking-in-expand 1.5s
-                    cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s both;
+                animation: tracking-in-expand 1.2s
+                    cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both;
                 font-size: 8.2cqw;
                 font-weight: 600;
                 word-spacing: 1cqw;
                 letter-spacing: 0.6cqw;
                 margin-bottom: 0.8cqh;
+                @media screen and (max-width: 400px) {
+                    animation: tracking-in-expand 1.5s
+                        cubic-bezier(0.215, 0.61, 0.355, 1) both;
+                }
             }
             &_subtitle {
                 white-space: nowrap;
-                animation: tracking-in-expand2 1.5s
-                    cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s both;
+                animation: tracking-in-expand2 1.2s
+                    cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both;
                 font-weight: 300;
                 font-size: 6cqw;
                 word-spacing: 2cqw;
                 letter-spacing: 0.9cqw;
+                @media screen and (max-width: 400px) {
+                    animation: tracking-in-expand2 1.5s
+                        cubic-bezier(0.215, 0.61, 0.355, 1) both;
+                }
             }
         }
     }
