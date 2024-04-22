@@ -9,6 +9,17 @@ export default function Menu({ size }) {
     const { t } = useTranslation();
     const [menuIsVisible, setMenuIsVisible] = useState(false);
 
+    const closeMenu = () => {
+        document.querySelector(".menu-small_wrapper").classList.add("hidden");
+        setTimeout(() => {
+            document
+                .querySelector(".menu-small_wrapper")
+                .classList.remove("hidden");
+
+            setMenuIsVisible(false);
+        }, 400);
+    };
+
     if (size === "large") {
         return (
             <section className="menu-large">
@@ -54,7 +65,7 @@ export default function Menu({ size }) {
                         className="menu-small_wrapper"
                         onClick={(event) => {
                             if (event.currentTarget === event.target) {
-                                setMenuIsVisible(false);
+                                closeMenu();
                             }
                         }}
                     >
@@ -64,35 +75,35 @@ export default function Menu({ size }) {
                         </section>
                         <section className="menu-small_links">
                             <NavLink
-                                onClick={() => setMenuIsVisible(false)}
+                                onClick={() => closeMenu()}
                                 className="menu-small_links_link"
                                 to="/"
                             >
                                 {t("header.main")}
                             </NavLink>
                             <NavLink
-                                onClick={() => setMenuIsVisible(false)}
+                                onClick={() => closeMenu()}
                                 className="menu-small_links_link"
                                 to="projects"
                             >
                                 {t("header.projects")}
                             </NavLink>
                             <NavLink
-                                onClick={() => setMenuIsVisible(false)}
+                                onClick={() => closeMenu()}
                                 className="menu-small_links_link"
                                 to="skills"
                             >
                                 {t("header.skills")}
                             </NavLink>
                             <NavLink
-                                onClick={() => setMenuIsVisible(false)}
+                                onClick={() => closeMenu()}
                                 className="menu-small_links_link"
                                 to="about"
                             >
                                 {t("header.about")}
                             </NavLink>
                             <NavLink
-                                onClick={() => setMenuIsVisible(false)}
+                                onClick={() => closeMenu()}
                                 className="menu-small_links_link"
                                 to="contacts"
                             >
