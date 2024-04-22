@@ -3,21 +3,36 @@ import { IoMenu } from "react-icons/io5";
 import ButtonLanguage from "./buttons/ButtonLanguage";
 import ButtonTheme from "./buttons/ButtonTheme";
 import { useState } from "react";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function Menu({ size }) {
-    // const { t } = useTranslation();
+    const { t } = useTranslation();
     const [menuIsVisible, setMenuIsVisible] = useState(false);
 
     if (size === "large") {
         return (
             <section className="menu-large">
                 <section className="menu-large_wrapper">
-                    {/* <section className="menu-large_links">
-                        <NavLink to="/">1</NavLink>
-                        <NavLink to="contacts">2</NavLink>
-                        <NavLink to="about">3</NavLink>
-                    </section> */}
+                    <section className="menu-large_links">
+                        <NavLink
+                            className="menu-large_links_link"
+                            to="projects"
+                        >
+                            {t("header.projects")}
+                        </NavLink>
+                        <NavLink className="menu-large_links_link" to="skills">
+                            {t("header.skills")}
+                        </NavLink>
+                        <NavLink className="menu-large_links_link" to="about">
+                            {t("header.about")}
+                        </NavLink>
+                        <NavLink
+                            className="menu-large_links_link"
+                            to="contacts"
+                        >
+                            {t("header.contacts")}
+                        </NavLink>
+                    </section>
                     <section className="menu-large_buttons">
                         <ButtonTheme />
                         <ButtonLanguage />
@@ -48,9 +63,41 @@ export default function Menu({ size }) {
                             <ButtonTheme />
                         </section>
                         <section className="menu-small_links">
-                            <NavLink to="/">1</NavLink>
-                            <NavLink to="contacts">2</NavLink>
-                            <NavLink to="about">3</NavLink>
+                            <NavLink
+                                onClick={() => setMenuIsVisible(false)}
+                                className="menu-small_links_link"
+                                to="/"
+                            >
+                                {t("header.main")}
+                            </NavLink>
+                            <NavLink
+                                onClick={() => setMenuIsVisible(false)}
+                                className="menu-small_links_link"
+                                to="projects"
+                            >
+                                {t("header.projects")}
+                            </NavLink>
+                            <NavLink
+                                onClick={() => setMenuIsVisible(false)}
+                                className="menu-small_links_link"
+                                to="skills"
+                            >
+                                {t("header.skills")}
+                            </NavLink>
+                            <NavLink
+                                onClick={() => setMenuIsVisible(false)}
+                                className="menu-small_links_link"
+                                to="about"
+                            >
+                                {t("header.about")}
+                            </NavLink>
+                            <NavLink
+                                onClick={() => setMenuIsVisible(false)}
+                                className="menu-small_links_link"
+                                to="contacts"
+                            >
+                                {t("header.contacts")}
+                            </NavLink>
                         </section>
                     </section>
                 </section>

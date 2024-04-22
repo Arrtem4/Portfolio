@@ -55,15 +55,15 @@ button {
     opacity: 0;
   }
 }
+.main {
+  height: 100%;
+}
+
 .about {
   height: 100%;
 }
 
 .contacts {
-  height: 100%;
-}
-
-.main {
   height: 100%;
 }
 
@@ -172,6 +172,20 @@ button {
 }
 .menu-large_links {
   display: flex;
+  gap: 1.5cqw;
+  margin-right: 2cqw;
+}
+.menu-large_links_link {
+  font-family: "Noto Sans Display";
+  font-weight: 300;
+  color: var(--text-main-color);
+  font-size: clamp(10px, 2cqw, 25px);
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu-large_links_link.active {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .menu-small.hidden {
@@ -206,6 +220,19 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 3cqh;
+}
+.menu-small_links_link {
+  font-family: "Noto Sans Display";
+  font-weight: 300;
+  color: var(--text-main-color);
+  font-size: clamp(20px, 10cqw, 50px);
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu-small_links_link.active {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .button-language {

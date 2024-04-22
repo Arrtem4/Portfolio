@@ -3,9 +3,11 @@
 @import "./base/App";
 @import "./base/Animation";
 
+@import "./pages/Main";
 @import "./pages/About";
 @import "./pages/Contacts";
-@import "./pages/Main";
+@import "./pages/Projects";
+@import "./pages/Skills";
 @import "./pages/NotFound";
 
 @import "./components/Header";

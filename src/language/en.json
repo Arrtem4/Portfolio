@@ -5,6 +5,10 @@
         "button-back": "Back to previous page"
     },
     "header": {
-        "first": "first"
+        "main": "MAIN",
+        "about": "ABOUT ME",
+        "contacts": "CONTACTS",
+        "projects": "PROJECTS",
+        "skills": "TECH STACK"
     }
 }

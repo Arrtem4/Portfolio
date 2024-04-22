@@ -1,8 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import Menu from "./Menu";
 import { useEffect, useState } from "react";
 
 export default function Header() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleResize = () => {
@@ -15,7 +17,7 @@ export default function Header() {
     }, []);
     return (
         <section className="header">
-            <div className="header_logo">
+            <div className="header_logo" onClick={() => navigate("/")}>
                 <div className="header_logo_circle">
                     <p>IA</p>
                 </div>
