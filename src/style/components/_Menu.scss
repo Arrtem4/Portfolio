@@ -5,6 +5,10 @@
     &_buttons {
         display: flex;
         align-items: center;
+        &.link_5 {
+            animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                2.4s both;
+        }
     }
     &_links {
         display: flex;
@@ -54,6 +58,22 @@
             &.active {
                 font-weight: 600;
                 text-decoration: underline;
+            }
+            &.link_a {
+                animation: scale-in-center 0.5s
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+            }
+            &.link_b {
+                animation: scale-in-center 0.5s
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.1s both;
+            }
+            &.link_3 {
+                animation: scale-in-center 0.5s
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.2s both;
+            }
+            &.link_4 {
+                animation: scale-in-center 0.5s
+                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.3s both;
             }
         }
     }

@@ -9,15 +9,12 @@ export default function Menu({ size }) {
     const { t } = useTranslation();
     const [menuIsVisible, setMenuIsVisible] = useState(false);
 
-    const closeMenu = () => {
-        document.querySelector(".menu-small_wrapper").classList.add("hidden");
-        setTimeout(() => {
-            document
-                .querySelector(".menu-small_wrapper")
-                .classList.remove("hidden");
-
-            setMenuIsVisible(false);
-        }, 400);
+    const closeMenu = async () => {
+        let menu = document.querySelector(".menu-small_wrapper");
+        menu.classList.add("hidden");
+        await new Promise((resolve) => setTimeout(resolve, 400));
+        menu.classList.remove("hidden");
+        setMenuIsVisible(false);
     };
 
     if (size === "large") {
@@ -26,25 +23,25 @@ export default function Menu({ size }) {
                 <section className="menu-large_wrapper">
                     <section className="menu-large_links">
                         <NavLink
-                            className="menu-large_links_link"
+                            className="menu-large_links_link link_a"
                             to="projects"
                         >
                             {t("header.projects")}
                         </NavLink>
-                        <NavLink className="menu-large_links_link" to="skills">
+                        <NavLink className="menu-large_links_link link_b" to="skills">
                             {t("header.skills")}
                         </NavLink>
-                        <NavLink className="menu-large_links_link" to="about">
+                        <NavLink className="menu-large_links_link link_3" to="about">
                             {t("header.about")}
                         </NavLink>
                         <NavLink
-                            className="menu-large_links_link"
+                            className="menu-large_links_link link_4"
                             to="contacts"
                         >
                             {t("header.contacts")}
                         </NavLink>
                     </section>
-                    <section className="menu-large_buttons">
+                    <section className="menu-large_buttons link_5">
                         <ButtonTheme />
                         <ButtonLanguage />
                     </section>

@@ -1,10 +1,26 @@
 import { useNavigate } from "react-router-dom";
 import Menu from "./Menu";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 export default function Header() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const navigate = useNavigate();
+
+    const rotateLogo = async () => {
+        let circle = document.querySelector(".header_logo_circle");
+        circle.classList.add("rotate");
+        navigate("/");
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        circle.classList.remove("rotate");
+    };
+
+    useLayoutEffect(() => {
+        let circle = document.querySelector(".header_logo_circle");
+        circle.classList.add("first-animation");
+        setTimeout(() => {
+            circle.classList.remove("first-animation");
+        }, 1000);
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -15,9 +31,10 @@ export default function Header() {
             window.removeEventListener("resize", handleResize);
         };
     }, []);
+
     return (
         <section className="header">
-            <div className="header_logo" onClick={() => navigate("/")}>
+            <div className="header_logo" onClick={rotateLogo}>
                 <div className="header_logo_circle">
                     <p>IA</p>
                 </div>

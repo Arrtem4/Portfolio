@@ -27,6 +27,13 @@
             border-style: solid;
             border-color: var(--text-main-color);
             margin-right: 1.5cqw;
+            &.rotate {
+                animation: rotate-center 1s cubic-bezier(0.45, 0.92, 0.84, 1.01)
+                    both;
+            }
+            &.first-animation {
+                animation: roll-in-left 1s ease-out both;
+            }
             p {
                 font-size: clamp(20px, 3cqw, 50px);
                 text-align: center;
@@ -34,8 +41,11 @@
         }
         &_title {
             width: clamp(170px, 23cqw, 500px);
+
             container-type: inline-size;
             &_header {
+                animation: tracking-in-expand 1.5s
+                    cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s both;
                 font-size: 8.2cqw;
                 font-weight: 600;
                 word-spacing: 1cqw;
@@ -43,6 +53,9 @@
                 margin-bottom: 0.8cqh;
             }
             &_subtitle {
+                white-space: nowrap;
+                animation: tracking-in-expand2 1.5s
+                    cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s both;
                 font-weight: 300;
                 font-size: 6cqw;
                 word-spacing: 2cqw;

@@ -87,6 +87,58 @@ button {
     opacity: 1;
   }
 }
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand2 {
+  0% {
+    letter-spacing: 0.5em;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-150px) rotate(-540deg);
+    transform: translateX(-150px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .main {
   height: 100%;
 }
@@ -158,6 +210,12 @@ button {
   border-color: var(--text-main-color);
   margin-right: 1.5cqw;
 }
+.header_logo_circle.rotate {
+  animation: rotate-center 1s cubic-bezier(0.45, 0.92, 0.84, 1.01) both;
+}
+.header_logo_circle.first-animation {
+  animation: roll-in-left 1s ease-out both;
+}
 .header_logo_circle p {
   font-size: clamp(20px, 3cqw, 50px);
   text-align: center;
@@ -167,6 +225,7 @@ button {
   container-type: inline-size;
 }
 .header_logo_title_header {
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s both;
   font-size: 8.2cqw;
   font-weight: 600;
   word-spacing: 1cqw;
@@ -174,6 +233,8 @@ button {
   margin-bottom: 0.8cqh;
 }
 .header_logo_title_subtitle {
+  white-space: nowrap;
+  animation: tracking-in-expand2 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 1.2s both;
   font-weight: 300;
   font-size: 6cqw;
   word-spacing: 2cqw;
@@ -201,6 +262,9 @@ button {
 .menu-large_buttons {
   display: flex;
   align-items: center;
+}
+.menu-large_buttons.link_5 {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.4s both;
 }
 .menu-large_links {
   display: flex;
@@ -245,6 +309,18 @@ button {
 .menu-large_links_link.active {
   font-weight: 600;
   text-decoration: underline;
+}
+.menu-large_links_link.link_a {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+.menu-large_links_link.link_b {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.1s both;
+}
+.menu-large_links_link.link_3 {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.2s both;
+}
+.menu-large_links_link.link_4 {
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.3s both;
 }
 
 .menu-small.hidden {
