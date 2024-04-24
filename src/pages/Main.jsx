@@ -1,4 +1,4 @@
-import photo from "../pictures/photo-central.png";
+import photo from "../pictures/photo-central.webp";
 
 export default function Main() {
     return (
