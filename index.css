@@ -9,6 +9,10 @@
   transition: background-color 1s;
 }
 
+body {
+  background-color: var(--bg-main-color);
+}
+
 button {
   cursor: pointer;
 }
@@ -139,8 +143,121 @@ button {
     opacity: 1;
   }
 }
+@keyframes color-change-5x {
+  0% {
+    background: rgba(228, 7, 7, 0.293);
+  }
+  20% {
+    background: rgba(252, 236, 7, 0.5215686275);
+  }
+  40% {
+    background: rgba(92, 239, 7, 0.5058823529);
+  }
+  60% {
+    background: rgba(8, 75, 218, 0.5215686275);
+  }
+  80% {
+    background: rgba(203, 10, 229, 0.4784313725);
+  }
+  100% {
+    background: rgba(230, 9, 119, 0.4941176471);
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 .main {
   height: 100%;
+}
+.main_central {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.main_central_h1 {
+  width: 40%;
+}
+.main_central_composition {
+  flex-grow: 1;
+  background-color: var(--bg-main-color);
+  position: relative;
+  container-type: inline-size;
+  animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+}
+.main_central_composition_circle-color {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  width: 65cqmin;
+  height: 65cqmin;
+  border-radius: 50%;
+  animation: color-change-5x 10s linear infinite alternate both;
+}
+.main_central_composition_filter {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4cqmin);
+}
+.main_central_composition_circle-1 {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  width: 52cqmin;
+  height: 52cqmin;
+  border-width: 4cqmin;
+  border-color: var(--bg-main-color);
+  border-style: solid;
+  border-radius: 50%;
+  backdrop-filter: invert(100%);
+}
+.main_central_composition_circle-2 {
+  position: absolute;
+  z-index: 7;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -43%) rotate(-3deg);
+  width: 52cqmin;
+  height: 52cqmin;
+  border: 4cqmin solid;
+  border-radius: 50%;
+  border-color: transparent transparent var(--bg-main-color) transparent;
+}
+.main_central_composition_circle-3 {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  width: 52cqmin;
+  height: 52cqmin;
+  border-width: 4cqmin;
+  border-color: var(--bg-main-color);
+  border-style: solid;
+  border-radius: 50%;
+}
+.main_central_composition img {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-53%, -57%) rotate(-4deg);
+  width: 42cqmin;
 }
 
 .about {

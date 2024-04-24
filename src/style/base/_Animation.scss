@@ -110,3 +110,39 @@
         opacity: 1;
     }
 }
+
+@keyframes color-change-5x {
+    0% {
+        background: rgba(228, 7, 7, 0.293);
+    }
+    20% {
+        background: #fcec0785;
+    }
+    40% {
+        background: #5cef0781;
+    }
+    60% {
+        background: #084bda85;
+    }
+    80% {
+        background: #cb0ae57a;
+    }
+    100% {
+        background: #e609777e;
+    }
+}
+
+@keyframes fade-in-fwd {
+    0% {
+      -webkit-transform: translateZ(-80px);
+              transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+  
