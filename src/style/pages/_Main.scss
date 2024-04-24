@@ -11,10 +11,12 @@
         }
         &_composition {
             flex-grow: 1;
+            border-radius: 20%;
             background-color: var(--bg-main-color);
             position: relative;
             container-type: inline-size;
-            animation: fade-in-fwd 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2s both;
+            animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) 2s
+                both;
             &_circle-color {
                 position: absolute;
                 z-index: 1;
@@ -32,6 +34,7 @@
                 width: 100%;
                 height: 100%;
                 backdrop-filter: blur(4cqmin);
+                border-radius: 20%;
             }
             &_circle-1 {
                 position: absolute;
@@ -66,8 +69,8 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -43%);
-                width: 52cqmin;
-                height: 52cqmin;
+                width: 53cqmin;
+                height: 53cqmin;
                 border-width: 4cqmin;
                 border-color: var(--bg-main-color);
                 border-style: solid;
