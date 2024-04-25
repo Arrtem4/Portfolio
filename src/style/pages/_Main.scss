@@ -5,16 +5,19 @@
         height: 100%;
         overflow: hidden;
         display: grid;
-        grid-template-columns: 40% 1fr;
+        grid-template-columns: 45% 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 3cqmin;
         &_h1 {
+            grid-row: 1 / 2;
+            grid-column: 1/ 2;
+            align-self: end;
             width: 100%;
-            color: var(--text-main-color);
             container-type: inline-size;
-            &_p-1 {
+            &_text {
                 font-family: "Comforter";
                 font-size: 30cqmin;
-                text-align: center;
-                transform: rotate(-10deg);
+                transform: rotate(-10deg) translate(30cqmin, 3cqmin);
                 &.animation1 {
                     color: rgba(228, 7, 7, 0.508);
                     text-shadow: 0 0 3cqmin rgb(228, 7, 7);
@@ -25,15 +28,26 @@
                         both;
                 }
             }
-            &_p-2 {
+        }
+        &_h2 {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            width: 100%;
+            container-type: inline-size;
+            align-self: start;
+            padding-left: 10cqmin;
+
+            &_text {
+                color: var(--text-main-color);
                 font-family: "Caveat";
                 letter-spacing: 0.4cqmin;
+                word-spacing: 1.5cqmin;
                 font-size: 7cqmin;
-                padding-left: 4cqmin;
-                padding-top: 4cqmin;
             }
         }
         &_composition {
+            grid-row: 1 / span 2;
+            grid-column: 2 / 3;
             border-radius: 20%;
             background-color: var(--bg-main-color);
             position: relative;

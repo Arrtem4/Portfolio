@@ -19,7 +19,7 @@ export default function Main() {
             let element = document.querySelector(
                 ".main_central_composition_circle-color"
             );
-            let element2 = document.querySelector(".main_central_h1_p-1");
+            let element2 = document.querySelector(".main_central_h1_text");
             element.classList.remove("animation1");
             element2.classList.remove("animation1");
             element.classList.add("animation2");
@@ -32,10 +32,12 @@ export default function Main() {
         <section className="main">
             <section className="main_central">
                 <section className="main_central_h1">
-                    <p className="main_central_h1_p-1 animation1">
-                        {t("main.p-1")}
+                    <p className="main_central_h1_text animation1">
+                        {t("main.h-1")}
                     </p>
-                    <p className="main_central_h1_p-2">{t("main.p-2")}</p>
+                </section>
+                <section className="main_central_h2">
+                    <p className="main_central_h2_text">{t("main.h-2")}</p>
                 </section>
                 <section
                     className={`main_central_composition ${
