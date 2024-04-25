@@ -113,22 +113,79 @@
 
 @keyframes color-change-5x {
     0% {
-        background: rgba(228, 7, 7, 0.293);
+        background: rgba(228, 7, 7, 0.5);
+        width: 65cqmin;
+        height: 65cqmin;
+        border-radius: 50%;
     }
     20% {
-        background: #fcec0785;
+        background: #fcec079c;
+        width: 67cqmin;
+        height: 67cqmin;
+        border-radius: 45%;
     }
     40% {
-        background: #5cef0781;
+        background: #5cef0792;
+        width: 65cqmin;
+        height: 65cqmin;
+        border-radius: 40%;
     }
     60% {
-        background: #084bda85;
+        background: #084bda98;
+        width: 67cqmin;
+        height: 67cqmin;
+        border-radius: 45%;
     }
     80% {
-        background: #cb0ae57a;
+        background: #cb0ae594;
+        width: 65cqmin;
+        height: 65cqmin;
+        border-radius: 50%;
     }
     100% {
-        background: #e609777e;
+        background: #e6097794;
+        width: 67cqmin;
+        height: 67cqmin;
+        border-radius: 45%;
+    }
+}
+
+@keyframes color-change2-5x {
+    0% {
+        color: rgba(228, 7, 7, 0.497);
+        text-shadow: 0 0 3cqmin rgb(228, 7, 7);
+    }
+    20% {
+        color: #fcec07a3;
+        text-shadow: 0 0 3cqmin #fcec07;
+    }
+    40% {
+        color: #5cef07b0;
+        text-shadow: 0 0 3cqmin #5cef07;
+    }
+    60% {
+        color: #084bdab4;
+        text-shadow: 0 0 3cqmin #084bda;
+    }
+    80% {
+        color: #cb0ae5a4;
+        text-shadow: 0 0 3cqmin #cb0ae5;
+    }
+    100% {
+        color: #e60977a0;
+        text-shadow: 0 0 3cqmin #e60977;
+    }
+}
+
+@keyframes highlightText {
+    0% {
+        text-shadow: 0 0 5px red; /* Начальное состояние */
+    }
+    50% {
+        text-shadow: 0 0 10px red; /* Промежуточное состояние */
+    }
+    100% {
+        text-shadow: 0 0 5px red; /* Конечное состояние */
     }
 }
 

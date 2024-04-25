@@ -4,26 +4,43 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
-        display: flex;
+        display: grid;
+        grid-template-columns: 40% 1fr;
         &_h1 {
-            width: 40%;
+            width: 100%;
             color: var(--text-main-color);
+            container-type: inline-size;
             &_p-1 {
+                font-family: "Comforter";
+                font-size: 30cqmin;
+                text-align: center;
+                transform: rotate(-10deg);
+                &.animation1 {
+                    color: rgba(228, 7, 7, 0.508);
+                    text-shadow: 0 0 3cqmin rgb(228, 7, 7);
+                    animation: flicker-in-1 1.9s linear 2.1s both;
+                }
+                &.animation2 {
+                    animation: color-change2-5x 8s linear infinite alternate
+                        both;
+                }
+            }
+            &_p-2 {
+                font-family: "Caveat";
+                letter-spacing: 0.4cqmin;
+                font-size: 7cqmin;
+                padding-left: 4cqmin;
+                padding-top: 4cqmin;
             }
         }
         &_composition {
-            flex-grow: 1;
             border-radius: 20%;
             background-color: var(--bg-main-color);
             position: relative;
             container-type: inline-size;
-            &.visited-animation {
-                animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1)
-                    both;
-            }
             &.non-visited-animation {
-                animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s
-                    both;
+                animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1)
+                    1.8s both;
             }
             &_circle-color {
                 position: absolute;
@@ -35,12 +52,11 @@
                 height: 65cqmin;
                 border-radius: 50%;
                 &.animation1 {
-                    background: rgba(228, 7, 7, 0.293);
-                    animation: flicker-in-1 2s linear 1.5s both;
+                    background: rgba(228, 7, 7, 0.5);
+                    animation: flicker-in-1 2s linear 2s both;
                 }
                 &.animation2 {
-                    animation: color-change-5x 10s linear infinite alternate
-                        both;
+                    animation: color-change-5x 8s linear infinite alternate both;
                 }
             }
             &_filter {

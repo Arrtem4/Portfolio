@@ -19,22 +19,27 @@ export default function Main() {
             let element = document.querySelector(
                 ".main_central_composition_circle-color"
             );
+            let element2 = document.querySelector(".main_central_h1_p-1");
             element.classList.remove("animation1");
+            element2.classList.remove("animation1");
             element.classList.add("animation2");
+            element2.classList.add("animation2");
         };
-        changeColorCircleAnimation(visited ? 0 : 3500);
+        changeColorCircleAnimation(visited ? 0 : 4000);
     });
 
     return (
         <section className="main">
             <section className="main_central">
                 <section className="main_central_h1">
-                    <p className="main_central_h1_p-1">{t("main.p-1")}</p>
+                    <p className="main_central_h1_p-1 animation1">
+                        {t("main.p-1")}
+                    </p>
                     <p className="main_central_h1_p-2">{t("main.p-2")}</p>
                 </section>
                 <section
                     className={`main_central_composition ${
-                        visited ? "visited-animation" : "non-visited-animation"
+                        visited ? "" : "non-visited-animation"
                     }`}
                 >
                     <div
