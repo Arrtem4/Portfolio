@@ -10,5 +10,9 @@
         "contacts": "CONTACTS",
         "projects": "PROJECTS",
         "skills": "SKILLS"
+    },
+    "main": {
+        "p-1": "Hello!",
+        "p-2": "I'm Iakovenko Artem, a fullstack developer from Russia with a focus on frontend and UX&UI design"
     }
 }

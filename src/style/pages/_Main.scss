@@ -7,7 +7,9 @@
         display: flex;
         &_h1 {
             width: 40%;
-            // background-color: rgba(0, 0, 0, 0.24);
+            color: var(--text-main-color);
+            &_p-1 {
+            }
         }
         &_composition {
             flex-grow: 1;
@@ -15,8 +17,14 @@
             background-color: var(--bg-main-color);
             position: relative;
             container-type: inline-size;
-            animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) 2s
-                both;
+            &.visited-animation {
+                animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1)
+                    both;
+            }
+            &.non-visited-animation {
+                animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) 1.5s
+                    both;
+            }
             &_circle-color {
                 position: absolute;
                 z-index: 1;
@@ -28,7 +36,7 @@
                 border-radius: 50%;
                 &.animation1 {
                     background: rgba(228, 7, 7, 0.293);
-                    animation: flicker-in-1 2s linear 2.5s both;
+                    animation: flicker-in-1 2s linear 1.5s both;
                 }
                 &.animation2 {
                     animation: color-change-5x 10s linear infinite alternate

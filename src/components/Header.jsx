@@ -15,11 +15,14 @@ export default function Header() {
     };
 
     useLayoutEffect(() => {
-        let circle = document.querySelector(".header_logo_circle");
-        circle.classList.add("first-animation");
-        setTimeout(() => {
+        const changeAnimation = async () => {
+            let circle = document.querySelector(".header_logo_circle");
+            circle.classList.add("first-animation");
+            await new Promise((resolve) => setTimeout(resolve, 1000));
             circle.classList.remove("first-animation");
-        }, 1000);
+            document.documentElement.dataset.isVisited = "true";
+        };
+        changeAnimation();
     }, []);
 
     useEffect(() => {
