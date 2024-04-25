@@ -17,7 +17,11 @@
             &_text {
                 font-family: "Comforter";
                 font-size: 30cqmin;
-                transform: rotate(-10deg) translate(30cqmin, 3cqmin);
+                transform: rotate(-10deg) translate(30cqmin, 1cqmin);
+                &.ru {
+                    font-size: 30cqmin;
+                    transform: rotate(-10deg) translate(20cqmin, 1cqmin);
+                }
                 &.animation1 {
                     color: rgba(228, 7, 7, 0.508);
                     text-shadow: 0 0 3cqmin rgb(228, 7, 7);

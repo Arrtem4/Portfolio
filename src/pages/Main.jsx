@@ -5,13 +5,9 @@ import { useTranslation } from "react-i18next";
 export default function Main() {
     const { t } = useTranslation();
     const visited = document.documentElement.dataset.isVisited;
+    const lang = document.documentElement.dataset.lang;
 
-    // useLayoutEffect(() => {
-    //     let status = document.documentElement.dataset.isVisited;
-    //     if (status === "true") {
-    //         console.log(`trueeee`)
-    //     }
-    // })
+    console.log(lang);
 
     useEffect(() => {
         const changeColorCircleAnimation = async (timer) => {
@@ -32,7 +28,11 @@ export default function Main() {
         <section className="main">
             <section className="main_central">
                 <section className="main_central_h1">
-                    <p className="main_central_h1_text animation1">
+                    <p
+                        className={`main_central_h1_text ${
+                            lang === "en" ? "" : "ru"
+                        } animation1 `}
+                    >
                         {t("main.h-1")}
                     </p>
                 </section>

@@ -6,6 +6,7 @@ import { useState } from "react";
 export default function ButtonLanguage() {
     const [language, setLanguage] = useLanguage("language", "en");
     const [active, setActive] = useState(false);
+    document.documentElement.dataset.lang = language;
     const handleChange = (lang) => {
         setLanguage(lang);
         i18n.changeLanguage(lang);

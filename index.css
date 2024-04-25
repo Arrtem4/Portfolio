@@ -356,7 +356,11 @@ button {
 .main_central_h1_text {
   font-family: "Comforter";
   font-size: 30cqmin;
-  transform: rotate(-10deg) translate(30cqmin, 3cqmin);
+  transform: rotate(-10deg) translate(30cqmin, 1cqmin);
+}
+.main_central_h1_text.ru {
+  font-size: 30cqmin;
+  transform: rotate(-10deg) translate(20cqmin, 1cqmin);
 }
 .main_central_h1_text.animation1 {
   color: rgba(228, 7, 7, 0.508);
