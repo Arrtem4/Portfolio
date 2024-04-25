@@ -26,7 +26,14 @@
                 width: 65cqmin;
                 height: 65cqmin;
                 border-radius: 50%;
-                animation: color-change-5x 10s linear infinite alternate both;
+                &.animation1 {
+                    background: rgba(228, 7, 7, 0.293);
+                    animation: flicker-in-1 2s linear 2.5s both;
+                }
+                &.animation2 {
+                    animation: color-change-5x 10s linear infinite alternate
+                        both;
+                }
             }
             &_filter {
                 position: absolute;
