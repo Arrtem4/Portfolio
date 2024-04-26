@@ -47,7 +47,7 @@ export default function Menu({ size }) {
                             {t("header.contacts")}
                         </NavLink>
                     </section>
-                    <section className="menu-large_buttons">
+                    <section className="menu-large_buttons link_5 ">
                         <ButtonTheme />
                         <ButtonLanguage />
                     </section>

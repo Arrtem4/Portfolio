@@ -68,6 +68,14 @@ button {
     opacity: 0;
   }
 }
+@keyframes aaa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes scale-in-ver-top {
   0% {
     -webkit-transform: scaleY(0);
@@ -623,7 +631,7 @@ button {
   align-items: center;
 }
 .menu-large_buttons.link_5 {
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
+  animation: aaa 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.8s both;
 }
 .menu-large_links {
   display: flex;
