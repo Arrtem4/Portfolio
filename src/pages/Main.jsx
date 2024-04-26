@@ -7,8 +7,6 @@ export default function Main() {
     const visited = document.documentElement.dataset.isVisited;
     const lang = document.documentElement.dataset.lang;
 
-    console.log(lang);
-
     useEffect(() => {
         const changeColorCircleAnimation = async (timer) => {
             await new Promise((resolve) => setTimeout(resolve, timer));
@@ -41,7 +39,7 @@ export default function Main() {
                 </section>
                 <section
                     className={`main_central_composition ${
-                        visited ? "" : "non-visited-animation"
+                        visited ? "" : "animation"
                     }`}
                 >
                     <div
