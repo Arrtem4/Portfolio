@@ -14,15 +14,9 @@
     &_logo {
         color: var(--text-main-color);
         font-family: "Montserrat";
-        display: flex;
-        align-items: center;
-        justify-content: center;
         cursor: pointer;
         &_circle {
             font-weight: 600;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: clamp(35px, 4.7cqw, 75px);
             height: clamp(35px, 4.7cqw, 75px);
             border-radius: 50%;

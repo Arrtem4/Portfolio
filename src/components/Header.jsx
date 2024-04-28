@@ -37,8 +37,8 @@ export default function Header() {
 
     return (
         <section className="header">
-            <div className="header_logo" onClick={rotateLogo}>
-                <div className="header_logo_circle">
+            <div className="header_logo center" onClick={rotateLogo}>
+                <div className="header_logo_circle center">
                     <p>IA</p>
                 </div>
                 <div className="header_logo_title">

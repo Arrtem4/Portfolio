@@ -13,7 +13,7 @@ export default function ButtonLanguage() {
     };
 
     return (
-        <div className="button-language" onClick={() => setActive(!active)}>
+        <div className="button-language center" onClick={() => setActive(!active)}>
             {active && (
                 <div className="button-language_background-for-close"></div>
             )}

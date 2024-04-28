@@ -17,7 +17,7 @@ export default function ButtonTheme() {
 
     return (
         <div
-            className="button-theme"
+            className="button-theme center"
             onClick={handleDivClick}
             onAnimationEnd={() => setAnimationStarted(false)}
         >
@@ -26,7 +26,7 @@ export default function ButtonTheme() {
                     <div
                         className={`${
                             animationStarted ? "button-theme_icon-wrapper" : ""
-                        } button-theme_icon-wrapper-static`}
+                        } center`}
                     >
                         <BsFillSunFill />
                     </div>
@@ -46,7 +46,7 @@ export default function ButtonTheme() {
                     <div
                         className={`${
                             animationStarted ? "button-theme_icon-wrapper" : ""
-                        } button-theme_icon-wrapper-static`}
+                        } center`}
                     >
                         <BsFillMoonStarsFill />
                     </div>

@@ -3,8 +3,6 @@
         display: flex;
     }
     &_buttons {
-        display: flex;
-        align-items: center;
         &.link_5 {
             animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
                 1.45s both;
@@ -115,10 +113,7 @@
         justify-content: space-between;
     }
     &_links {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         gap: 4cqh;
         &_link {
             font-family: "Noto Sans Display";

@@ -47,7 +47,7 @@ export default function Menu({ size }) {
                             {t("header.contacts")}
                         </NavLink>
                     </section>
-                    <section className="menu-large_buttons link_5 ">
+                    <section className="menu-large_buttons center link_5 ">
                         <ButtonTheme />
                         <ButtonLanguage />
                     </section>
@@ -76,7 +76,7 @@ export default function Menu({ size }) {
                             <ButtonLanguage />
                             <ButtonTheme />
                         </section>
-                        <section className="menu-small_links">
+                        <section className="menu-small_links center">
                             <NavLink
                                 onClick={() => closeMenu()}
                                 className="menu-small_links_link"

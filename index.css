@@ -535,16 +535,10 @@ button {
 .header_logo {
   color: var(--text-main-color);
   font-family: "Montserrat";
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 .header_logo_circle {
   font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: clamp(35px, 4.7cqw, 75px);
   height: clamp(35px, 4.7cqw, 75px);
   border-radius: 50%;
@@ -608,10 +602,6 @@ button {
 
 .menu-large_wrapper {
   display: flex;
-}
-.menu-large_buttons {
-  display: flex;
-  align-items: center;
 }
 .menu-large_buttons.link_5 {
   animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.45s both;
@@ -708,10 +698,7 @@ button {
   justify-content: space-between;
 }
 .menu-small_links {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 4cqh;
 }
 .menu-small_links_link {
@@ -729,8 +716,6 @@ button {
 
 .button-language {
   font-family: "Noto Sans Display";
-  display: flex;
-  align-items: center;
   cursor: pointer;
   position: relative;
 }
@@ -795,9 +780,6 @@ button {
   width: 50px;
   color: var(--text-main-color);
   font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 @media only screen and (max-width: 700px) {
@@ -815,9 +797,4 @@ button {
   position: absolute;
   pointer-events: none;
   opacity: 0;
-}
-.button-theme_icon-wrapper-static {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=index.css.map */

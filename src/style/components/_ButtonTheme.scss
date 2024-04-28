@@ -2,9 +2,6 @@
     width: 50px;
     color: var(--text-main-color);
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     @include respond(s) {
         font-size: 35px;
@@ -18,11 +15,6 @@
                 pointer-events: none;
                 opacity: 0;
             }
-        }
-        &-static {
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
     }
 }
