@@ -6,6 +6,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    @include respond(s) {
+        font-size: 35px;
+    }
     &_icon-wrapper {
         animation: button-theme-in 1s ease forwards;
         &-hidden {
@@ -21,11 +24,5 @@
             align-items: center;
             justify-content: center;
         }
-    }
-}
-
-@container (max-width: 700px) {
-    .button-theme {
-        font-size: 35px;
     }
 }

@@ -31,6 +31,24 @@ body {
     }
 }
 
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs {
+        @media only screen and (max-width: 400px) {
+            @content;
+        }
+    }
+    @if $breakpoint == s {
+        @media only screen and (max-width: 700px) {
+            @content;
+        }
+    }
+    @if $breakpoint == l {
+        @media only screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+}
+
 button {
     cursor: pointer;
 }

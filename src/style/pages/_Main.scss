@@ -1,5 +1,9 @@
 .main {
     height: 100%;
+    @include respond(l) {
+        position: relative;
+        z-index: -5;
+    }
     &_central {
         width: 100%;
         height: 100%;
@@ -8,15 +12,32 @@
         grid-template-columns: 45% 1fr;
         grid-template-rows: 1fr 1fr;
         row-gap: 3cqmin;
+        @include respond(l) {
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 55% 25%;
+        }
         &_h1 {
             grid-row: 1 / 2;
             grid-column: 1/ 2;
             align-self: end;
             container-type: inline-size;
+            @include respond(l) {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                container-type: size;
+                align-self: stretch;
+            }
             &_text {
                 font-family: "Comforter";
                 font-size: 30cqmin;
                 transform: rotate(-10deg) translate(30cqmin, 1cqmin);
+                padding-left: 0;
+                @include respond(l) {
+                    font-family: "Comforter";
+                    font-size: 70cqmin;
+                    transform: rotate(-20deg);
+                    padding-left: 15%;
+                }
                 &.ru {
                     font-size: 30cqmin;
                     transform: rotate(-10deg) translate(20cqmin, 1cqmin);
@@ -37,6 +58,12 @@
             container-type: inline-size;
             align-self: start;
             padding-left: 10cqmin;
+            @include respond(l) {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+                container-type: size;
+                align-self: stretch;
+            }
             &_text {
                 color: var(--text-main-color);
                 font-family: "Caveat";
@@ -53,6 +80,12 @@
             position: relative;
             z-index: -3;
             container-type: inline-size;
+            @include respond(l) {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+                container-type: size;
+                align-self: stretch;
+            }
             &.animation {
                 animation: enter-opacity 2s ease 1.5s both;
             }
@@ -127,35 +160,6 @@
                 left: 50%;
                 transform: translate(-53%, -57%) rotate(-4deg);
                 width: 42cqmin;
-            }
-        }
-    }
-}
-
-@container (max-width: 1200px) {
-    .main {
-        position: relative;
-        z-index: -5;
-        &_central {
-            grid-template-columns: 100%;
-            grid-template-rows: 20% 55% 25%;
-            &_h1 {
-                grid-column: 1 / 2;
-                grid-row: 1 / 2;
-                container-type: size;
-                align-self: stretch;
-            }
-            &_h2 {
-                grid-column: 1 / 2;
-                grid-row: 3 / 4;
-                container-type: size;
-                align-self: stretch;
-            }
-            &_composition {
-                grid-column: 1 / 2;
-                grid-row: 2 / 3;
-                container-type: size;
-                align-self: stretch;
             }
         }
     }

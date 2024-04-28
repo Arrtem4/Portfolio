@@ -5,6 +5,9 @@
     padding: clamp(10px, 1.5cqw, 20px);
     padding-right: clamp(10px, 3cqw, 35px);
     min-width: max-content;
+    @include respond(xs) {
+        padding: 10px;
+    }
     &_space {
         flex-grow: 1;
     }
@@ -27,6 +30,14 @@
             border-style: solid;
             border-color: var(--text-main-color);
             margin-right: 1.5cqw;
+            @media screen and (max-width: 1300px) {
+                border-width: 2px;
+                border-style: solid;
+                border-color: var(--text-main-color);
+            }
+            @include respond(xs) {
+                display: none;
+            }
             &.rotate {
                 animation: rotate-center 1s cubic-bezier(0.45, 0.92, 0.84, 1.01)
                     both;
@@ -50,7 +61,7 @@
                 word-spacing: 1cqw;
                 letter-spacing: 0.6cqw;
                 margin-bottom: 0.8cqh;
-                @media screen and (max-width: 400px) {
+                @include respond(xs) {
                     animation: tracking-in-expand 1.5s
                         cubic-bezier(0.215, 0.61, 0.355, 1) both;
                 }
@@ -63,32 +74,10 @@
                 font-size: 6cqw;
                 word-spacing: 2cqw;
                 letter-spacing: 0.9cqw;
-                @media screen and (max-width: 400px) {
+                @include respond(xs) {
                     animation: tracking-in-expand2 1.5s
                         cubic-bezier(0.215, 0.61, 0.355, 1) both;
                 }
-            }
-        }
-    }
-}
-
-@container (max-width: 1300px) {
-    .header {
-        &_logo {
-            &_circle {
-                border-width: 2px;
-                border-style: solid;
-                border-color: var(--text-main-color);
-            }
-        }
-    }
-}
-@container (max-width: 400px) {
-    .header {
-        padding: 10px;
-        &_logo {
-            &_circle {
-                display: none;
             }
         }
     }
