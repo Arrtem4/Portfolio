@@ -19,7 +19,7 @@ export default function Main() {
             element.classList.add("animation2");
             element2.classList.add("animation2");
         };
-        changeColorCircleAnimation(visited ? 0 : 4000);
+        changeColorCircleAnimation(visited ? 0 : 3500);
     });
 
     return (

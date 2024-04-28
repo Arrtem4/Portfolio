@@ -24,11 +24,10 @@
                 &.animation1 {
                     color: rgba(228, 7, 7, 0.508);
                     text-shadow: 0 0 3cqmin rgb(228, 7, 7);
-                    animation: flicker-in-1 1s linear 3s both;
+                    animation: flicker-in-main 1s linear 2.5s both;
                 }
                 &.animation2 {
-                    animation: color-change2-5x 8s linear infinite alternate
-                        both;
+                    animation: color-change-2 8s linear infinite alternate both;
                 }
             }
         }
@@ -54,8 +53,7 @@
             z-index: -3;
             container-type: inline-size;
             &.animation {
-                animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1)
-                    1.8s both;
+                animation: enter-opacity 2s ease 1.5s both;
             }
             &_circle-color {
                 position: absolute;
@@ -68,10 +66,10 @@
                 border-radius: 50%;
                 &.animation1 {
                     background: rgba(228, 7, 7, 0.5);
-                    animation: flicker-in-1 2s linear 2s both;
+                    animation: flicker-in-main 2s linear 1.5s both;
                 }
                 &.animation2 {
-                    animation: color-change-5x 8s linear infinite alternate both;
+                    animation: color-change-1 8s linear infinite alternate both;
                 }
             }
             &_filter {

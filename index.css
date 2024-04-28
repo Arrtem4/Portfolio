@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "./base/variables.css";
 * {
   margin: 0;
@@ -68,43 +67,11 @@ button {
     opacity: 0;
   }
 }
-@keyframes aaa {
+@keyframes enter-opacity {
   0% {
     opacity: 0;
   }
   100% {
-    opacity: 1;
-  }
-}
-@keyframes scale-in-ver-top {
-  0% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-}
-@keyframes scale-out-ver-bottom {
-  0% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 0% 100%;
-    transform-origin: 0% 100%;
     opacity: 1;
   }
 }
@@ -148,17 +115,7 @@ button {
     opacity: 1;
   }
 }
-@keyframes scale-in-center {
-  0% {
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-@keyframes color-change-5x {
+@keyframes color-change-1 {
   0% {
     background: rgba(228, 7, 7, 0.5);
     width: 65cqmin;
@@ -196,7 +153,7 @@ button {
     border-radius: 45%;
   }
 }
-@keyframes color-change2-5x {
+@keyframes color-change-2 {
   0% {
     color: rgba(228, 7, 7, 0.497);
     text-shadow: 0 0 3cqmin rgb(228, 7, 7);
@@ -222,30 +179,7 @@ button {
     text-shadow: 0 0 3cqmin #e60977;
   }
 }
-@keyframes highlightText {
-  0% {
-    text-shadow: 0 0 5px red; /* Начальное состояние */
-  }
-  50% {
-    text-shadow: 0 0 10px red; /* Промежуточное состояние */
-  }
-  100% {
-    text-shadow: 0 0 5px red; /* Конечное состояние */
-  }
-}
-@keyframes fade-in-fwd {
-  0% {
-    -webkit-transform: translateZ(-80px);
-    transform: translateZ(-80px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
-@keyframes flicker-in-1 {
+@keyframes flicker-in-main {
   0% {
     opacity: 0;
   }
@@ -340,6 +274,35 @@ button {
     opacity: 1;
   }
 }
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-100dvh);
+    transform: translateY(-100dvh);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100dvh);
+    transform: translateY(-100dvh);
+    opacity: 0;
+  }
+}
 .main {
   height: 100%;
 }
@@ -370,10 +333,10 @@ button {
 .main_central_h1_text.animation1 {
   color: rgba(228, 7, 7, 0.508);
   text-shadow: 0 0 3cqmin rgb(228, 7, 7);
-  animation: flicker-in-1 1s linear 3s both;
+  animation: flicker-in-main 1s linear 2.5s both;
 }
 .main_central_h1_text.animation2 {
-  animation: color-change2-5x 8s linear infinite alternate both;
+  animation: color-change-2 8s linear infinite alternate both;
 }
 .main_central_h2 {
   grid-row: 2/3;
@@ -398,7 +361,7 @@ button {
   container-type: inline-size;
 }
 .main_central_composition.animation {
-  animation: fade-in-fwd 3s cubic-bezier(0.39, 0.575, 0.565, 1) 1.8s both;
+  animation: enter-opacity 2s ease 1.5s both;
 }
 .main_central_composition_circle-color {
   position: absolute;
@@ -412,10 +375,10 @@ button {
 }
 .main_central_composition_circle-color.animation1 {
   background: rgba(228, 7, 7, 0.5);
-  animation: flicker-in-1 2s linear 2s both;
+  animation: flicker-in-main 2s linear 1.5s both;
 }
 .main_central_composition_circle-color.animation2 {
-  animation: color-change-5x 8s linear infinite alternate both;
+  animation: color-change-1 8s linear infinite alternate both;
 }
 .main_central_composition_filter {
   position: absolute;
@@ -631,7 +594,7 @@ button {
   align-items: center;
 }
 .menu-large_buttons.link_5 {
-  animation: aaa 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.8s both;
+  animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.45s both;
 }
 .menu-large_links {
   display: flex;
@@ -678,16 +641,16 @@ button {
   text-decoration: underline;
 }
 .menu-large_links_link.link_1 {
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
+  animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.25s both;
 }
 .menu-large_links_link.link_2 {
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.4s both;
+  animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
 }
 .menu-large_links_link.link_3 {
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
+  animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.35s both;
 }
 .menu-large_links_link.link_4 {
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.6s both;
+  animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.4s both;
 }
 
 .menu-small.hidden {
@@ -697,12 +660,7 @@ button {
   font-size: clamp(30px, 8cqw, 40px);
   color: var(--text-main-color);
   cursor: pointer;
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
-}
-@media screen and (max-width: 400px) {
-  .menu-small_icon {
-    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
-  }
+  animation: enter-opacity 1s ease 1.3s both;
 }
 .menu-small_wrapper {
   position: absolute;
@@ -717,10 +675,10 @@ button {
   padding: 4cqh 12cqw;
   overflow: auto;
   background-color: var(--bg-main-color);
-  animation: scale-in-ver-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 0.6s ease-out both;
 }
 .menu-small_wrapper.hidden {
-  animation: scale-out-ver-bottom 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-out-top 0.6s ease-out both;
 }
 .menu-small_buttons {
   width: 100%;

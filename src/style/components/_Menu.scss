@@ -6,7 +6,8 @@
         display: flex;
         align-items: center;
         &.link_5 {
-            animation: aaa 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.8s both;
+            animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                1.45s both;
         }
     }
     &_links {
@@ -59,20 +60,20 @@
                 text-decoration: underline;
             }
             &.link_1 {
-                animation: scale-in-center 0.5s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
+                animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                    1.25s both;
             }
             &.link_2 {
-                animation: scale-in-center 0.5s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.4s both;
+                animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                    1.3s both;
             }
             &.link_3 {
-                animation: scale-in-center 0.5s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.5s both;
+                animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                    1.35s both;
             }
             &.link_4 {
-                animation: scale-in-center 0.5s
-                    cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.6s both;
+                animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+                    1.4s both;
             }
         }
     }
@@ -86,12 +87,7 @@
         font-size: clamp(30px, 8cqw, 40px);
         color: var(--text-main-color);
         cursor: pointer;
-        animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-            0.5s both;
-        @media screen and (max-width: 400px) {
-            animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                0.7s both;
-        }
+        animation: enter-opacity 1s ease 1.3s both;
     }
     &_wrapper {
         position: absolute;
@@ -106,11 +102,9 @@
         padding: 4cqh 12cqw;
         overflow: auto;
         background-color: var(--bg-main-color);
-        animation: scale-in-ver-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-            both;
+        animation: slide-in-top 0.6s ease-out both;
         &.hidden {
-            animation: scale-out-ver-bottom 0.4s
-                cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+            animation: slide-out-top 0.6s ease-out both;
         }
     }
     &_buttons {
