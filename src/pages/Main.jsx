@@ -1,11 +1,25 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import photo from "../pictures/photo-central.webp";
 import { useTranslation } from "react-i18next";
+import Typed from "typed.js";
 
 export default function Main() {
     const { t } = useTranslation();
     const visited = document.documentElement.dataset.isVisited;
     const lang = document.documentElement.dataset.lang;
+    const textH2 = useRef(null);
+
+    useEffect(() => {
+        const typed = new Typed(textH2.current, {
+            strings: [t("main.h-2")],
+            startDelay: 4000,
+            typeSpeed: 40,
+            showCursor: false,
+        });
+        return () => {
+            typed.destroy();
+        };
+    }, [t]);
 
     useEffect(() => {
         const changeColorCircleAnimation = async (timer) => {
@@ -35,7 +49,7 @@ export default function Main() {
                     </p>
                 </section>
                 <section className="main_central_h2">
-                    <p className="main_central_h2_text">{t("main.h-2")}</p>
+                    <p ref={textH2} className="main_central_h2_text"></p>
                 </section>
                 <section
                     className={`main_central_composition ${

@@ -535,7 +535,7 @@ button {
   animation: rotate-center 1s cubic-bezier(0.45, 0.92, 0.84, 1.01) both;
 }
 .header_logo_circle.first-animation {
-  animation: roll-in-left 1s ease-out both;
+  animation: roll-in-left 2s ease-out both;
 }
 .header_logo_circle p {
   font-size: clamp(20px, 3cqw, 50px);

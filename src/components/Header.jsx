@@ -18,7 +18,7 @@ export default function Header() {
         const changeAnimation = async () => {
             let circle = document.querySelector(".header_logo_circle");
             circle.classList.add("first-animation");
-            await new Promise((resolve) => setTimeout(resolve, 1000));
+            await new Promise((resolve) => setTimeout(resolve, 3000));
             circle.classList.remove("first-animation");
             document.documentElement.dataset.isVisited = "true";
         };
