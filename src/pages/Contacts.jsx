@@ -1,3 +1,3 @@
 export default function Contacts() {
-    return <div>Contacts</div>;
+    return <section className="contacts page-enter">Contacts</section>;
 }

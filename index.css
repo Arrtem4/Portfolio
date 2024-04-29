@@ -31,6 +31,10 @@ button {
   align-items: center;
 }
 
+.page-enter {
+  animation: slide-in-bottom 1s ease-out both;
+}
+
 .main-layout {
   font-family: "Noto Sans Display", "Playfair Display SC", sans-serif;
   width: 100%;
@@ -417,6 +421,21 @@ button {
     opacity: 0;
   }
 }
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(100dvh);
+    transform: translateY(100dvh);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .main {
   height: 100%;
 }
@@ -650,11 +669,23 @@ button {
 }
 
 .about {
-  height: 100%;
+  background-color: rgb(109, 230, 23);
+  min-height: 100%;
 }
 
 .contacts {
-  height: 100%;
+  background-color: rgb(30, 13, 222);
+  min-height: 100%;
+}
+
+.projects {
+  background-color: red;
+  min-height: 100%;
+}
+
+.skills {
+  background-color: rgb(9, 225, 217);
+  min-height: 100%;
 }
 
 .not-found {

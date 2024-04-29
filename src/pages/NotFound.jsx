@@ -5,7 +5,7 @@ export default function NotFound() {
     const navigate = useNavigate();
 
     return (
-        <section className="not-found center">
+        <section className="not-found center page-enter">
             <p className="not-found_text">{t("not-found.text")}</p>
             <button className="not-found_button" onClick={() => navigate("/")}>
                 {t("not-found.button-to-home")}
