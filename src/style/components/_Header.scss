@@ -24,13 +24,11 @@
             border-style: solid;
             border-color: var(--text-main-color);
             margin-right: 1.5cqw;
-            @media screen and (max-width: 1300px) {
-                border-width: 2px;
-                border-style: solid;
-                border-color: var(--text-main-color);
-            }
             @include respond(xs) {
                 display: none;
+            }
+            @include respond(l) {
+                border-width: 2px;
             }
             &.rotate {
                 animation: rotate-center 1s cubic-bezier(0.45, 0.92, 0.84, 1.01)

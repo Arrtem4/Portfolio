@@ -99,19 +99,23 @@
                 height: 65cqmin;
                 border-radius: 50%;
                 &.animation1 {
-                    background: rgba(228, 7, 7, 0.5);
+                    background-color: rgba(228, 7, 7, 0.5);
                     animation: flicker-in-main 2s linear 1.5s both;
+                    -webkit-animation: flicker-in-main 2s linear 1.5s both;
                 }
                 &.animation2 {
                     animation: color-change-1 8s linear infinite alternate both;
+                    -webkit-animation: color-change-1 8s linear infinite
+                        alternate both;
                 }
             }
             &_filter {
                 position: absolute;
-                z-index: -1;
+                z-index: 0;
                 width: 100%;
                 height: 100%;
                 backdrop-filter: blur(4cqmin);
+                -webkit-backdrop-filter: blur(4cqmin);
             }
             &_circle-1 {
                 position: absolute;
@@ -126,6 +130,7 @@
                 border-style: solid;
                 border-radius: 50%;
                 backdrop-filter: invert(100%);
+                -webkit-backdrop-filter: invert(100%);
             }
             &_circle-2 {
                 position: absolute;

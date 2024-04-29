@@ -117,37 +117,75 @@ button {
 }
 @keyframes color-change-1 {
   0% {
-    background: rgba(228, 7, 7, 0.5);
+    background-color: rgba(228, 7, 7, 0.5);
     width: 65cqmin;
     height: 65cqmin;
     border-radius: 50%;
   }
   20% {
-    background: rgba(252, 236, 7, 0.6117647059);
+    background-color: rgba(252, 236, 7, 0.6117647059);
     width: 67cqmin;
     height: 67cqmin;
     border-radius: 45%;
   }
   40% {
-    background: rgba(92, 239, 7, 0.5725490196);
+    background-color: rgba(92, 239, 7, 0.5725490196);
     width: 65cqmin;
     height: 65cqmin;
     border-radius: 40%;
   }
   60% {
-    background: rgba(8, 75, 218, 0.5960784314);
+    background-color: rgba(8, 75, 218, 0.5960784314);
     width: 67cqmin;
     height: 67cqmin;
     border-radius: 45%;
   }
   80% {
-    background: rgba(203, 10, 229, 0.5803921569);
+    background-color: rgba(203, 10, 229, 0.5803921569);
     width: 65cqmin;
     height: 65cqmin;
     border-radius: 50%;
   }
   100% {
-    background: rgba(230, 9, 119, 0.5803921569);
+    background-color: rgba(230, 9, 119, 0.5803921569);
+    width: 67cqmin;
+    height: 67cqmin;
+    border-radius: 45%;
+  }
+}
+@-webkit-keyframes color-change-1 {
+  0% {
+    background-color: rgba(228, 7, 7, 0.5);
+    width: 65cqmin;
+    height: 65cqmin;
+    border-radius: 50%;
+  }
+  20% {
+    background-color: rgba(252, 236, 7, 0.6117647059);
+    width: 67cqmin;
+    height: 67cqmin;
+    border-radius: 45%;
+  }
+  40% {
+    background-color: rgba(92, 239, 7, 0.5725490196);
+    width: 65cqmin;
+    height: 65cqmin;
+    border-radius: 40%;
+  }
+  60% {
+    background-color: rgba(8, 75, 218, 0.5960784314);
+    width: 67cqmin;
+    height: 67cqmin;
+    border-radius: 45%;
+  }
+  80% {
+    background-color: rgba(203, 10, 229, 0.5803921569);
+    width: 65cqmin;
+    height: 65cqmin;
+    border-radius: 50%;
+  }
+  100% {
+    background-color: rgba(230, 9, 119, 0.5803921569);
     width: 67cqmin;
     height: 67cqmin;
     border-radius: 45%;
@@ -306,7 +344,7 @@ button {
 .main {
   height: 100%;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .main {
     position: relative;
     z-index: -5;
@@ -321,7 +359,7 @@ button {
   grid-template-rows: 1fr 1fr;
   row-gap: 3cqmin;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .main_central {
     grid-template-columns: 100%;
     grid-template-rows: 20% 55% 25%;
@@ -333,7 +371,7 @@ button {
   align-self: end;
   container-type: inline-size;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .main_central_h1 {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -347,7 +385,7 @@ button {
   transform: rotate(-10deg) translate(30cqmin, 1cqmin);
   padding-left: 0;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .main_central_h1_text {
     font-family: "Comforter";
     font-size: 70cqmin;
@@ -374,7 +412,7 @@ button {
   align-self: start;
   padding-left: 10cqmin;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .main_central_h2 {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -398,7 +436,7 @@ button {
   z-index: -3;
   container-type: inline-size;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
   .main_central_composition {
     grid-column: 1/2;
     grid-row: 2/3;
@@ -420,18 +458,21 @@ button {
   border-radius: 50%;
 }
 .main_central_composition_circle-color.animation1 {
-  background: rgba(228, 7, 7, 0.5);
+  background-color: rgba(228, 7, 7, 0.5);
   animation: flicker-in-main 2s linear 1.5s both;
+  -webkit-animation: flicker-in-main 2s linear 1.5s both;
 }
 .main_central_composition_circle-color.animation2 {
   animation: color-change-1 8s linear infinite alternate both;
+  -webkit-animation: color-change-1 8s linear infinite alternate both;
 }
 .main_central_composition_filter {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   width: 100%;
   height: 100%;
   backdrop-filter: blur(4cqmin);
+  -webkit-backdrop-filter: blur(4cqmin);
 }
 .main_central_composition_circle-1 {
   position: absolute;
@@ -446,6 +487,7 @@ button {
   border-style: solid;
   border-radius: 50%;
   backdrop-filter: invert(100%);
+  -webkit-backdrop-filter: invert(100%);
 }
 .main_central_composition_circle-2 {
   position: absolute;
@@ -547,16 +589,14 @@ button {
   border-color: var(--text-main-color);
   margin-right: 1.5cqw;
 }
-@media screen and (max-width: 1300px) {
-  .header_logo_circle {
-    border-width: 2px;
-    border-style: solid;
-    border-color: var(--text-main-color);
-  }
-}
 @media only screen and (max-width: 400px) {
   .header_logo_circle {
     display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .header_logo_circle {
+    border-width: 2px;
   }
 }
 .header_logo_circle.rotate {

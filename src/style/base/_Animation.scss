@@ -68,37 +68,75 @@
 }
 @keyframes color-change-1 {
     0% {
-        background: rgba(228, 7, 7, 0.5);
+        background-color: rgba(228, 7, 7, 0.5);
         width: 65cqmin;
         height: 65cqmin;
         border-radius: 50%;
     }
     20% {
-        background: #fcec079c;
+        background-color: #fcec079c;
         width: 67cqmin;
         height: 67cqmin;
         border-radius: 45%;
     }
     40% {
-        background: #5cef0792;
+        background-color: #5cef0792;
         width: 65cqmin;
         height: 65cqmin;
         border-radius: 40%;
     }
     60% {
-        background: #084bda98;
+        background-color: #084bda98;
         width: 67cqmin;
         height: 67cqmin;
         border-radius: 45%;
     }
     80% {
-        background: #cb0ae594;
+        background-color: #cb0ae594;
         width: 65cqmin;
         height: 65cqmin;
         border-radius: 50%;
     }
     100% {
-        background: #e6097794;
+        background-color: #e6097794;
+        width: 67cqmin;
+        height: 67cqmin;
+        border-radius: 45%;
+    }
+}
+@-webkit-keyframes color-change-1 {
+    0% {
+        background-color: rgba(228, 7, 7, 0.5);
+        width: 65cqmin;
+        height: 65cqmin;
+        border-radius: 50%;
+    }
+    20% {
+        background-color: #fcec079c;
+        width: 67cqmin;
+        height: 67cqmin;
+        border-radius: 45%;
+    }
+    40% {
+        background-color: #5cef0792;
+        width: 65cqmin;
+        height: 65cqmin;
+        border-radius: 40%;
+    }
+    60% {
+        background-color: #084bda98;
+        width: 67cqmin;
+        height: 67cqmin;
+        border-radius: 45%;
+    }
+    80% {
+        background-color: #cb0ae594;
+        width: 65cqmin;
+        height: 65cqmin;
+        border-radius: 50%;
+    }
+    100% {
+        background-color: #e6097794;
         width: 67cqmin;
         height: 67cqmin;
         border-radius: 45%;
@@ -225,7 +263,6 @@
         opacity: 1;
     }
 }
-
 @keyframes slide-in-top {
     0% {
         -webkit-transform: translateY(-100dvh);
@@ -241,7 +278,6 @@
         opacity: 1;
     }
 }
-
 @keyframes slide-out-top {
     0% {
         -webkit-transform: translateY(0);
