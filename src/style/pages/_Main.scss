@@ -14,7 +14,8 @@
         row-gap: 3cqmin;
         @include respond(l) {
             grid-template-columns: 100%;
-            grid-template-rows: 20% 55% 25%;
+            grid-template-rows: 20% 57% 23%;
+            row-gap: 0;
         }
         &_h1 {
             grid-row: 1 / 2;
@@ -30,17 +31,20 @@
             &_text {
                 font-family: "Comforter";
                 font-size: 30cqmin;
-                transform: rotate(-10deg) translate(30cqmin, 1cqmin);
+                transform: rotate(-13deg) translate(30cqmin, 2cqmin);
                 padding-left: 0;
                 @include respond(l) {
-                    font-family: "Comforter";
                     font-size: 70cqmin;
-                    transform: rotate(-20deg);
                     padding-left: 15%;
+                    transform: rotate(-13deg) translate(0cqmin, 10cqmin);
                 }
                 &.ru {
-                    font-size: 30cqmin;
-                    transform: rotate(-10deg) translate(20cqmin, 1cqmin);
+                    font-size: 25cqmin;
+                    transform: rotate(-13deg) translate(25cqmin, -2cqmin);
+                    @include respond(l) {
+                        transform: rotate(-13deg) translate(-10cqmin, 10cqmin);
+                        font-size: 60cqmin;
+                    }
                 }
                 &.animation1 {
                     color: rgba(228, 7, 7, 0.508);
@@ -71,6 +75,12 @@
                 letter-spacing: 0.4cqmin;
                 word-spacing: 1.5cqmin;
                 font-size: 7cqmin;
+                @include respond(l) {
+                    letter-spacing: 1cqmin;
+                    word-spacing: 3cqmin;
+                    font-size: 14cqmin;
+                    padding-right: 10cqmin;
+                }
             }
         }
         &_composition {
@@ -98,6 +108,10 @@
                 width: 65cqmin;
                 height: 65cqmin;
                 border-radius: 50%;
+                @include respond(l) {
+                    width: 80cqmin;
+                    height: 80cqmin;
+                }
                 &.animation1 {
                     background-color: rgba(228, 7, 7, 0.5);
                     animation: flicker-in-main 2s linear 1.5s both;
@@ -107,6 +121,12 @@
                     animation: color-change-1 8s linear infinite alternate both;
                     -webkit-animation: color-change-1 8s linear infinite
                         alternate both;
+                    @include respond(l) {
+                        animation: color-change-1-small 8s linear infinite
+                            alternate both;
+                        -webkit-animation: color-change-1-small 8s linear
+                            infinite alternate both;
+                    }
                 }
             }
             &_filter {
@@ -131,6 +151,10 @@
                 border-radius: 50%;
                 backdrop-filter: invert(100%);
                 -webkit-backdrop-filter: invert(100%);
+                @include respond(l) {
+                    width: 70cqmin;
+                    height: 70cqmin;
+                }
             }
             &_circle-2 {
                 position: absolute;
@@ -144,6 +168,10 @@
                 border-radius: 50%;
                 border-color: transparent transparent var(--bg-main-color)
                     transparent;
+                @include respond(l) {
+                    width: 70cqmin;
+                    height: 70cqmin;
+                }
             }
             &_circle-3 {
                 position: absolute;
@@ -157,6 +185,10 @@
                 border-color: var(--bg-main-color);
                 border-style: solid;
                 border-radius: 50%;
+                @include respond(l) {
+                    width: 71cqmin;
+                    height: 71cqmin;
+                }
             }
             & img {
                 position: absolute;
@@ -165,6 +197,10 @@
                 left: 50%;
                 transform: translate(-53%, -57%) rotate(-4deg);
                 width: 42cqmin;
+                @include respond(l) {
+                    width: 59cqmin;
+                    transform: translate(-54%, -57%) rotate(-4deg);
+                }
             }
         }
     }
