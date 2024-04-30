@@ -6,6 +6,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 1s, border-color 1s;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 body {
@@ -33,6 +38,10 @@ button {
 
 .page-enter {
   animation: slide-in-bottom 1s ease-out both;
+}
+
+.page-exit {
+  animation: slide-out-top 1s ease-out both;
 }
 
 .main-layout {

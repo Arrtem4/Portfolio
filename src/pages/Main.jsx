@@ -38,7 +38,7 @@ export default function Main() {
     });
 
     return (
-        <section className="main">
+        <section className={`main ${visited === "true" ? "page-enter" : ""}`}>
             <section className="main_central">
                 <section className="main_central_h1">
                     <p
