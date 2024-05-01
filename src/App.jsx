@@ -6,6 +6,7 @@ import Contacts from "./pages/Contacts";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import NotFound from "./pages/NotFound";
+
 export default function App() {
     return (
         <HashRouter>

@@ -7,7 +7,6 @@ export default function Main() {
     const { t } = useTranslation();
     const visited = document.documentElement.dataset.isVisited;
     const lang = document.documentElement.dataset.lang;
-
     const textH2 = useRef(null);
 
     useEffect(() => {
