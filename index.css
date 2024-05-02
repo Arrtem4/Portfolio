@@ -681,8 +681,14 @@ button {
 }
 
 .projects {
-  background-color: red;
   min-height: 100%;
+}
+.projects .projects_year {
+  display: flex;
+  flex-direction: column;
+}
+.projects .projects_year._2024 {
+  color: var(--text-main-color);
 }
 
 .skills {
@@ -996,4 +1002,26 @@ button {
   position: absolute;
   pointer-events: none;
   opacity: 0;
+}
+
+.year-index {
+  color: var(--text-main-color);
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  column-gap: 2cqmin;
+}
+.year-index_border {
+  height: 2px;
+}
+.year-index_border.left {
+  background: linear-gradient(to left, var(--text-main-color) 0%, rgba(0, 0, 0, 0) 70%);
+}
+.year-index_border.right {
+  background: linear-gradient(to right, var(--text-main-color) 0%, rgba(0, 0, 0, 0) 70%);
+}
+.year-index_number {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 4cqmin;
 }/*# sourceMappingURL=index.css.map */
