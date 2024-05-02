@@ -680,17 +680,6 @@ button {
   min-height: 100%;
 }
 
-.projects {
-  min-height: 100%;
-}
-.projects .projects_year {
-  display: flex;
-  flex-direction: column;
-}
-.projects .projects_year._2024 {
-  color: var(--text-main-color);
-}
-
 .skills {
   background-color: rgb(9, 225, 217);
   min-height: 100%;
@@ -1024,4 +1013,23 @@ button {
   font-family: "Montserrat";
   font-weight: 300;
   font-size: 4cqmin;
+}
+
+.projects-item {
+  display: flex;
+  align-items: center;
+  padding: 4cqmin 4cqmin;
+  column-gap: 3cqmin;
+}
+.projects-item_position-left_img {
+  width: 55%;
+}
+.projects-item_position-left_description {
+  flex-grow: 1;
+}
+.projects-item_position-right_img {
+  width: 55%;
+}
+.projects-item_position-right_description {
+  flex-grow: 1;
 }/*# sourceMappingURL=index.css.map */

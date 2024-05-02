@@ -1,0 +1,22 @@
+.projects-item {
+    display: flex;
+    align-items: center;
+    padding: 4cqmin 4cqmin;
+    column-gap: 3cqmin;
+    &_position-left {
+        &_img {
+            width: 55%;
+        }
+        &_description {
+            flex-grow: 1;
+        }
+    }
+    &_position-right {
+        &_img {
+            width: 55%;
+        }
+        &_description {
+            flex-grow: 1;
+        }
+    }
+}
