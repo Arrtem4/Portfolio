@@ -1018,16 +1018,29 @@ button {
 
 .projects-item {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   padding: 6cqmin 8cqmin;
   column-gap: 8cqmin;
+  height: max-content;
 }
 .projects-item_position-right {
   flex-direction: row-reverse;
 }
 .projects-item_img {
   width: 47%;
+  box-shadow: 2px 2px 20px rgb(0, 0, 0);
+  border-radius: 7px;
 }
 .projects-item_description {
   flex-grow: 1;
+  color: var(--text-main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects-item_description_row-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1cqmin;
+  column-gap: 2cqmin;
 }/*# sourceMappingURL=index.css.map */

@@ -14,5 +14,24 @@
     "main": {
         "h-1": "Hello!",
         "h-2": "I'm Iakovenko Artem, a fullstack developer from Saint Petersburg with a focus on frontend and UX/UI design"
+    },
+    "projects": {
+        "stack": "Used tools :",
+        "repository": "GitHub repository :",
+        "site": "Live page :",
+        "aeroflex": {
+            "name": "Aeroflex",
+            "description": "My site"
+        },
+        "vzkg": { "name": "", "description": "" },
+        "flags": { "name": "", "description": "" },
+        "userFinder": { "name": "", "description": "" },
+        "library": { "name": "", "description": "" },
+        "reviews": { "name": "", "description": "" },
+        "calculator": { "name": "", "description": "" },
+        "todos": { "name": "", "description": "" },
+        "geolocation": { "name": "", "description": "" },
+        "balls": { "name": "", "description": "" },
+        "games": { "name": "", "description": "" }
     }
 }

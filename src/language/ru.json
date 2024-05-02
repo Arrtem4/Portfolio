@@ -14,5 +14,24 @@
     "main": {
         "h-1": "Привет!",
         "h-2": "Меня зовут Артем, Я fullstack  разработчик из Санкт-Петербурга с уклоном во frontend и UX/UI дизайн"
+    },
+    "projects": {
+        "stack": "Применяемые инструменты :",
+        "repository": "Репозиторий ",
+        "site": "Ссылка на сайт :",
+        "aeroflex": {
+            "name": "Aeroflex",
+            "description": "My site"
+        },
+        "vzkg": { "name": "", "description": "" },
+        "flags": { "name": "", "description": "" },
+        "userFinder": { "name": "", "description": "" },
+        "library": { "name": "", "description": "" },
+        "reviews": { "name": "", "description": "" },
+        "calculator": { "name": "", "description": "" },
+        "todos": { "name": "", "description": "" },
+        "geolocation": { "name": "", "description": "" },
+        "balls": { "name": "", "description": "" },
+        "games": { "name": "", "description": "" }
     }
 }
