@@ -21,6 +21,24 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        &_name {
+            text-align: center;
+            margin-bottom: 2cqmin;
+            font-family: "Noto Sans Display";
+            font-size: 4cqmin;
+        }
+        &_name-line {
+            height: 2px;
+            background: linear-gradient(
+                to right,
+                transparent 10%,
+                var(--text-main-color) 50%,
+                transparent 90%
+            );
+        }
+        &_text-wrapper {
+            text-align: center;
+        }
         &_row-wrapper {
             display: flex;
             flex-wrap: wrap;

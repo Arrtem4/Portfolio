@@ -20,18 +20,33 @@
         "repository": "GitHub repository :",
         "site": "Live page :",
         "aeroflex": {
-            "name": "Aeroflex",
-            "description": "My site"
+            "name": "Technical insulation calculators",
+            "description1": "The work was done for a client.",
+            "description2": "The project includes the development of new calculators, as well as changing the logic of the calculators installed earlier.",
+            "description3": "During the project it was proposed to make changes in the design, making the calculator more convenient, which the client agreed to and was satisfied with the work done.",
+            "description4": "Legacy code support was required, which I successfully coped with, completed the project and successfully implemented it into the client's CMS system."
         },
-        "vzkg": { "name": "", "description": "" },
-        "flags": { "name": "", "description": "" },
-        "userFinder": { "name": "", "description": "" },
-        "library": { "name": "", "description": "" },
-        "reviews": { "name": "", "description": "" },
-        "calculator": { "name": "", "description": "" },
-        "todos": { "name": "", "description": "" },
-        "geolocation": { "name": "", "description": "" },
-        "balls": { "name": "", "description": "" },
-        "games": { "name": "", "description": "" }
+        "vzkg": {
+            "name": "Visual cladding material constructor",
+            "description": ""
+        },
+        "flags": {
+            "name": "Directory of basic country information",
+            "description": ""
+        },
+        "userFinder": {
+            "name": "Search and information about any GitHub user",
+            "description": ""
+        },
+        "library": { "name": "A simple library", "description": "" },
+        "reviews": { "name": "Review aggregator", "description": "" },
+        "calculator": { "name": "Calculator", "description": "" },
+        "todos": { "name": "To-do list", "description": "" },
+        "geolocation": {
+            "name": "Geolocation detection by IP",
+            "description": ""
+        },
+        "balls": { "name": "Landing \"Balloons\"", "description": "" },
+        "games": { "name": "Landing \"Gaming Club\"", "description": "" }
     }
 }

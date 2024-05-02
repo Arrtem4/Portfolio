@@ -20,18 +20,33 @@
         "repository": "Репозиторий ",
         "site": "Ссылка на сайт :",
         "aeroflex": {
-            "name": "Aeroflex",
-            "description": "My site"
+            "name": "Калькуляторы технической изоляции",
+            "description1": "Работа выполнена для клиента.",
+            "description2": "Проект включает в себя разработку новых калькуляторов, а также изменение логики в работе калькуляторов, установленных ранее.",
+            "description3": "В ходе проекта было предложено внести изменения в дизайн, сделав калькулятор более удобным, на что клиент согласился и остался доволен выполненной работой.",
+            "description4": "Требовалась поддержка легаси кода, с чем я удачно справился, выполнил проект и удачно внедрил его в CMS клиента."
         },
-        "vzkg": { "name": "", "description": "" },
-        "flags": { "name": "", "description": "" },
-        "userFinder": { "name": "", "description": "" },
-        "library": { "name": "", "description": "" },
-        "reviews": { "name": "", "description": "" },
-        "calculator": { "name": "", "description": "" },
-        "todos": { "name": "", "description": "" },
-        "geolocation": { "name": "", "description": "" },
-        "balls": { "name": "", "description": "" },
-        "games": { "name": "", "description": "" }
+        "vzkg": {
+            "name": "Визуальный конфигуратор облицовочного материала",
+            "description": ""
+        },
+        "flags": {
+            "name": "Справочник основной информации о странах",
+            "description": ""
+        },
+        "userFinder": {
+            "name": "Поиск и информация о любом пользователе GitHub",
+            "description": ""
+        },
+        "library": { "name": "Структура для библиотеки", "description": "" },
+        "reviews": { "name": "Агрегатор рецензий", "description": "" },
+        "calculator": { "name": "Калькулятор", "description": "" },
+        "todos": { "name": "Список дел", "description": "" },
+        "geolocation": {
+            "name": "Определение геолокации по IP",
+            "description": ""
+        },
+        "balls": { "name": "Лэндинг \"Воздушные шары\"", "description": "" },
+        "games": { "name": "Лэндинг \"Игровой клуб\"", "description": "" }
     }
 }

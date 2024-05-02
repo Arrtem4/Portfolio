@@ -20,12 +20,27 @@ export default function ProjectsItem({
             <section
                 className={`projects-item_description  projects-item_description_${position}`}
             >
-                <p className="projects-item_description_name">
-                    {t(`projects.${projectName}.name`)}
-                </p>
-                <p className="projects-item_description_text">
-                    {t(`projects.${projectName}.description`)}
-                </p>
+                <div className="projects-item_description_name-wrapper">
+                    <p className="projects-item_description_name">
+                        {t(`projects.${projectName}.name`)}
+                    </p>
+                    <div className="projects-item_description_name-line"></div>
+                </div>
+
+                <div className="projects-item_description_text-wrapper">
+                    <p className="projects-item_description_text">
+                        {t(`projects.${projectName}.description1`)}
+                    </p>
+                    <p className="projects-item_description_text">
+                        {t(`projects.${projectName}.description2`)}
+                    </p>
+                    <p className="projects-item_description_text">
+                        {t(`projects.${projectName}.description3`)}
+                    </p>
+                    <p className="projects-item_description_text">
+                        {t(`projects.${projectName}.description4`)}
+                    </p>
+                </div>
                 <div className="projects-item_description_row-wrapper">
                     <p className="projects-item_description_stack">
                         {t(`projects.stack`)}
