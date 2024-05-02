@@ -1,22 +1,18 @@
 .projects-item {
     display: flex;
     align-items: center;
-    padding: 4cqmin 4cqmin;
-    column-gap: 3cqmin;
-    &_position-left {
-        &_img {
-            width: 55%;
-        }
-        &_description {
-            flex-grow: 1;
-        }
-    }
+    padding: 6cqmin 8cqmin;
+    column-gap: 8cqmin;
     &_position-right {
-        &_img {
-            width: 55%;
-        }
-        &_description {
-            flex-grow: 1;
-        }
+        flex-direction: row-reverse;
+    }
+    &_img {
+        width: 47%;
+    }
+    &_description {
+        flex-grow: 1;
+        // &_right{
+
+        // }
     }
 }

@@ -999,6 +999,7 @@ button {
   grid-template-columns: 1fr max-content 1fr;
   align-items: center;
   column-gap: 2cqmin;
+  padding: 3cqmin 0;
 }
 .year-index_border {
   height: 2px;
@@ -1018,18 +1019,15 @@ button {
 .projects-item {
   display: flex;
   align-items: center;
-  padding: 4cqmin 4cqmin;
-  column-gap: 3cqmin;
+  padding: 6cqmin 8cqmin;
+  column-gap: 8cqmin;
 }
-.projects-item_position-left_img {
-  width: 55%;
+.projects-item_position-right {
+  flex-direction: row-reverse;
 }
-.projects-item_position-left_description {
-  flex-grow: 1;
+.projects-item_img {
+  width: 47%;
 }
-.projects-item_position-right_img {
-  width: 55%;
-}
-.projects-item_position-right_description {
+.projects-item_description {
   flex-grow: 1;
 }/*# sourceMappingURL=index.css.map */
