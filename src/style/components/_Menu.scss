@@ -5,7 +5,7 @@
     &_buttons {
         &.link_5 {
             animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                1.45s both;
+                1.1s both;
         }
     }
     &_links {
@@ -59,19 +59,19 @@
             }
             &.link_1 {
                 animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                    1.25s both;
+                    0.9s both;
             }
             &.link_2 {
                 animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                    1.3s both;
+                    0.95s both;
             }
             &.link_3 {
                 animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                    1.35s both;
+                    1s both;
             }
             &.link_4 {
                 animation: enter-opacity 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-                    1.4s both;
+                    1.05s both;
             }
         }
     }

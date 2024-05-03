@@ -12,8 +12,8 @@
         cursor: pointer;
         &_circle {
             font-weight: 600;
-            width: clamp(35px, 5cqmin, 80px);
-            height: clamp(35px, 5cqmin, 80px);
+            width: clamp(35px, 5.2cqmin, 80px);
+            height: clamp(35px, 5.2cqmin, 80px);
             border-radius: 50%;
             border-width: 2px;
             border-style: solid;
@@ -27,7 +27,7 @@
                     both;
             }
             &.first-animation {
-                animation: roll-in-left 2s ease-out both;
+                animation: roll-in-left 1s ease-out both;
             }
             p {
                 font-size: clamp(20px, 3.2cqmin, 50px);
@@ -39,7 +39,7 @@
             container-type: inline-size;
             &_header {
                 animation: tracking-in-expand 1.2s
-                    cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both;
+                    cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s both;
                 font-size: 8cqw;
                 font-weight: 600;
                 word-spacing: 1cqw;
@@ -53,7 +53,7 @@
             &_subtitle {
                 white-space: nowrap;
                 animation: tracking-in-expand2 1.2s
-                    cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both;
+                    cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s both;
                 font-weight: 300;
                 font-size: 5.9cqw;
                 word-spacing: 2cqw;

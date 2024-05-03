@@ -19,9 +19,7 @@ export default function ProjectsItem({
                 src={image}
                 alt="Project-image"
             />
-            <section
-                className={`projects-item_description  projects-item_description_${position}`}
-            >
+            <section className="projects-item_description">
                 <div className="projects-item_description_name-wrapper">
                     <p className="projects-item_description_name">
                         {t(`projects.${projectName}.name`)}

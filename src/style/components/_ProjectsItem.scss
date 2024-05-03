@@ -4,13 +4,23 @@
     padding: 6cqmin 8cqmin;
     column-gap: 8cqmin;
     height: max-content;
+    @include respond(l) {
+        flex-direction: column;
+        row-gap: 2cqmin;
+    }
     &_position-right {
         flex-direction: row-reverse;
+        @include respond(l) {
+            flex-direction: column;
+        }
     }
     &_img {
         width: 47%;
         box-shadow: 2px 2px 20px rgb(0, 0, 0);
         border-radius: 12px;
+        @include respond(l) {
+            width: 100%;
+        }
     }
     &_description {
         row-gap: 1.5cqmin;
@@ -18,9 +28,6 @@
         align-self: stretch;
         flex-grow: 1;
         color: var(--text-main-color);
-        // &_right{
-
-        // }
         display: flex;
         flex-direction: column;
         justify-content: space-between;
