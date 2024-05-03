@@ -23,10 +23,10 @@ export default function Projects() {
                     repository="https://github.com/Arrtem4/Aeroflex-Calculator"
                     site="https://arrtem4.github.io/Aeroflex-Calculator/podderzhka/kalkulyatory/"
                     tools={[
+                        "HTML",
+                        "CSS",
                         "JavaScript",
                         "jQuery",
-                        "CSS",
-                        "HTML",
                         "CMS Bitrix",
                     ]}
                 />
@@ -36,6 +36,13 @@ export default function Projects() {
                     projectName="vzkg"
                     repository="https://github.com/Arrtem4/Configurator"
                     site="https://arrtem4.github.io/Configurator/"
+                    tools={[
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "jQuery",
+                        "CMS Bitrix",
+                    ]}
                 />
                 <ProjectsItem
                     position="left"
@@ -43,6 +50,17 @@ export default function Projects() {
                     projectName="flags"
                     repository="https://github.com/Arrtem4/TS-Countries"
                     site="https://arrtem4.github.io/TS-Countries/#/"
+                    tools={[
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "TypeScript",
+                        "React",
+                        "React-Redux",
+                        "React-Router",
+                        "API",
+                        "Styled-Components",
+                    ]}
                 />
                 <ProjectsItem
                     position="right"
@@ -50,6 +68,14 @@ export default function Projects() {
                     projectName="userFinder"
                     repository="https://github.com/Arrtem4/TS-GitHub-Users"
                     site="https://arrtem4.github.io/TS-GitHub-Users/"
+                    tools={[
+                        "HTML",
+                        "SCSS",
+                        "JavaScript",
+                        "TypeScript",
+                        "React",
+                        "GitHub API",
+                    ]}
                 />
                 <ProjectsItem
                     position="left"
@@ -57,6 +83,13 @@ export default function Projects() {
                     projectName="library"
                     repository="https://github.com/Arrtem4/Redux-Book-Library-App"
                     site="https://arrtem4.github.io/Redux-Book-Library-App/"
+                    tools={[
+                        "HTML",
+                        "SCSS",
+                        "JavaScript",
+                        "React",
+                        "React-Redux",
+                    ]}
                 />
             </section>
             <section className="projects_year">
@@ -67,6 +100,23 @@ export default function Projects() {
                     projectName="reviews"
                     repository="https://github.com/Arrtem4/WhatAboutTheReviews"
                     site="https://whatwiththereviews.onrender.com/"
+                    tools={[
+                        "HTML",
+                        "SCSS",
+                        "JavaScript",
+                        "React",
+                        "React-Redux",
+                        "Redux-Toolkit",
+                        "React-Router",
+                        "API",
+                        "Node.js",
+                        "Express.js",
+                        "Passport.js",
+                        "PostgreSQL",
+                        "i18next",
+                        "React-Dropzone",
+                        "Vite",
+                    ]}
                 />
                 <ProjectsItem
                     position="left"
@@ -74,6 +124,7 @@ export default function Projects() {
                     projectName="calculator"
                     repository="https://github.com/Arrtem4/calc"
                     site="https://arrtem4.github.io/calc/"
+                    tools={["HTML", "SCSS", "JavaScript", "React"]}
                 />
                 <ProjectsItem
                     position="right"
@@ -81,6 +132,17 @@ export default function Projects() {
                     projectName="todos"
                     repository="https://github.com/Arrtem4/To-do-List"
                     site="https://arrtem4.github.io/To-do-List/#/"
+                    tools={[
+                        "HTML",
+                        "SCSS",
+                        "JavaScript",
+                        "React",
+                        "React-Redux",
+                        "Redux-Toolkit",
+                        "React-Router",
+                        "Framer-Motion",
+                        "Firebase",
+                    ]}
                 />
             </section>
             <section className="projects_year">
@@ -91,6 +153,7 @@ export default function Projects() {
                     projectName="geolocation"
                     repository="https://github.com/Arrtem4/IP-Geolocation"
                     site="https://arrtem4.github.io/IP-Geolocation/"
+                    tools={["HTML", "SCSS", "JavaScript", "Parcel", "API"]}
                 />
                 <ProjectsItem
                     position="right"
@@ -98,6 +161,7 @@ export default function Projects() {
                     projectName="balls"
                     repository="https://github.com/Arrtem4/Ballons"
                     site="https://arrtem4.github.io/Ballons/"
+                    tools={["HTML", "SCSS"]}
                 />
                 <ProjectsItem
                     position="left"
@@ -105,6 +169,7 @@ export default function Projects() {
                     projectName="games"
                     repository="https://github.com/Arrtem4/games"
                     site="https://arrtem4.github.io/games/"
+                    tools={["HTML", "SCSS"]}
                 />
             </section>
         </section>

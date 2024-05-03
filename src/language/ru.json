@@ -27,25 +27,73 @@
         },
         "vzkg": {
             "name": "Визуальный конфигуратор облицовочного материала",
-            "description": ""
+            "description1": "Работа выполнена по заказу клиента.",
+            "description2": "Разработал автономный модуль, который в дальнейшем можно было бы встроить в CMS клиента.",
+            "description3": "Ограничений не было, но было решено использовать jQuery, как и на сайте клиента. Логика работы основана на использовании различных слоёв и их позиционировании на фиксированном изображении.",
+            "description4": "Работа была выполнена в стиле, который бы максимально гармонично вписался на сайт заказчика. Клиент остался полностью доволен работой."
         },
         "flags": {
             "name": "Справочник основной информации о странах",
-            "description": ""
+            "description1": "Учебный проект, в котором я применил React в связке с Typescript.",
+            "description2": "Использованы так же React-Router для навигации, React-Redux для хранения состояния и кастомные хуки React для изменения темы в приложении.",
+            "description3": "Для хранения и получения информации в приложении использовал стороннее API и Axios.",
+            "description4": "Кстати, для стилизации компонентов в этом проекте я использовал Styled-Components ради эксперимента, хотя предпочитаю SCSS."
         },
         "userFinder": {
             "name": "Поиск и информация о любом пользователе GitHub",
-            "description": ""
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
         },
-        "library": { "name": "Структура для библиотеки", "description": "" },
-        "reviews": { "name": "Агрегатор рецензий", "description": "" },
-        "calculator": { "name": "Калькулятор", "description": "" },
-        "todos": { "name": "Список дел", "description": "" },
+        "library": {
+            "name": "Структура для библиотеки",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
+        "reviews": {
+            "name": "Агрегатор рецензий",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
+        "calculator": {
+            "name": "Калькулятор",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
+        "todos": {
+            "name": "Список дел",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
         "geolocation": {
             "name": "Определение геолокации по IP",
-            "description": ""
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
         },
-        "balls": { "name": "Лэндинг \"Воздушные шары\"", "description": "" },
-        "games": { "name": "Лэндинг \"Игровой клуб\"", "description": "" }
+        "balls": {
+            "name": "Лэндинг \"Воздушные шары\"",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
+        "games": {
+            "name": "Лэндинг \"Игровой клуб\"",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        }
     }
 }

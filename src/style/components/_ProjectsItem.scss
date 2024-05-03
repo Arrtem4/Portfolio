@@ -10,7 +10,7 @@
     &_img {
         width: 47%;
         box-shadow: 2px 2px 20px rgb(0, 0, 0);
-        border-radius: 7px;
+        border-radius: 12px;
     }
     &_description {
         row-gap: 1.5cqmin;
@@ -29,7 +29,7 @@
             text-align: center;
             margin-bottom: 1.5cqmin;
             font-family: "Caveat";
-            font-size:clamp(25px, 5cqmin,50px);
+            font-size: clamp(25px, 5cqmin, 50px);
             letter-spacing: 0.3cqmin;
         }
         &_name-line {
@@ -46,7 +46,7 @@
             flex-direction: column;
             row-gap: 1cqmin;
             text-align: center;
-            font-size:clamp(15px, 2.5cqmin,30px);
+            font-size: clamp(15px, 2.5cqmin, 30px);
             font-weight: 300;
         }
         &_stack-wrapper {
@@ -55,7 +55,7 @@
         }
 
         &_stack {
-            font-size:clamp(15px, 2cqmin,30px);
+            font-size: clamp(15px, 2cqmin, 30px);
             padding: 0.3cqmin 0.6cqmin;
             background-color: var(--bg-stack-item-color);
             border-radius: 5px;
@@ -71,7 +71,7 @@
             display: flex;
             align-items: center;
             column-gap: 0.5cqmin;
-            font-size:clamp(18px, 2.5cqmin,33px);
+            font-size: clamp(18px, 2.5cqmin, 33px);
             text-decoration: none;
             color: var(--text-main-color);
         }

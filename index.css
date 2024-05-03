@@ -717,8 +717,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: clamp(10px, 2cqmin, 25px);
-  padding-right: clamp(10px, 4cqmin, 40px);
+  padding: clamp(10px, 1.5cqmin, 25px);
+  padding-right: clamp(20px, 4cqmin, 40px);
   min-width: max-content;
 }
 .header_logo {
@@ -728,13 +728,13 @@ button {
 }
 .header_logo_circle {
   font-weight: 600;
-  width: clamp(35px, 6cqmin, 80px);
-  height: clamp(35px, 6cqmin, 80px);
+  width: clamp(35px, 5cqmin, 80px);
+  height: clamp(35px, 5cqmin, 80px);
   border-radius: 50%;
   border-width: 2px;
   border-style: solid;
   border-color: var(--text-main-color);
-  margin-right: 1.5cqmin;
+  margin-right: 1cqmin;
 }
 @media only screen and (max-width: 400px) {
   .header_logo_circle {
@@ -748,16 +748,16 @@ button {
   animation: roll-in-left 2s ease-out both;
 }
 .header_logo_circle p {
-  font-size: clamp(20px, 3.8cqmin, 50px);
+  font-size: clamp(20px, 3.2cqmin, 50px);
   text-align: center;
 }
 .header_logo_title {
-  width: clamp(180px, 29cqmin, 300px);
+  width: clamp(180px, 27cqmin, 300px);
   container-type: inline-size;
 }
 .header_logo_title_header {
   animation: tracking-in-expand 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both;
-  font-size: 8.2cqw;
+  font-size: 8cqw;
   font-weight: 600;
   word-spacing: 1cqw;
   letter-spacing: 0.6cqw;
@@ -772,7 +772,7 @@ button {
   white-space: nowrap;
   animation: tracking-in-expand2 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.6s both;
   font-weight: 300;
-  font-size: 6cqw;
+  font-size: 5.9cqw;
   word-spacing: 2cqw;
   letter-spacing: 0.9cqw;
 }
@@ -925,11 +925,10 @@ button {
   transition: opacity 0.2s ease, transform 0.2s ease;
   opacity: 0;
   transform: translateY(-50%);
-  list-style: none;
   position: absolute;
-  top: 23px;
+  top: 20px;
   left: -10px;
-  font-size: 14px;
+  font-size: 15px;
   z-index: 12;
 }
 @media only screen and (max-width: 700px) {
@@ -1017,7 +1016,7 @@ button {
 .projects-item_img {
   width: 47%;
   box-shadow: 2px 2px 20px rgb(0, 0, 0);
-  border-radius: 7px;
+  border-radius: 12px;
 }
 .projects-item_description {
   row-gap: 1.5cqmin;

@@ -27,25 +27,73 @@
         },
         "vzkg": {
             "name": "Visual cladding material constructor",
-            "description": ""
+            "description1": "The work was carried out to the client's order.",
+            "description2": "Developed a standalone module that could be embedded into the client's CMS in the future.",
+            "description3": "There were no restrictions, but it was decided to use jQuery, as on the client's site. The logic of work is based on the use of different layers and their positioning on a fixed image.",
+            "description4": "The work was done in a style that would fit as harmoniously as possible on the client's website. The client was completely satisfied with the work."
         },
         "flags": {
             "name": "Directory of basic country information",
-            "description": ""
+            "description1": "A learning project where I applied React in conjunction with Typescript.",
+            "description2": "I also used React-Router for navigation, React-Redux for state storage and custom React hooks to change the theme in the application.",
+            "description3": "For storing and retrieving information in the application I used third-party API and Axios.",
+            "description4": "By the way, for styling components in this project I used Styled-Components for the sake of experimentation, although I prefer SCSS."
         },
         "userFinder": {
             "name": "Search and information about any GitHub user",
-            "description": ""
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
         },
-        "library": { "name": "A simple library", "description": "" },
-        "reviews": { "name": "Review aggregator", "description": "" },
-        "calculator": { "name": "Calculator", "description": "" },
-        "todos": { "name": "To-do list", "description": "" },
+        "library": {
+            "name": "A simple library",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
+        "reviews": {
+            "name": "Review aggregator",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
+        "calculator": {
+            "name": "Calculator",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
+        "todos": {
+            "name": "To-do list",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
         "geolocation": {
             "name": "Geolocation detection by IP",
-            "description": ""
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
         },
-        "balls": { "name": "Landing \"Balloons\"", "description": "" },
-        "games": { "name": "Landing \"Gaming Club\"", "description": "" }
+        "balls": {
+            "name": "Landing \"Balloons\"",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        },
+        "games": {
+            "name": "Landing \"Gaming Club\"",
+            "description1": "",
+            "description2": "",
+            "description3": "",
+            "description4": ""
+        }
     }
 }

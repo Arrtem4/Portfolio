@@ -13,7 +13,10 @@ export default function ButtonLanguage() {
     };
 
     return (
-        <div className="button-language center" onClick={() => setActive(!active)}>
+        <div
+            className="button-language center"
+            onClick={() => setActive(!active)}
+        >
             {active && (
                 <div className="button-language_background-for-close"></div>
             )}
@@ -22,20 +25,16 @@ export default function ButtonLanguage() {
             </p>
             <AiOutlineCaretDown className="button-language_caret" />
 
-            <ul className={`button-language_list ${active ? "visible" : ""}`}>
-                <li
+            <div className={`button-language_list ${active ? "visible" : ""}`}>
+                <div
                     className="button-language_list-item"
-                    onClick={() => handleChange("en")}
+                    onClick={() =>
+                        handleChange(language === "en" ? "ru" : "en")
+                    }
                 >
-                    EN
-                </li>
-                <li
-                    className="button-language_list-item"
-                    onClick={() => handleChange("ru")}
-                >
-                    RU
-                </li>
-            </ul>
+                    {language === "en" ? "RU" : "EN"}
+                </div>
+            </div>
         </div>
     );
 }
