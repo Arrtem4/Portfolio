@@ -1,11 +1,13 @@
 import { useTranslation } from "react-i18next";
+import { BsLink45Deg } from "react-icons/bs";
 
 export default function ProjectsItem({
-    position,
-    image,
-    projectName,
-    repository,
-    site,
+    position = "left",
+    image = {},
+    projectName = "project name",
+    repository = "",
+    site = "",
+    tools = [],
 }) {
     const { t } = useTranslation();
     return (
@@ -41,25 +43,38 @@ export default function ProjectsItem({
                         {t(`projects.${projectName}.description4`)}
                     </p>
                 </div>
-                <div className="projects-item_description_row-wrapper">
-                    <p className="projects-item_description_stack">
-                        {t(`projects.stack`)}
-                    </p>
+                <div className="projects-item_description_stack-wrapper center">
+                    {tools.map((el, i) => {
+                        return (
+                            <div
+                                className="projects-item_description_stack"
+                                key={i}
+                            >
+                                {el}
+                            </div>
+                        );
+                    })}
                 </div>
-                <div className="projects-item_description_row-wrapper">
-                    <p className="projects-item_description_repository">
+                <div className="projects-item_description_link-wrapper">
+                    <a
+                        className="projects-item_description_link"
+                        href={repository}
+                        target="_blank"
+                    >
                         {t(`projects.repository`)}
-                    </p>
-                    <a href={repository} target="_blank">
-                        {repository}
+                        <BsLink45Deg
+                            style={{ transform: "translateY(.3cqmin)" }}
+                        />
                     </a>
-                </div>
-                <div className="projects-item_description_row-wrapper">
-                    <p className="projects-item_description_site">
+                    <a
+                        className="projects-item_description_link"
+                        href={site}
+                        target="_blank"
+                    >
                         {t(`projects.site`)}
-                    </p>
-                    <a href={site} target="_blank">
-                        {site}
+                        <BsLink45Deg
+                            style={{ transform: "translateY(.3cqmin)" }}
+                        />
                     </a>
                 </div>
             </section>

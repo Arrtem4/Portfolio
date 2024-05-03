@@ -2,15 +2,10 @@
     width: 100%;
     display: flex;
     align-items: center;
-    padding: clamp(10px, 1.5cqw, 20px);
-    padding-right: clamp(10px, 3cqw, 35px);
+    justify-content: space-between;
+    padding: clamp(10px, 2cqmin, 25px);
+    padding-right: clamp(10px, 4cqmin, 40px);
     min-width: max-content;
-    @include respond(xs) {
-        padding: 10px;
-    }
-    &_space {
-        flex-grow: 1;
-    }
     &_logo {
         color: var(--text-main-color);
         font-family: "Montserrat";

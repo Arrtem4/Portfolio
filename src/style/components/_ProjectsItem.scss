@@ -1,6 +1,6 @@
 .projects-item {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     padding: 6cqmin 8cqmin;
     column-gap: 8cqmin;
     height: max-content;
@@ -13,6 +13,9 @@
         border-radius: 7px;
     }
     &_description {
+        row-gap: 1.5cqmin;
+        container-type: inline-size;
+        align-self: stretch;
         flex-grow: 1;
         color: var(--text-main-color);
         // &_right{
@@ -21,11 +24,13 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         &_name {
             text-align: center;
-            margin-bottom: 2cqmin;
-            font-family: "Noto Sans Display";
-            font-size: 4cqmin;
+            margin-bottom: 1.5cqmin;
+            font-family: "Caveat";
+            font-size:clamp(25px, 5cqmin,50px);
+            letter-spacing: 0.3cqmin;
         }
         &_name-line {
             height: 2px;
@@ -37,13 +42,38 @@
             );
         }
         &_text-wrapper {
-            text-align: center;
-        }
-        &_row-wrapper {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
             row-gap: 1cqmin;
-            column-gap: 2cqmin;
+            text-align: center;
+            font-size:clamp(15px, 2.5cqmin,30px);
+            font-weight: 300;
+        }
+        &_stack-wrapper {
+            flex-wrap: wrap;
+            gap: 1cqmin;
+        }
+
+        &_stack {
+            font-size:clamp(15px, 2cqmin,30px);
+            padding: 0.3cqmin 0.6cqmin;
+            background-color: var(--bg-stack-item-color);
+            border-radius: 5px;
+        }
+        &_link-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1.5cqmin;
+        }
+        &_link {
+            font-family: "Caveat";
+            display: flex;
+            align-items: center;
+            column-gap: 0.5cqmin;
+            font-size:clamp(18px, 2.5cqmin,33px);
+            text-decoration: none;
+            color: var(--text-main-color);
         }
     }
 }

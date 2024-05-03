@@ -3,6 +3,7 @@ html[data-theme="light"] {
     --bg-main-color: rgb(255, 255, 255);
     --text-button-color: rgb(0, 0, 0);
     --bg-button-color: rgb(172, 172, 172);
+    --bg-stack-item-color: rgba(200, 200, 200, 0.61);
 }
 
 html[data-theme="dark"] {
@@ -10,4 +11,5 @@ html[data-theme="dark"] {
     --bg-main-color: rgb(0, 0, 0);
     --text-button-color: rgb(255, 255, 255);
     --bg-button-color: rgb(49, 49, 49);
+    --bg-stack-item-color: rgba(71, 71, 71, 0.664);
 }

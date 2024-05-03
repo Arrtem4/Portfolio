@@ -716,17 +716,10 @@ button {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: clamp(10px, 1.5cqw, 20px);
-  padding-right: clamp(10px, 3cqw, 35px);
+  justify-content: space-between;
+  padding: clamp(10px, 2cqmin, 25px);
+  padding-right: clamp(10px, 4cqmin, 40px);
   min-width: max-content;
-}
-@media only screen and (max-width: 400px) {
-  .header {
-    padding: 10px;
-  }
-}
-.header_space {
-  flex-grow: 1;
 }
 .header_logo {
   color: var(--text-main-color);
@@ -802,14 +795,14 @@ button {
 }
 .menu-large_links {
   display: flex;
-  gap: 1.5cqw;
-  margin-right: 2cqw;
+  gap: 2cqmin;
+  margin-right: 2cqmin;
 }
 .menu-large_links_link {
   font-family: "Noto Sans Display";
   font-weight: 300;
   color: var(--text-main-color);
-  font-size: clamp(10px, 2cqw, 25px);
+  font-size: clamp(10px, 2.4cqmin, 25px);
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -1018,7 +1011,7 @@ button {
 
 .projects-item {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   padding: 6cqmin 8cqmin;
   column-gap: 8cqmin;
   height: max-content;
@@ -1032,28 +1025,57 @@ button {
   border-radius: 7px;
 }
 .projects-item_description {
+  row-gap: 1.5cqmin;
+  container-type: inline-size;
+  align-self: stretch;
   flex-grow: 1;
   color: var(--text-main-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .projects-item_description_name {
   text-align: center;
-  margin-bottom: 2cqmin;
-  font-family: "Noto Sans Display";
-  font-size: 4cqmin;
+  margin-bottom: 1.5cqmin;
+  font-family: "Caveat";
+  font-size: clamp(25px, 5cqmin, 50px);
+  letter-spacing: 0.3cqmin;
 }
 .projects-item_description_name-line {
   height: 2px;
   background: linear-gradient(to right, transparent 10%, var(--text-main-color) 50%, transparent 90%);
 }
 .projects-item_description_text-wrapper {
-  text-align: center;
-}
-.projects-item_description_row-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   row-gap: 1cqmin;
-  column-gap: 2cqmin;
+  text-align: center;
+  font-size: clamp(15px, 2.5cqmin, 30px);
+  font-weight: 300;
+}
+.projects-item_description_stack-wrapper {
+  flex-wrap: wrap;
+  gap: 1cqmin;
+}
+.projects-item_description_stack {
+  font-size: clamp(15px, 2cqmin, 30px);
+  padding: 0.3cqmin 0.6cqmin;
+  background-color: var(--bg-stack-item-color);
+  border-radius: 5px;
+}
+.projects-item_description_link-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5cqmin;
+}
+.projects-item_description_link {
+  font-family: "Caveat";
+  display: flex;
+  align-items: center;
+  column-gap: 0.5cqmin;
+  font-size: clamp(18px, 2.5cqmin, 33px);
+  text-decoration: none;
+  color: var(--text-main-color);
 }/*# sourceMappingURL=index.css.map */

@@ -10,13 +10,13 @@
     }
     &_links {
         display: flex;
-        gap: 1.5cqw;
-        margin-right: 2cqw;
+        gap: 2cqmin;
+        margin-right: 2cqmin;
         &_link {
             font-family: "Noto Sans Display";
             font-weight: 300;
             color: var(--text-main-color);
-            font-size: clamp(10px, 2cqw, 25px);
+            font-size: clamp(10px, 2.4cqmin, 25px);
             text-decoration: none;
             cursor: pointer;
             position: relative;

@@ -22,6 +22,13 @@ export default function Projects() {
                     projectName="aeroflex"
                     repository="https://github.com/Arrtem4/Aeroflex-Calculator"
                     site="https://arrtem4.github.io/Aeroflex-Calculator/podderzhka/kalkulyatory/"
+                    tools={[
+                        "JavaScript",
+                        "jQuery",
+                        "CSS",
+                        "HTML",
+                        "CMS Bitrix",
+                    ]}
                 />
                 <ProjectsItem
                     position="right"

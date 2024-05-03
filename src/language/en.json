@@ -16,9 +16,8 @@
         "h-2": "I'm Iakovenko Artem, a fullstack developer from Saint Petersburg with a focus on frontend and UX/UI design"
     },
     "projects": {
-        "stack": "Used tools :",
-        "repository": "GitHub repository :",
-        "site": "Live page :",
+        "repository": "GitHub repository",
+        "site": "Live page",
         "aeroflex": {
             "name": "Technical insulation calculators",
             "description1": "The work was done for a client.",
