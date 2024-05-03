@@ -12,18 +12,15 @@
         cursor: pointer;
         &_circle {
             font-weight: 600;
-            width: clamp(35px, 4.7cqw, 75px);
-            height: clamp(35px, 4.7cqw, 75px);
+            width: clamp(35px, 6cqmin, 80px);
+            height: clamp(35px, 6cqmin, 80px);
             border-radius: 50%;
-            border-width: 3px;
+            border-width: 2px;
             border-style: solid;
             border-color: var(--text-main-color);
-            margin-right: 1.5cqw;
+            margin-right: 1.5cqmin;
             @include respond(xs) {
                 display: none;
-            }
-            @include respond(l) {
-                border-width: 2px;
             }
             &.rotate {
                 animation: rotate-center 1s cubic-bezier(0.45, 0.92, 0.84, 1.01)
@@ -33,12 +30,12 @@
                 animation: roll-in-left 2s ease-out both;
             }
             p {
-                font-size: clamp(20px, 3cqw, 50px);
+                font-size: clamp(20px, 3.8cqmin, 50px);
                 text-align: center;
             }
         }
         &_title {
-            width: clamp(170px, 23cqw, 500px);
+            width: clamp(180px, 29cqmin, 300px);
             container-type: inline-size;
             &_header {
                 animation: tracking-in-expand 1.2s

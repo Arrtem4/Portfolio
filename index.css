@@ -728,22 +728,17 @@ button {
 }
 .header_logo_circle {
   font-weight: 600;
-  width: clamp(35px, 4.7cqw, 75px);
-  height: clamp(35px, 4.7cqw, 75px);
+  width: clamp(35px, 6cqmin, 80px);
+  height: clamp(35px, 6cqmin, 80px);
   border-radius: 50%;
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   border-color: var(--text-main-color);
-  margin-right: 1.5cqw;
+  margin-right: 1.5cqmin;
 }
 @media only screen and (max-width: 400px) {
   .header_logo_circle {
     display: none;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .header_logo_circle {
-    border-width: 2px;
   }
 }
 .header_logo_circle.rotate {
@@ -753,11 +748,11 @@ button {
   animation: roll-in-left 2s ease-out both;
 }
 .header_logo_circle p {
-  font-size: clamp(20px, 3cqw, 50px);
+  font-size: clamp(20px, 3.8cqmin, 50px);
   text-align: center;
 }
 .header_logo_title {
-  width: clamp(170px, 23cqw, 500px);
+  width: clamp(180px, 29cqmin, 300px);
   container-type: inline-size;
 }
 .header_logo_title_header {
