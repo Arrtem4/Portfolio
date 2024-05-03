@@ -41,58 +41,58 @@
         },
         "userFinder": {
             "name": "Search and information about any GitHub user",
-            "description1": "",
-            "description2": "",
-            "description3": "",
-            "description4": ""
+            "description1": "A small training project where I used React in conjunction with Typescript.",
+            "description2": "It allows you to find any GitHub user by their nickname and get useful information about them.",
+            "description3": "I used the GitHub API to get information about GitHub users.",
+            "description4": "With this project I started my introduction to Typescript and it was an interesting experience."
         },
         "library": {
             "name": "A simple library",
-            "description1": "",
-            "description2": "",
-            "description3": "",
-            "description4": ""
+            "description1": "A small training project, the point of which is to transparently use and understand React-Redux and vanilla Redux.",
+            "description2": "It represents the basic workflow of a small library application.",
+            "description3": "Allows adding new books and retrieving random books stored on my API server for another project or stored locally in the project. ",
+            "description4": "Books can be marked as favorites, sorted and un-favorites can be hidden. Live search on the list of books is present."
         },
         "reviews": {
             "name": "Review aggregator",
-            "description1": "",
-            "description2": "",
-            "description3": "",
-            "description4": ""
+            "description1": "Big project, written as a final paper for an internship at iTransition.",
+            "description2": "It is an app-aggregator of reviews of films, books and anything artistic. Allows you to log in via Google or GitHub, write reviews, give likes, see your likes count, comment on reviews or search for a review.",
+            "description3": "The React app calls my Node.js API and fetches data from a deployed PostgreSQL database. The images are stored in a cloud service Cloudinary.",
+            "description4": "The app has an option to change the theme and interface language."
         },
         "calculator": {
             "name": "Calculator",
-            "description1": "",
-            "description2": "",
-            "description3": "",
-            "description4": ""
+            "description1": "A simple React application. ",
+            "description2": "There is a possibility to choose several design themes.",
+            "description3": "The application is fully adapted for different devices.",
+            "description4": "All characters work when entered from the keyboard."
         },
         "todos": {
             "name": "To-do list",
-            "description1": "",
-            "description2": "",
-            "description3": "",
-            "description4": ""
+            "description1": "There's no getting around the classic To-Do List :)",
+            "description2": "To use it you need to register with any email - there will be no verification.",
+            "description3": "The data is stored on Google Firebase service.",
+            "description4": "You can create to-do's and add them to the list by adding any date from your calendar, mark them as done, delete them or sort them. Overdue cases will be marked in red for your convenience."
         },
         "geolocation": {
             "name": "Geolocation detection by IP",
-            "description1": "",
-            "description2": "",
-            "description3": "",
+            "description1": "A small application that I started to learn the basics of JavaScript while creating.",
+            "description2": "Using a third-party API and information provided by the browser, we can get our approximate location.",
+            "description3": "You can also get the location of any IP you are interested in.",
             "description4": ""
         },
         "balls": {
             "name": "Landing \"Balloons\"",
-            "description1": "",
-            "description2": "",
-            "description3": "",
+            "description1": "The time of my learning CSS and CSS preprocessors.",
+            "description2": "The project is written without JavaScript.",
+            "description3": "All attention was paid to CSS animation and adaptive, thanks to which the landing looks great on any device.",
             "description4": ""
         },
         "games": {
             "name": "Landing \"Gaming Club\"",
-            "description1": "",
-            "description2": "",
-            "description3": "",
+            "description1": "One of my first lendings.",
+            "description2": "Like Ballons project, it was written without JavaScript.",
+            "description3": "All attention was paid to learning Flexbox and Grid - the most popular methods for creating flexible and adaptive layouts in web development.",
             "description4": ""
         }
     }

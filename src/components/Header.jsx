@@ -50,6 +50,7 @@ export default function Header() {
                     </div>
                 </div>
             </div>
+            <div className="header_space"></div>
             {windowWidth > 700 ? <Menu size="large" /> : <Menu size="small" />}
         </section>
     );

@@ -2,10 +2,12 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: clamp(10px, 1.5cqmin, 25px);
     padding-right: clamp(20px, 4cqmin, 40px);
     min-width: max-content;
+    &_space {
+        flex-grow: 1;
+    }
     &_logo {
         color: var(--text-main-color);
         font-family: "Montserrat";
