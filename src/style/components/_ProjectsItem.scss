@@ -10,16 +10,24 @@
     }
     &_position-right {
         flex-direction: row-reverse;
+        .projects-item_img {
+            animation: slide-in-right 1s ease both;
+        }
         @include respond(l) {
             flex-direction: column;
+            .projects-item_img {
+                animation: enter-opacity 1s ease both;
+            }
         }
     }
     &_img {
         width: 47%;
         box-shadow: 2px 2px 20px rgb(0, 0, 0);
         border-radius: 12px;
+        animation: slide-in-left 1s ease both;
         @include respond(l) {
             width: 100%;
+            animation: enter-opacity 1s ease both;
         }
     }
     &_description {
@@ -38,6 +46,7 @@
             font-family: "Caveat";
             font-size: clamp(25px, 5cqmin, 50px);
             letter-spacing: 0.3cqmin;
+            animation: enter-opacity 1s ease-out 0.5s both;
         }
         &_name-line {
             height: 2px;
@@ -47,6 +56,7 @@
                 var(--text-main-color) 50%,
                 transparent 90%
             );
+            animation: enter-opacity 1s ease-out 1.2s both;
         }
         &_text-wrapper {
             display: flex;
@@ -56,10 +66,12 @@
             font-size: clamp(15px, 2.1cqmin, 22px);
             font-weight: 400;
             letter-spacing: 0.15cqmin;
+            animation: enter-opacity 1s ease-out 0.7s both;
         }
         &_stack-wrapper {
             flex-wrap: wrap;
             gap: 1cqmin;
+            animation: enter-opacity 1s ease-out 0.9s both;
         }
 
         &_stack {
@@ -73,6 +85,7 @@
             flex-direction: column;
             align-items: center;
             row-gap: 1.5cqmin;
+            animation: enter-opacity 1s ease-out 1.1s both;
         }
         &_link {
             font-family: "Caveat";

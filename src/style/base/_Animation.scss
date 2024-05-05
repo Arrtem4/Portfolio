@@ -368,11 +368,27 @@
         opacity: 0;
     }
 }
-@keyframes slide-in-bottom {
+@keyframes slide-in-left {
     0% {
+        -webkit-transform: translateX(-30cqw);
+        transform: translateX(-30cqw);
         opacity: 0;
     }
     100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-right {
+    0% {
+        -webkit-transform: translateX(30cqw);
+        transform: translateX(30cqw);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
