@@ -43,6 +43,8 @@ button {
 .main-layout {
   font-family: "Noto Sans Display", sans-serif;
   width: 100%;
+  max-width: 3600px;
+  margin: 0 auto;
   height: 100dvh;
   background-color: var(--bg-main-color);
   container-type: inline-size;
@@ -1046,7 +1048,7 @@ button {
 }
 .projects-item_img {
   width: 47%;
-  box-shadow: 2px 2px 20px rgb(0, 0, 0);
+  box-shadow: 2px 2px 20px var(--shadow-prj-img-color);
   border-radius: 12px;
   animation: slide-in-left 1s ease both;
 }
@@ -1084,11 +1086,24 @@ button {
   display: flex;
   flex-direction: column;
   row-gap: 1cqmin;
-  text-align: center;
+  align-items: center;
   font-size: clamp(15px, 2.1cqmin, 22px);
   font-weight: 400;
   letter-spacing: 0.15cqmin;
   animation: enter-opacity 1s ease-out 0.7s both;
+}
+.projects-item_description_text-wrapper * {
+  padding: 0.5cqmin 1cqmin;
+  text-align: center;
+  width: fit-content;
+  background-color: var(--bg-stack-item-color);
+  border-radius: 10px;
+  transition: background-color 0.4s ease;
+}
+@media (hover: hover) {
+  .projects-item_description_text-wrapper *:hover {
+    background-color: var(--bg-stack-item-color-hover);
+  }
 }
 .projects-item_description_stack-wrapper {
   flex-wrap: wrap;
@@ -1100,6 +1115,13 @@ button {
   padding: 0.6cqmin 1.5cqmin;
   background-color: var(--bg-stack-item-color);
   border-radius: 5px;
+  transition: all 0.4s ease;
+}
+@media (hover: hover) {
+  .projects-item_description_stack:hover {
+    transform: translateY(-0.5cqmin);
+    background-color: var(--bg-stack-item-color-hover);
+  }
 }
 .projects-item_description_link-wrapper {
   display: flex;
@@ -1116,4 +1138,18 @@ button {
   font-size: clamp(20px, 3.5cqmin, 30px);
   text-decoration: none;
   color: var(--text-main-color);
+  transition: all 0.2s ease;
+}
+@media (hover: hover) {
+  .projects-item_description_link:hover {
+    word-spacing: 1cqmin;
+    column-gap: 1cqmin;
+  }
+  .projects-item_description_link:hover .projects-item_description_link-icon {
+    transform: rotate(180deg) translateY(-0.3cqmin);
+  }
+}
+.projects-item_description_link-icon {
+  transition: all 0.2s ease;
+  transform: translateY(0.3cqmin);
 }/*# sourceMappingURL=index.css.map */

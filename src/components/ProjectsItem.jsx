@@ -60,9 +60,7 @@ export default function ProjectsItem({
                         target="_blank"
                     >
                         {t(`projects.repository`)}
-                        <BsLink45Deg
-                            style={{ transform: "translateY(.3cqmin)" }}
-                        />
+                        <BsLink45Deg className="projects-item_description_link-icon" />
                     </a>
                     <a
                         className="projects-item_description_link"
@@ -70,9 +68,7 @@ export default function ProjectsItem({
                         target="_blank"
                     >
                         {t(`projects.site`)}
-                        <BsLink45Deg
-                            style={{ transform: "translateY(.3cqmin)" }}
-                        />
+                        <BsLink45Deg className="projects-item_description_link-icon" />
                     </a>
                 </div>
             </section>
