@@ -5,7 +5,12 @@ export default function Card({ image }) {
     return (
         <div
             className={`card ${rotate ? "rotate" : ""}`}
-            onTouchStart={() => setRotate(!rotate)}
+            onClick={() => setRotate(!rotate)}
+            onMouseOut={() => {
+                if (rotate) {
+                    setRotate(false);
+                }
+            }}
         >
             <div className="card-front">
                 <img src={image} className="card-front_img"></img>
