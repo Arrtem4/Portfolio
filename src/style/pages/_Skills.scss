@@ -1,4 +1,9 @@
 .skills {
-    background-color: rgb(9, 225, 217);
-    min-height: 100%;
+    background-color: var(--bg-main-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4cqmin 6cqmin;
+    column-gap: 5cqmin;
+    row-gap: 8cqmin;
+    justify-content: space-around;
 }

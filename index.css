@@ -695,8 +695,13 @@ button {
 }
 
 .skills {
-  background-color: rgb(9, 225, 217);
-  min-height: 100%;
+  background-color: var(--bg-main-color);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4cqmin 6cqmin;
+  column-gap: 5cqmin;
+  row-gap: 8cqmin;
+  justify-content: space-around;
 }
 
 .not-found {
@@ -1155,14 +1160,22 @@ button {
 }
 
 .card {
-  width: 200px;
-  height: 300px;
-  perspective: 500px;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
 }
-.card:hover .card-front {
+@media (hover: hover) {
+  .card:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+  .card:hover .card-back {
+    transform: rotateY(0deg);
+  }
+}
+.card.rotate .card-front {
   transform: rotateY(-180deg);
 }
-.card:hover .card-back {
+.card.rotate .card-back {
   transform: rotateY(0deg);
 }
 .card-front, .card-back {
@@ -1170,15 +1183,20 @@ button {
   height: 100%;
   position: absolute;
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 .card-front {
-  background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: transform 0.5s;
-  background-color: red;
+  overflow: hidden;
+}
+.card-front_img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px var(--shadow-skills-card-color);
 }
 .card-back {
   background-color: #e0e0e0;
@@ -1188,5 +1206,4 @@ button {
   align-items: center;
   transform: rotateY(180deg);
   transition: transform 0.5s;
-  background-color: blue;
 }/*# sourceMappingURL=index.css.map */
