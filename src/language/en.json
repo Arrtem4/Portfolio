@@ -97,6 +97,8 @@
         }
     },
     "skills": {
+        "cards-button": "CARDS",
+        "list-button": "LIST",
         "separator1": "FUNDAMENTAL",
         "separator2": "ADDITIONAL",
         "separator3": "SERVER AND DATA"

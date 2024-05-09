@@ -20,6 +20,6 @@ html[data-theme="dark"] {
     --bg-stack-item-color-hover: rgb(85, 85, 85);
     --shadow-prj-img-color: rgba(255, 255, 255, 0);
     --shadow-skills-card-color: rgb(43, 43, 43);
-    --bg-skills-button: rgb(172, 172, 172);
+    --bg-skills-button: rgb(77, 77, 77);
     --bg-skills-button-active: rgb(226, 95, 95);
 }

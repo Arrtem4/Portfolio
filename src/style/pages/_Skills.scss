@@ -13,16 +13,10 @@
     &_list {
     }
     &_toggle {
-        display: flex;
-        justify-content: center;
-        column-gap: 4cqw;
-        &_button {
-            color: var(--text-main-color);
-            background-color: var(--bg-skills-button);
-            &_active {
-                color: var(--text-main-color);
-                background-color: var(--bg-skills-button-active);
-            }
+        column-gap: 6cqw;
+
+        & p {
+            font-size: clamp(20px, 2.7cqmin, 30px);
         }
     }
 }

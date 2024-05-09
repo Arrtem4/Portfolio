@@ -707,17 +707,10 @@ button {
   justify-content: space-evenly;
 }
 .skills_toggle {
-  display: flex;
-  justify-content: center;
-  column-gap: 4cqw;
+  column-gap: 6cqw;
 }
-.skills_toggle_button {
-  color: var(--text-main-color);
-  background-color: var(--bg-skills-button);
-}
-.skills_toggle_button_active {
-  color: var(--text-main-color);
-  background-color: var(--bg-skills-button-active);
+.skills_toggle p {
+  font-size: clamp(20px, 2.7cqmin, 30px);
 }
 
 .not-found {
@@ -1207,7 +1200,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s;
+  transition: transform 0.8s;
   overflow: hidden;
 }
 .card-front_img {
@@ -1220,5 +1213,5 @@ button {
   justify-content: center;
   align-items: center;
   transform: rotateY(180deg);
-  transition: transform 0.5s;
+  transition: transform 0.8s;
 }/*# sourceMappingURL=index.css.map */

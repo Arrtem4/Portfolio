@@ -27,23 +27,23 @@ export default function Skills() {
     const [justList, setJustList] = useState(false);
     return (
         <section className="skills page-enter">
-            <section className="skills_toggle">
-                <div
-                    className={`skills_toggle_button ${
-                        justList ? "" : "skills_toggle_button_active"
+            <section className="skills_toggle center">
+                <p
+                    className={`menu-large_links_link ${
+                        justList ? "" : "active"
                     }`}
-                    onClick={() => setJustList(!justList)}
+                    onClick={() => setJustList(false)}
                 >
-                    <p>cards</p>
-                </div>
-                <div
-                    className={`skills_toggle_button ${
-                        justList ? "skills_toggle_button_active" : ""
-                    }`}
-                    onClick={() => setJustList(!justList)}
+                    {t("skills.cards-button")}
+                </p>
+                <p
+                    className={`menu-large_links_link ${
+                        justList ? "active" : ""
+                    } `}
+                    onClick={() => setJustList(true)}
                 >
-                    <p>list</p>
-                </div>
+                    {t("skills.list-button")}
+                </p>
             </section>
             {justList ? (
                 <section className="skills_list"></section>
@@ -57,15 +57,15 @@ export default function Skills() {
                     </section>
                     <DecorativeSeparator text={t("skills.separator2")} />
                     <section className="skills_cards_block page-enter">
-                        <Card image={scss} />
-                        <Card image={git} />
+                        <Card image={ts} />
                         <Card image={react} />
                         <Card image={redux} />
                         <Card image={router} />
-                        <Card image={ts} />
+                        <Card image={scss} />
+                        <Card image={npm} />
+                        <Card image={git} />
                         <Card image={api} />
                         <Card image={vite} />
-                        <Card image={npm} />
                         <Card image={jquery} />
                         <Card image={vscode} />
                     </section>

@@ -97,6 +97,8 @@
         }
     },
     "skills": {
+        "cards-button": "КАРТОЧКИ",
+        "list-button": "СПИСОК",
         "separator1": "ОСНОВНЫЕ",
         "separator2": "ДОПОЛНИТЕЛЬНЫЕ",
         "separator3": "СЕРВЕР И ДАННЫЕ"
