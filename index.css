@@ -811,14 +811,14 @@ button {
 }
 .menu-large_links {
   display: flex;
-  gap: 2cqmin;
+  gap: 1.2cqw;
   margin-right: 2cqmin;
 }
 .menu-large_links_link {
   font-family: "Noto Sans Display";
   font-weight: 300;
   color: var(--text-main-color);
-  font-size: clamp(10px, 2.4cqmin, 25px);
+  font-size: clamp(18px, 2.4cqmin, 25px);
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -908,7 +908,7 @@ button {
   font-family: "Noto Sans Display";
   font-weight: 300;
   color: var(--text-main-color);
-  font-size: clamp(10px, 7cqh, 45px);
+  font-size: clamp(10px, 7cqh, 35px);
   text-decoration: none;
   cursor: pointer;
 }
