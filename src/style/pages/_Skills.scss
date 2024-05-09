@@ -1,9 +1,28 @@
 .skills {
     background-color: var(--bg-main-color);
-    display: flex;
-    flex-wrap:wrap;
     padding: 3cqmin 5cqmin;
-    column-gap: 3cqmin;
-    row-gap: 8cqmin;
-    justify-content: space-around;
+    &_cards {
+        &_block {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 3cqw;
+            row-gap: 5cqw;
+            justify-content: space-evenly;
+        }
+    }
+    &_list {
+    }
+    &_toggle {
+        display: flex;
+        justify-content: center;
+        column-gap: 4cqw;
+        &_button {
+            color: var(--text-main-color);
+            background-color: var(--bg-skills-button);
+            &_active {
+                color: var(--text-main-color);
+                background-color: var(--bg-skills-button-active);
+            }
+        }
+    }
 }

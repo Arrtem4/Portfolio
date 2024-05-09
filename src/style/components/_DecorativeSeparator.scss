@@ -1,10 +1,10 @@
-.year-index {
+.decorativeSeparator {
     color: var(--text-main-color);
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     align-items: center;
     column-gap: 2cqmin;
-    padding: 3cqmin 0;
+    padding: 4cqmax 0;
     &_border {
         height: 2px;
         &.left {
@@ -22,9 +22,9 @@
             );
         }
     }
-    &_number {
+    &_text {
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: 4cqmin;
+        font-size: clamp(20px, 4.5cqmin, 45px);
     }
 }

@@ -1,4 +1,4 @@
-import YearsIndex from "../components/YearsIndex";
+import DecorativeSeparator from "../components/DecorativeSeparator";
 import ProjectsItem from "../components/ProjectsItem";
 import aeroflex from "../pictures/projects/aeroflex.webp";
 import vzkg from "../pictures/projects/vzkg.webp";
@@ -15,7 +15,7 @@ export default function Projects() {
     return (
         <section className="projects page-enter">
             <section className="projects_year">
-                <YearsIndex year="2024" />
+                <DecorativeSeparator text="2024" />
                 <ProjectsItem
                     position="left"
                     image={aeroflex}
@@ -93,7 +93,7 @@ export default function Projects() {
                 />
             </section>
             <section className="projects_year">
-                <YearsIndex year="2023" />
+                <DecorativeSeparator text="2023" />
                 <ProjectsItem
                     position="right"
                     image={reviews}
@@ -146,7 +146,7 @@ export default function Projects() {
                 />
             </section>
             <section className="projects_year">
-                <YearsIndex year="2022 " />
+                <DecorativeSeparator text="2022" />
                 <ProjectsItem
                     position="left"
                     image={geolocation}

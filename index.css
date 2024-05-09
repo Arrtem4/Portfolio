@@ -697,12 +697,27 @@ button {
 
 .skills {
   background-color: var(--bg-main-color);
+  padding: 3cqmin 5cqmin;
+}
+.skills_cards_block {
   display: flex;
   flex-wrap: wrap;
-  padding: 3cqmin 5cqmin;
-  column-gap: 3cqmin;
-  row-gap: 8cqmin;
-  justify-content: space-around;
+  column-gap: 3cqw;
+  row-gap: 5cqw;
+  justify-content: space-evenly;
+}
+.skills_toggle {
+  display: flex;
+  justify-content: center;
+  column-gap: 4cqw;
+}
+.skills_toggle_button {
+  color: var(--text-main-color);
+  background-color: var(--bg-skills-button);
+}
+.skills_toggle_button_active {
+  color: var(--text-main-color);
+  background-color: var(--bg-skills-button-active);
 }
 
 .not-found {
@@ -1002,27 +1017,27 @@ button {
   opacity: 0;
 }
 
-.year-index {
+.decorativeSeparator {
   color: var(--text-main-color);
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   align-items: center;
   column-gap: 2cqmin;
-  padding: 3cqmin 0;
+  padding: 4cqmax 0;
 }
-.year-index_border {
+.decorativeSeparator_border {
   height: 2px;
 }
-.year-index_border.left {
+.decorativeSeparator_border.left {
   background: linear-gradient(to left, var(--text-main-color) 0%, rgba(0, 0, 0, 0) 70%);
 }
-.year-index_border.right {
+.decorativeSeparator_border.right {
   background: linear-gradient(to right, var(--text-main-color) 0%, rgba(0, 0, 0, 0) 70%);
 }
-.year-index_number {
+.decorativeSeparator_text {
   font-family: "Montserrat";
   font-weight: 300;
-  font-size: 4cqmin;
+  font-size: clamp(20px, 4.5cqmin, 45px);
 }
 
 .projects-item {

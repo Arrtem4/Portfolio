@@ -7,6 +7,8 @@ html[data-theme="light"] {
     --bg-stack-item-color-hover: rgb(193, 193, 193);
     --shadow-prj-img-color: rgba(0, 0, 0, 0.752);
     --shadow-skills-card-color: rgba(0, 0, 0, 0.752);
+    --bg-skills-button: rgb(172, 172, 172);
+    --bg-skills-button-active: rgb(193, 193, 193);
 }
 
 html[data-theme="dark"] {
@@ -18,4 +20,6 @@ html[data-theme="dark"] {
     --bg-stack-item-color-hover: rgb(85, 85, 85);
     --shadow-prj-img-color: rgba(255, 255, 255, 0);
     --shadow-skills-card-color: rgb(43, 43, 43);
+    --bg-skills-button: rgb(172, 172, 172);
+    --bg-skills-button-active: rgb(226, 95, 95);
 }

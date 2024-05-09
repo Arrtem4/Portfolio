@@ -95,5 +95,10 @@
             "description3": "All attention was paid to learning Flexbox and Grid - the most popular methods for creating flexible and adaptive layouts in web development.",
             "description4": ""
         }
+    },
+    "skills": {
+        "separator1": "FUNDAMENTAL",
+        "separator2": "ADDITIONAL",
+        "separator3": "SERVER AND DATA"
     }
 }
