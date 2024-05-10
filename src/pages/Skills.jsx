@@ -32,6 +32,10 @@ import tailwind from "../pictures/skills/tailwind.webp";
 import docker from "../pictures/skills/docker.webp";
 import photoshop from "../pictures/skills/photoshop.webp";
 import firebase from "../pictures/skills/firebase.webp";
+import cloudinary from "../pictures/skills/cloudinary.webp";
+import cloud from "../pictures/skills/cloud.webp";
+import less from "../pictures/skills/less.webp";
+import material from "../pictures/skills/material.webp";
 
 export default function Skills() {
     const { t } = useTranslation();
@@ -85,14 +89,18 @@ export default function Skills() {
                         <Card image={mongo} />
                         <Card image={postgresql} />
                         <Card image={firebase} />
+                        <Card image={cloud} />
+                        <Card image={cloudinary} />
                     </section>
                     <DecorativeSeparator text={t("skills.separator4")} />
                     <section className="skills_cards_block page-enter">
                         <Card image={scss} />
+                        <Card image={less} />
+                        <Card image={material} />
+                        <Card image={framer} />
                         <Card image={bootstrap} />
                         <Card image={tailwind} />
                         <Card image={styled} />
-                        <Card image={framer} />
                     </section>
                     <DecorativeSeparator text={t("skills.separator5")} />
                     <section className="skills_cards_block page-enter">
