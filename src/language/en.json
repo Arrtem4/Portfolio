@@ -101,6 +101,8 @@
         "list-button": "LIST",
         "separator1": "FUNDAMENTAL",
         "separator2": "ADDITIONAL",
-        "separator3": "SERVER AND DATA"
+        "separator3": "SERVER AND DATA",
+        "separator4": "INTERFACE STYLING",
+        "separator5": "DEVELOPMENT TOOLS"
     }
 }

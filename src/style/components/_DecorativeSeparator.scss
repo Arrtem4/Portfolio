@@ -23,8 +23,11 @@
         }
     }
     &_text {
+        display: block;
         font-family: "Montserrat";
         font-weight: 300;
         font-size: clamp(20px, 4.5cqmin, 45px);
+        width: min-content;
+        text-align: center;
     }
 }

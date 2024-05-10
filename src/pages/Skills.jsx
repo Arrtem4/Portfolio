@@ -21,6 +21,17 @@ import api from "../pictures/skills/api.webp";
 import jquery from "../pictures/skills/jquery.webp";
 import vite from "../pictures/skills/vite.webp";
 import npm from "../pictures/skills/npm.webp";
+import postman from "../pictures/skills/postman.webp";
+import babel from "../pictures/skills/babel.webp";
+import styled from "../pictures/skills/styled.webp";
+import framer from "../pictures/skills/framer.webp";
+import figma from "../pictures/skills/figma.webp";
+import bootstrap from "../pictures/skills/bootstrap.webp";
+import webpack from "../pictures/skills/webpack.webp";
+import tailwind from "../pictures/skills/tailwind.webp";
+import docker from "../pictures/skills/docker.webp";
+import photoshop from "../pictures/skills/photoshop.webp";
+import firebase from "../pictures/skills/firebase.webp";
 
 export default function Skills() {
     const { t } = useTranslation();
@@ -54,20 +65,17 @@ export default function Skills() {
                         <Card image={html} />
                         <Card image={css} />
                         <Card image={js} />
+                        <Card image={ts} />
+                        <Card image={git} />
                     </section>
                     <DecorativeSeparator text={t("skills.separator2")} />
                     <section className="skills_cards_block page-enter">
-                        <Card image={ts} />
                         <Card image={react} />
                         <Card image={redux} />
                         <Card image={router} />
-                        <Card image={scss} />
                         <Card image={npm} />
-                        <Card image={git} />
                         <Card image={api} />
-                        <Card image={vite} />
                         <Card image={jquery} />
-                        <Card image={vscode} />
                     </section>
                     <DecorativeSeparator text={t("skills.separator3")} />
                     <section className="skills_cards_block page-enter">
@@ -76,6 +84,26 @@ export default function Skills() {
                         <Card image={passport} />
                         <Card image={mongo} />
                         <Card image={postgresql} />
+                        <Card image={firebase} />
+                    </section>
+                    <DecorativeSeparator text={t("skills.separator4")} />
+                    <section className="skills_cards_block page-enter">
+                        <Card image={scss} />
+                        <Card image={bootstrap} />
+                        <Card image={tailwind} />
+                        <Card image={styled} />
+                        <Card image={framer} />
+                    </section>
+                    <DecorativeSeparator text={t("skills.separator5")} />
+                    <section className="skills_cards_block page-enter">
+                        <Card image={vscode} />
+                        <Card image={vite} />
+                        <Card image={webpack} />
+                        <Card image={babel} />
+                        <Card image={docker} />
+                        <Card image={postman} />
+                        <Card image={figma} />
+                        <Card image={photoshop} />
                     </section>
                 </section>
             )}
