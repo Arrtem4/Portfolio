@@ -36,6 +36,7 @@ import cloudinary from "../pictures/skills/cloudinary.webp";
 import cloud from "../pictures/skills/cloud.webp";
 import less from "../pictures/skills/less.webp";
 import material from "../pictures/skills/material.webp";
+import devtools from "../pictures/skills/devtools.webp";
 
 export default function Skills() {
     const { t } = useTranslation();
@@ -69,16 +70,17 @@ export default function Skills() {
                         <Card image={html} />
                         <Card image={css} />
                         <Card image={js} />
-                        <Card image={ts} />
                         <Card image={git} />
                     </section>
                     <DecorativeSeparator text={t("skills.separator2")} />
                     <section className="skills_cards_block page-enter">
+                        <Card image={ts} />
                         <Card image={react} />
                         <Card image={redux} />
                         <Card image={router} />
-                        <Card image={npm} />
                         <Card image={api} />
+                        <Card image={npm} />
+                        <Card image={docker} />
                         <Card image={jquery} />
                     </section>
                     <DecorativeSeparator text={t("skills.separator3")} />
@@ -105,10 +107,10 @@ export default function Skills() {
                     <DecorativeSeparator text={t("skills.separator5")} />
                     <section className="skills_cards_block page-enter">
                         <Card image={vscode} />
-                        <Card image={vite} />
+                        <Card image={devtools} />
                         <Card image={webpack} />
+                        <Card image={vite} />
                         <Card image={babel} />
-                        <Card image={docker} />
                         <Card image={postman} />
                         <Card image={figma} />
                         <Card image={photoshop} />
