@@ -103,6 +103,156 @@
         "separator2": "ADDITIONAL",
         "separator3": "SERVER AND DATA",
         "separator4": "INTERFACE STYLING",
-        "separator5": "DEVELOPMENT TOOLS"
+        "separator5": "DEVELOPMENT TOOLS",
+        "cards": {
+            "html": {
+                "name": "HTML",
+                "description": "A markup language used to create the structure of web pages. It defines content elements and their hierarchy on a page using tags."
+            },
+            "css": {
+                "name": "CSS",
+                "description": "A style language that defines the appearance and formatting of HTML elements. CSS allows you to control the colors, fonts, sizes, and positioning of elements on a web page."
+            },
+            "js": {
+                "name": "JavaScript",
+                "description": "A programming language that is used to add interactivity to web pages. It is used to create dynamic content, animations, event handling, and more."
+            },
+            "git": {
+                "name": "Git",
+                "description": "A version control system used to manage changes to a project's source code. It allows developers to track changes, create development branches, merge changes, and manage project history."
+            },
+            "ts": {
+                "name": "TypeScript",
+                "description": "An extension of the JavaScript language that adds static typing and other features such as interfaces, enumerations, and generics. TypeScript helps improve the development process by reducing bugs and improving IDE support."
+            },
+            "react": {
+                "name": "React",
+                "description": "JavaScript library for creating user interfaces. It is used to develop interactive web applications, allowing you to create components that automatically update when data changes."
+            },
+            "redux": {
+                "name": "Redux",
+                "description": "A state management library for JavaScript applications, often used in conjunction with React. Redux provides unidirectional data flow and a single repository for application state, making state management predictable and easy to debug."
+            },
+            "router": {
+                "name": "React-Router",
+                "description": "A routing library for React applications. React Router allows you to create single-page applications with dynamic URLs, enabling URL-based navigation between different components."
+            },
+            "rest": {
+                "name": "RESTful API",
+                "description": "An architectural style for designing networked applications that utilizes the HTTP protocol to manipulate data. The RESTful API provides a standardized set of operations (e.g., GET, POST, PUT, DELETE) to manage resources on the server."
+            },
+            "api": {
+                "name": "API",
+                "description": "A set of definitions and protocols that is used to communicate between different components of software. An API defines how different parts of a program can communicate with each other."
+            },
+            "npm": {
+                "name": "NPM",
+                "description": "A package manager for JavaScript used to install, manage, and publish code packages. npm allows developers to easily find and install project dependencies and share their own packages with the community."
+            },
+            "docker": {
+                "name": "Docker",
+                "description": "A platform for developing, delivering, and running applications in containers. Docker containers provide an isolated environment for applications and their dependencies, making applications portable and easily scalable."
+            },
+            "jquery": {
+                "name": "jQuery",
+                "description": "A JavaScript library that facilitates HTML element manipulation, event handling, animation, and server-side interaction. jQuery makes it easy to write cross-browser JavaScript code and accelerates web application development."
+            },
+            "node": {
+                "name": "Node.js",
+                "description": "A server-side JavaScript runtime environment for building high-performance and scalable networked applications. Node.js is based on Google Chrome's V8 engine and provides asynchronous and event-driven programming."
+            },
+            "express": {
+                "name": "Express",
+                "description": "A minimalistic and flexible web framework for Node.js that makes it easy to build web applications and APIs. Express provides a set of methods and utilities for handling HTTP requests, routing, and session management."
+            },
+            "passport": {
+                "name": "Passport.js",
+                "description": "An authentication library for Node.js that provides a simple and flexible mechanism for authentication and authorization in web applications. Passport.js supports various authentication strategies such as local authentication, OAuth, and OpenID."
+            },
+            "mongo": {
+                "name": "MongoDB",
+                "description": "A document-oriented NoSQL database used to store and manage data in JSON document format. MongoDB offers flexible data schema, scalability, and high performance when dealing with large amounts of data."
+            },
+            "postgresql": {
+                "name": "PostgreSQL",
+                "description": "An open source relational database that supports advanced SQL features and provides reliable data storage and management. PostgreSQL offers many features including transactional support, geodata, and full-text search."
+            },
+            "firebase": {
+                "name": "Firebase",
+                "description": "An application development platform from Google that provides a set of tools for building high-quality web and mobile applications. Firebase includes services such as real-time database, authentication, hosting, cloud features, and more."
+            },
+            "cloud": {
+                "name": "Google Cloud",
+                "description": "A cloud platform provided by Google that offers various cloud services including computing resources, data storage, databases, analytics, machine learning, and more."
+            },
+            "cloudinary": {
+                "name": "Cloudinary",
+                "description": "A cloud-based service for managing media content such as images, video, and audio. Cloudinary provides APIs for uploading, processing, storing and delivering media content in web applications."
+            },
+            "scss": {
+                "name": "SCSS / SASS",
+                "description": "A CSS preprocessor that extends the functionality of regular CSS by adding variables, nested rules, mixins, and other features to simplify and improve the styling process."
+            },
+            "less": {
+                "name": "LESS",
+                "description": "Another CSS preprocessor, similar to SCSS/SASS, that adds additional features to standard CSS, such as variables, mixins, nested styles, and more."
+            },
+            "material": {
+                "name": "Material UI",
+                "description": "A library of user interface components based on Google's Material Design system. Material UI provides ready-made components for developing modern and stylish web applications using React."
+            },
+            "framer": {
+                "name": "Framer Motion",
+                "description": "An animation library for React that provides a simple and declarative way to create animations in web applications. Framer Motion allows you to create different types of animations such as transitions between components, animated components and more."
+            },
+            "bootstrap": {
+                "name": "Bootstrap",
+                "description": "A framework for web and mobile app development that provides a set of ready-made components and CSS styles. Bootstrap helps you create adaptive and stylish interfaces with minimal effort."
+            },
+            "tailwind": {
+                "name": "Tailwind CSS",
+                "description": "A CSS framework that provides a set of ready-made classes for styling web pages. Tailwind CSS takes a utility-first approach, allowing you to quickly and flexibly create custom styles using CSS classes."
+            },
+            "styled": {
+                "name": "Styled-Components",
+                "description": "A library for styling components in React applications using CSS as JavaScript. Styled-Components allows you to create components with bound styles, making it easy to create and maintain styled components."
+            },
+            "vscode": {
+                "name": "VS Code",
+                "description": "Microsoft's integrated development environment (IDE) for writing code. VS Code has many extensions, supports a variety of programming languages, and provides extensive customization options for easy and efficient development."
+            },
+            "devtools": {
+                "name": "Chrome DevTools",
+                "description": "Web browser developer tools, such as Chrome DevTools or Firefox Developer Tools, that provide developers with the ability to debug, profile, and analyze web applications. Dev Tools include tools for inspecting HTML, CSS, JavaScript, network requests, and more."
+            },
+            "webpack": {
+                "name": "Webpack",
+                "description": "A modular packer for JavaScript applications that allows you to combine and manage project dependencies. Webpack allows you to create static assets such as JavaScript, CSS and images and optimize them for production."
+            },
+            "vite": {
+                "name": "Vite",
+                "description": "A fast web application development tool that utilizes modern JavaScript features such as ESM (ECMAScript Modules) and HMR (Hot Module Replacement). Vite allows you to develop web applications with speed and efficiency."
+            },
+            "parcel":{
+                "name": "Parcel",
+                "description": "A tool for bundling and optimizing JavaScript and CSS files. Parcel provides a simple and declarative way to build web applications using JavaScript and CSS."
+            },
+            "babel": {
+                "name": "Babel",
+                "description": "A tool for translating JavaScript code from a modern standard to an older standard that is compatible with a wider range of browsers and JavaScript runtime environments. Babel allows you to take advantage of new JavaScript language features without worrying about compatibility."
+            },
+            "postman": {
+                "name": "Postman",
+                "description": "An API testing and debugging tool that provides a user-friendly interface for sending HTTP requests and validating responses. Postman allows you to create and automate API tests and share collections of requests with other developers."
+            },
+            "figma": {
+                "name": "Figma",
+                "description": "A graphical editor and interface design environment that allows designers to create mockups, prototypes, and collaborate on design projects in real time. Figma provides extensive capabilities for creating modern and interactive designs."
+            },
+            "photoshop": {
+                "name": "Adobe Photoshop",
+                "description": "A graphic editor developed by Adobe that is widely used to create and edit images. Photoshop provides many tools for working with digital images, including retouching, applying effects, and creating compositions."
+            }
+        }
     }
 }

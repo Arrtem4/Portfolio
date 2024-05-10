@@ -37,6 +37,8 @@ import cloud from "../pictures/skills/cloud.webp";
 import less from "../pictures/skills/less.webp";
 import material from "../pictures/skills/material.webp";
 import devtools from "../pictures/skills/devtools.webp";
+import rest from "../pictures/skills/rest.webp";
+import parcel from "../pictures/skills/parcel.webp";
 
 export default function Skills() {
     const { t } = useTranslation();
@@ -78,6 +80,7 @@ export default function Skills() {
                         <Card image={react} />
                         <Card image={redux} />
                         <Card image={router} />
+                        <Card image={rest} />
                         <Card image={api} />
                         <Card image={npm} />
                         <Card image={docker} />
@@ -110,6 +113,7 @@ export default function Skills() {
                         <Card image={devtools} />
                         <Card image={webpack} />
                         <Card image={vite} />
+                        <Card image={parcel} />
                         <Card image={babel} />
                         <Card image={postman} />
                         <Card image={figma} />
