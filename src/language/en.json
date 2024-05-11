@@ -167,7 +167,7 @@
             },
             "passport": {
                 "name": "Passport.js",
-                "description": "An authentication library for Node.js that provides a simple and flexible mechanism for authentication and authorization in web applications. Passport.js supports various authentication strategies such as local authentication, OAuth, and OpenID."
+                "description": "An authentication library for Node.js that provides a simple and flexible mechanism for authentication and authorization in web applications. Supports various authentication strategies such as local authentication, OAuth, and OpenID."
             },
             "mongo": {
                 "name": "MongoDB",
@@ -201,9 +201,9 @@
                 "name": "Material UI",
                 "description": "A library of user interface components based on Google's Material Design system. Material UI provides ready-made components for developing modern and stylish web applications using React."
             },
-            "framer": {
+            "motion": {
                 "name": "Framer Motion",
-                "description": "An animation library for React that provides a simple and declarative way to create animations in web applications. Framer Motion allows you to create different types of animations such as transitions between components, animated components and more."
+                "description": "An animation library for React that provides a simple and declarative way to create animations in web applications.  Allows you to create different types of animations such as transitions between components, animated components and more."
             },
             "bootstrap": {
                 "name": "Bootstrap",
@@ -223,7 +223,7 @@
             },
             "devtools": {
                 "name": "Chrome DevTools",
-                "description": "Web browser developer tools, such as Chrome DevTools or Firefox Developer Tools, that provide developers with the ability to debug, profile, and analyze web applications. Dev Tools include tools for inspecting HTML, CSS, JavaScript, network requests, and more."
+                "description": "Web browser developer tools, that provide developers with the ability to debug, profile, and analyze web applications. Dev Tools include tools for inspecting HTML, CSS, JavaScript, network requests, and more."
             },
             "webpack": {
                 "name": "Webpack",
@@ -233,13 +233,13 @@
                 "name": "Vite",
                 "description": "A fast web application development tool that utilizes modern JavaScript features such as ESM (ECMAScript Modules) and HMR (Hot Module Replacement). Vite allows you to develop web applications with speed and efficiency."
             },
-            "parcel":{
+            "parcel": {
                 "name": "Parcel",
                 "description": "A tool for bundling and optimizing JavaScript and CSS files. Parcel provides a simple and declarative way to build web applications using JavaScript and CSS."
             },
             "babel": {
                 "name": "Babel",
-                "description": "A tool for translating JavaScript code from a modern standard to an older standard that is compatible with a wider range of browsers and JavaScript runtime environments. Babel allows you to take advantage of new JavaScript language features without worrying about compatibility."
+                "description": "A tool for translating JavaScript code from a modern standard to an older standard that is compatible with a wider range of browsers and JavaScript runtime environments. Allows you to take advantage of new JavaScript language features without worrying about compatibility."
             },
             "postman": {
                 "name": "Postman",
