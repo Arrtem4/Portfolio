@@ -9,7 +9,7 @@ export default function Skills() {
     const { t } = useTranslation();
     const [justList, setJustList] = useState(false);
     return (
-        <section className="skills">
+        <section className="skills page-enter">
             <section className="skills_toggle center">
                 <p
                     className={`menu-large_links_link ${
