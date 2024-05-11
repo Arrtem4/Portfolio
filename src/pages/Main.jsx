@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import photo from "../pictures/photo-central.webp";
 import { useTranslation } from "react-i18next";
 import Typed from "typed.js";
 
@@ -69,7 +68,10 @@ export default function Main() {
                     <div className="main_central_composition_circle-1"></div>
                     <div className="main_central_composition_circle-2"></div>
                     <div className="main_central_composition_circle-3"></div>
-                    <img src={photo} alt="photo-central"></img>
+                    <img
+                        src="pictures/photo-central.webp"
+                        alt="photo-central"
+                    ></img>
                 </section>
             </section>
         </section>
