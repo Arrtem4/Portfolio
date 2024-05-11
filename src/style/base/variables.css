@@ -8,6 +8,7 @@ html[data-theme="light"] {
     --shadow-prj-img-color: rgba(0, 0, 0, 0.752);
     --shadow-skills-card-color: rgba(0, 0, 0, 0.752);
     --bg-skills-card-color: rgb(237, 237, 237);
+    --bg-skills-card-color-hover: rgb(213, 213, 213);
 }
 
 html[data-theme="dark"] {
@@ -20,4 +21,5 @@ html[data-theme="dark"] {
     --shadow-prj-img-color: rgba(255, 255, 255, 0);
     --shadow-skills-card-color: rgb(43, 43, 43);
     --bg-skills-card-color: rgb(44, 44, 44);
+    --bg-skills-card-color-hover: rgb(23, 23, 23);
 }

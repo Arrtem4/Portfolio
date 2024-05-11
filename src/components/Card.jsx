@@ -13,12 +13,15 @@ export default function Card({ image = "", name = "", description = "" }) {
             }}
         >
             <div className="card-front">
-                <img src={image} className="card-front_img"></img>
+                <img
+                    src={image}
+                    alt="skill-image"
+                    className="card-front_img"
+                ></img>
             </div>
             <div className="card-back">
-                
-                    <p className="card-back_name">{name}</p>
-                
+                <p className="card-back_name">{name}</p>
+
                 <div className="card-back_description center">
                     <p>{description}</p>
                 </div>

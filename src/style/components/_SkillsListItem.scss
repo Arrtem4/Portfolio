@@ -1,0 +1,66 @@
+.skills-list-item {
+    display: flex;
+    color: var(--text-main-color);
+    align-items: center;
+    column-gap: 2cqmin;
+    row-gap: 3cqmin;
+    @include respond(l) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &_img-container {
+        width: 10cqmin;
+        height: 10cqmin;
+        flex-shrink: 0;
+        overflow: hidden;
+        border-radius: 10%;
+        transition: transform 1s ease;
+        @include hover {
+            &:hover {
+                transform: rotate(360deg);
+            }
+        }
+        & img {
+            width: 100%;
+        }
+    }
+    &_name {
+        flex-shrink: 0;
+        width: clamp(150px, 18cqmin, 40px);
+        text-align: center;
+        border-radius: 10px;
+        background-color: var(--bg-skills-card-color);
+        align-self: stretch;
+        @include hover {
+            &:hover {
+                background-color: var(--bg-skills-card-color-hover);
+                box-shadow: 2px 2px 10px var(--bg-skills-card-color-hover);
+            }
+        }
+        & p {
+            font-weight: 600;
+            font-size: clamp(20px, 2.5cqmin, 40px);
+        }
+    }
+    &_description {
+        padding: 1cqmin;
+        align-self: stretch;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        background-color: var(--bg-skills-card-color);
+        @include hover {
+            &:hover {
+                background-color: var(--bg-skills-card-color-hover);
+                box-shadow: 2px 2px 10px var(--bg-skills-card-color-hover);
+            }
+        }
+        & p {
+            font-size: clamp(15px, 1.8cqmin, 40px);
+            @include respond(l) {
+                text-align: center;
+            }
+        }
+    }
+}

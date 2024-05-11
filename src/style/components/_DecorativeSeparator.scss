@@ -1,7 +1,7 @@
 .decorativeSeparator {
     color: var(--text-main-color);
     display: grid;
-    grid-template-columns: 1fr max-content 1fr;
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     column-gap: 2cqmin;
     padding: 4cqmax 0;

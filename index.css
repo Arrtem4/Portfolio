@@ -706,6 +706,11 @@ button {
   row-gap: 5cqw;
   justify-content: space-evenly;
 }
+.skills_list_block {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(30px, 3cqmin, 40px);
+}
 .skills_toggle {
   column-gap: 6cqw;
 }
@@ -1013,7 +1018,7 @@ button {
 .decorativeSeparator {
   color: var(--text-main-color);
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   column-gap: 2cqmin;
   padding: 4cqmax 0;
@@ -1235,4 +1240,75 @@ button {
 .card-back_description {
   letter-spacing: 1px;
   font-size: 16px;
+}
+
+.skills-list-item {
+  display: flex;
+  color: var(--text-main-color);
+  align-items: center;
+  column-gap: 2cqmin;
+  row-gap: 3cqmin;
+}
+@media only screen and (max-width: 1000px) {
+  .skills-list-item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.skills-list-item_img-container {
+  width: 10cqmin;
+  height: 10cqmin;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 10%;
+  transition: transform 1s ease;
+}
+@media (hover: hover) {
+  .skills-list-item_img-container:hover {
+    transform: rotate(360deg);
+  }
+}
+.skills-list-item_img-container img {
+  width: 100%;
+}
+.skills-list-item_name {
+  flex-shrink: 0;
+  width: clamp(150px, 18cqmin, 40px);
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--bg-skills-card-color);
+  align-self: stretch;
+}
+@media (hover: hover) {
+  .skills-list-item_name:hover {
+    background-color: var(--bg-skills-card-color-hover);
+    box-shadow: 2px 2px 10px var(--bg-skills-card-color-hover);
+  }
+}
+.skills-list-item_name p {
+  font-weight: 600;
+  font-size: clamp(20px, 2.5cqmin, 40px);
+}
+.skills-list-item_description {
+  padding: 1cqmin;
+  align-self: stretch;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--bg-skills-card-color);
+}
+@media (hover: hover) {
+  .skills-list-item_description:hover {
+    background-color: var(--bg-skills-card-color-hover);
+    box-shadow: 2px 2px 10px var(--bg-skills-card-color-hover);
+  }
+}
+.skills-list-item_description p {
+  font-size: clamp(15px, 1.8cqmin, 40px);
+}
+@media only screen and (max-width: 1000px) {
+  .skills-list-item_description p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=index.css.map */
