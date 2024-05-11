@@ -4,7 +4,7 @@ export default function Card({ image = "", name = "", description = "" }) {
     const [rotate, setRotate] = useState(false);
     return (
         <div
-            className={`card ${rotate ? "rotate" : ""}`}
+            className={`card ${rotate ? "rotate" : ""} page-enter`}
             onClick={() => setRotate(!rotate)}
             onMouseOut={() => {
                 if (rotate) {

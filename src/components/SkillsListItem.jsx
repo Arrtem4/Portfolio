@@ -4,7 +4,7 @@ export default function SkillsListItem({
     description = "",
 }) {
     return (
-        <section className="skills-list-item">
+        <section className="skills-list-item page-enter">
             <div className="skills-list-item_img-container center">
                 <img src={image} alt="skill-image" />
             </div>

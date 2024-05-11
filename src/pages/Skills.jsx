@@ -9,7 +9,7 @@ export default function Skills() {
     const { t } = useTranslation();
     const [justList, setJustList] = useState(false);
     return (
-        <section className="skills page-enter">
+        <section className="skills">
             <section className="skills_toggle center">
                 <p
                     className={`menu-large_links_link ${
@@ -28,13 +28,13 @@ export default function Skills() {
                     {t("skills.list-button")}
                 </p>
             </section>
-            {justList ? (
+            {justList ? ( 
                 <section className="skills_list">
                     <DecorativeSeparator
                         text={t("skills.separator1")}
                         variant="list"
                     />
-                    <section className="skills_list_block page-enter">
+                    <section className="skills_list_block">
                         {skills.fundamental.map((el) => {
                             return (
                                 <SkillsListItem
@@ -52,7 +52,7 @@ export default function Skills() {
                         text={t("skills.separator2")}
                         variant="list"
                     />
-                    <section className="skills_list_block page-enter">
+                    <section className="skills_list_block">
                         {skills.additional.map((el) => {
                             return (
                                 <SkillsListItem
@@ -70,7 +70,7 @@ export default function Skills() {
                         text={t("skills.separator3")}
                         variant="list"
                     />
-                    <section className="skills_list_block page-enter">
+                    <section className="skills_list_block">
                         {skills.serverAndData.map((el) => {
                             return (
                                 <SkillsListItem
@@ -88,7 +88,7 @@ export default function Skills() {
                         text={t("skills.separator4")}
                         variant="list"
                     />
-                    <section className="skills_list_block page-enter">
+                    <section className="skills_list_block">
                         {skills.interfaceStyling.map((el) => {
                             return (
                                 <SkillsListItem
@@ -106,7 +106,7 @@ export default function Skills() {
                         text={t("skills.separator5")}
                         variant="list"
                     />
-                    <section className="skills_list_block page-enter">
+                    <section className="skills_list_block">
                         {skills.developmentTools.map((el) => {
                             return (
                                 <SkillsListItem
@@ -124,7 +124,7 @@ export default function Skills() {
             ) : (
                 <section className="skills_cards">
                     <DecorativeSeparator text={t("skills.separator1")} />
-                    <section className="skills_cards_block page-enter">
+                    <section className="skills_cards_block">
                         {skills.fundamental.map((el) => {
                             return (
                                 <Card
@@ -139,7 +139,7 @@ export default function Skills() {
                         })}
                     </section>
                     <DecorativeSeparator text={t("skills.separator2")} />
-                    <section className="skills_cards_block page-enter">
+                    <section className="skills_cards_block">
                         {skills.additional.map((el) => {
                             return (
                                 <Card
@@ -154,7 +154,7 @@ export default function Skills() {
                         })}
                     </section>
                     <DecorativeSeparator text={t("skills.separator3")} />
-                    <section className="skills_cards_block page-enter">
+                    <section className="skills_cards_block">
                         {skills.serverAndData.map((el) => {
                             return (
                                 <Card
@@ -169,7 +169,7 @@ export default function Skills() {
                         })}
                     </section>
                     <DecorativeSeparator text={t("skills.separator4")} />
-                    <section className="skills_cards_block page-enter">
+                    <section className="skills_cards_block">
                         {skills.interfaceStyling.map((el) => {
                             return (
                                 <Card
@@ -184,7 +184,7 @@ export default function Skills() {
                         })}
                     </section>
                     <DecorativeSeparator text={t("skills.separator5")} />
-                    <section className="skills_cards_block page-enter">
+                    <section className="skills_cards_block">
                         {skills.developmentTools.map((el) => {
                             return (
                                 <Card
