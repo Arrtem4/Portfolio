@@ -5,7 +5,7 @@ export default function ContactItem({
     image = "",
     text = "",
     link = "",
-    delay = 1,
+    delay = 0,
 }) {
     const [animated, setAnimated] = useState(true);
     return (

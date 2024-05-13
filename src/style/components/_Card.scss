@@ -2,6 +2,7 @@
     width: 270px;
     height: 380px;
     perspective: 1000px;
+    animation: enter-opacity 1s ease both;
     @include hover {
         &:hover {
             .card-front {

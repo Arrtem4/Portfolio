@@ -4,6 +4,7 @@
     align-items: center;
     column-gap: 2cqmin;
     row-gap: 3cqmin;
+    animation: enter-opacity 1s ease both;
     @include respond(l) {
         flex-wrap: wrap;
         justify-content: center;

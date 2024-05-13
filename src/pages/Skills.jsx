@@ -28,14 +28,14 @@ export default function Skills() {
                     {t("skills.list-button")}
                 </p>
             </section>
-            {justList ? ( 
+            {justList ? (
                 <section className="skills_list">
                     <DecorativeSeparator
                         text={t("skills.separator1")}
                         variant="list"
                     />
                     <section className="skills_list_block">
-                        {skills.fundamental.map((el) => {
+                        {skills.fundamental.map((el, i) => {
                             return (
                                 <SkillsListItem
                                     key={el}
@@ -44,6 +44,7 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
@@ -53,7 +54,7 @@ export default function Skills() {
                         variant="list"
                     />
                     <section className="skills_list_block">
-                        {skills.additional.map((el) => {
+                        {skills.additional.map((el, i) => {
                             return (
                                 <SkillsListItem
                                     key={el}
@@ -62,6 +63,7 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
@@ -71,7 +73,7 @@ export default function Skills() {
                         variant="list"
                     />
                     <section className="skills_list_block">
-                        {skills.serverAndData.map((el) => {
+                        {skills.serverAndData.map((el, i) => {
                             return (
                                 <SkillsListItem
                                     key={el}
@@ -80,6 +82,7 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
@@ -89,7 +92,7 @@ export default function Skills() {
                         variant="list"
                     />
                     <section className="skills_list_block">
-                        {skills.interfaceStyling.map((el) => {
+                        {skills.interfaceStyling.map((el, i) => {
                             return (
                                 <SkillsListItem
                                     key={el}
@@ -98,6 +101,7 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
@@ -107,7 +111,7 @@ export default function Skills() {
                         variant="list"
                     />
                     <section className="skills_list_block">
-                        {skills.developmentTools.map((el) => {
+                        {skills.developmentTools.map((el, i) => {
                             return (
                                 <SkillsListItem
                                     key={el}
@@ -116,6 +120,7 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
@@ -125,7 +130,7 @@ export default function Skills() {
                 <section className="skills_cards">
                     <DecorativeSeparator text={t("skills.separator1")} />
                     <section className="skills_cards_block">
-                        {skills.fundamental.map((el) => {
+                        {skills.fundamental.map((el, i) => {
                             return (
                                 <Card
                                     key={el}
@@ -134,13 +139,14 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
                     </section>
                     <DecorativeSeparator text={t("skills.separator2")} />
                     <section className="skills_cards_block">
-                        {skills.additional.map((el) => {
+                        {skills.additional.map((el, i) => {
                             return (
                                 <Card
                                     key={el}
@@ -149,13 +155,14 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
                     </section>
                     <DecorativeSeparator text={t("skills.separator3")} />
                     <section className="skills_cards_block">
-                        {skills.serverAndData.map((el) => {
+                        {skills.serverAndData.map((el, i) => {
                             return (
                                 <Card
                                     key={el}
@@ -164,13 +171,14 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
                     </section>
                     <DecorativeSeparator text={t("skills.separator4")} />
                     <section className="skills_cards_block">
-                        {skills.interfaceStyling.map((el) => {
+                        {skills.interfaceStyling.map((el, i) => {
                             return (
                                 <Card
                                     key={el}
@@ -179,13 +187,14 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}
                     </section>
                     <DecorativeSeparator text={t("skills.separator5")} />
                     <section className="skills_cards_block">
-                        {skills.developmentTools.map((el) => {
+                        {skills.developmentTools.map((el, i) => {
                             return (
                                 <Card
                                     key={el}
@@ -194,6 +203,7 @@ export default function Skills() {
                                     description={t(
                                         `skills.cards.${el}.description`
                                     )}
+                                    delay={i * 0.1}
                                 />
                             );
                         })}

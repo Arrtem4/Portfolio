@@ -1,16 +1,22 @@
 import { useState } from "react";
 
-export default function Card({ image = "", name = "", description = "" }) {
+export default function Card({
+    image = "",
+    name = "",
+    description = "",
+    delay = 0,
+}) {
     const [rotate, setRotate] = useState(false);
     return (
         <div
-            className={`card ${rotate ? "rotate" : ""} page-enter`}
+            className={`card ${rotate ? "rotate" : ""}`}
             onClick={() => setRotate(!rotate)}
             onMouseOut={() => {
                 if (rotate) {
                     setRotate(false);
                 }
             }}
+            style={{ animationDelay: `${delay}s` }}
         >
             <div className="card-front">
                 <img

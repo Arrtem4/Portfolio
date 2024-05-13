@@ -1197,6 +1197,7 @@ button {
   width: 270px;
   height: 380px;
   perspective: 1000px;
+  animation: enter-opacity 1s ease both;
 }
 @media (hover: hover) {
   .card:hover .card-front {
@@ -1265,6 +1266,7 @@ button {
   align-items: center;
   column-gap: 2cqmin;
   row-gap: 3cqmin;
+  animation: enter-opacity 1s ease both;
 }
 @media only screen and (max-width: 1000px) {
   .skills-list-item {
