@@ -691,8 +691,12 @@ button {
 }
 
 .contacts {
-  background-color: rgb(30, 13, 222);
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  row-gap: 3cqmin;
 }
 
 .skills {
@@ -1310,5 +1314,41 @@ button {
 @media only screen and (max-width: 1000px) {
   .skills-list-item_description p {
     text-align: center;
+  }
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: var(--text-main-color);
+}
+.contact-item_body {
+  display: flex;
+  align-items: center;
+  width: clamp(300px, 50cqmin, 600px);
+  background-color: var(--bg-contactsItem-color);
+  padding: 10px 10px;
+  border-radius: 80px;
+}
+.contact-item_body_img-wrapper {
+  width: 8cqmin;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.contact-item_body_img-wrapper img {
+  width: 100%;
+}
+.contact-item_body_text {
+  flex-grow: 1;
+  font-size: clamp(16px, 2.2cqmin, 30px);
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+@media (hover: hover) {
+  .contact-item_body:hover .contact-item_body_img-wrapper {
+    transform: translate(clamp(250px, 40cqmin, 600px), 0);
+  }
+  .contact-item_body:hover .contact-item_body_text {
+    transform: translate(-10cqmin, 0);
   }
 }/*# sourceMappingURL=index.css.map */

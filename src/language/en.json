@@ -254,5 +254,12 @@
                 "description": "A graphic editor developed by Adobe that is widely used to create and edit images. Photoshop provides many tools for working with digital images, including retouching, applying effects, and creating compositions."
             }
         }
+    },
+    "contacts": {
+        "telegram": "Telegram",
+        "github": "GitHub",
+        "mail": "yakovenko.art1@gmail.com",
+        "linkedin": "LinkedIn",
+        "cv": "Download resume PDF"
     }
 }
