@@ -9,6 +9,11 @@
             @content;
         }
     }
+    @if $breakpoint == cardsPoint {
+        @media only screen and (max-width: 510px) {
+            @content;
+        }
+    }
     @if $breakpoint == s {
         @media only screen and (max-width: 700px) {
             @content;

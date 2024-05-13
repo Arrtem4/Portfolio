@@ -4,7 +4,7 @@
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
     column-gap: 2cqmin;
-    padding: 4cqmax 0;
+    padding: 40px 0;
     &_border {
         height: 2px;
         &.left {
@@ -26,7 +26,7 @@
         display: block;
         font-family: "Montserrat";
         font-weight: 300;
-        font-size: clamp(20px, 4.5cqmin, 45px);
+        font-size: clamp(25px, 4.5cqmin, 45px);
         width: min-content;
         text-align: center;
     }

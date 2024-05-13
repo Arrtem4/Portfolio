@@ -18,7 +18,7 @@ export default function Card({
             }}
             style={{ animationDelay: `${delay}s` }}
         >
-            <div className="card-front">
+            <div className="card-front center">
                 <img
                     src={image}
                     alt="skill-image"

@@ -1,8 +1,9 @@
 .card {
-    width: 270px;
-    height: 380px;
+    width: 240px;
+    height: 370px;
     perspective: 1000px;
     animation: enter-opacity 1s ease both;
+    container-type: inline-size;
     @include hover {
         &:hover {
             .card-front {
@@ -12,6 +13,14 @@
                 transform: rotateY(0deg);
             }
         }
+    }
+    @include respond(l) {
+        width: 220px;
+        height: 340px;
+    }
+    @include respond(cardsPoint) {
+        width: 280px;
+        height: 410px;
     }
     &.rotate {
         .card-front {
@@ -31,10 +40,6 @@
         box-shadow: 2px 2px 15px var(--shadow-skills-card-color);
     }
     &-front {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         transition: transform 0.8s;
         overflow: hidden;
         &_img {
@@ -46,7 +51,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        padding: 20px 16px;
+        padding: 5cqw 10cqw;
         text-align: center;
         transform: rotateY(180deg);
         transition: transform 0.8s;
@@ -57,15 +62,15 @@
             width: fit-content;
             font-weight: 600;
             letter-spacing: 2px;
-            font-size: 30px;
-            padding-bottom: 10px;
+            font-size: 12cqw;
+            padding-bottom: 3cqw;
             border-bottom-style: solid;
             border-bottom-width: 2px;
             border-bottom-color: var (--text-main-color);
         }
         &_description {
             letter-spacing: 1px;
-            font-size: 16px;
+            font-size: 6cqw;
         }
     }
 }
