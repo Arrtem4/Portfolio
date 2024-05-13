@@ -9,6 +9,15 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    @include hover {
+        &:hover {
+            .skills-list-item_description,
+            .skills-list-item_name {
+                background-color: var(--bg-skills-card-color-hover);
+                box-shadow: 2px 2px 10px var(--bg-skills-card-color-hover);
+            }
+        }
+    }
     &_img-container {
         width: 10cqmin;
         height: 10cqmin;
@@ -32,12 +41,6 @@
         border-radius: 10px;
         background-color: var(--bg-skills-card-color);
         align-self: stretch;
-        @include hover {
-            &:hover {
-                background-color: var(--bg-skills-card-color-hover);
-                box-shadow: 2px 2px 10px var(--bg-skills-card-color-hover);
-            }
-        }
         & p {
             font-weight: 600;
             font-size: clamp(20px, 2.5cqmin, 40px);
@@ -51,12 +54,6 @@
         align-items: center;
         border-radius: 10px;
         background-color: var(--bg-skills-card-color);
-        @include hover {
-            &:hover {
-                background-color: var(--bg-skills-card-color-hover);
-                box-shadow: 2px 2px 10px var(--bg-skills-card-color-hover);
-            }
-        }
         & p {
             font-size: clamp(15px, 1.8cqmin, 40px);
             @include respond(l) {
