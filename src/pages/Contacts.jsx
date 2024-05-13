@@ -13,6 +13,7 @@ export default function Contacts() {
                     image={`pictures/contacts/${contact.name}.webp`}
                     text={t(`contacts.${contact.name}`)}
                     link={contact.link}
+                    delay={i * 0.1}
                 />
             ))}
         </section>

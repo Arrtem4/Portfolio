@@ -10,29 +10,37 @@
         background-color: var(--bg-contactsItem-color);
         padding: 10px 10px;
         border-radius: 80px;
-// container-type: inline-size;
+        container-type: inline-size;
         &_img-wrapper {
-            width: 8cqmin;
+            width: 18cqw;
             border-radius: 50%;
             overflow: hidden;
             transition: transform 0.5s ease;
+            &.animated {
+                animation: contacts-roll 1s ease both;
+            }
             & img {
                 width: 100%;
             }
         }
         &_text {
             flex-grow: 1;
-            font-size: clamp(16px, 2.2cqmin, 30px);
+            font-size: clamp(15px, 4.2cqw, 30px);
             text-align: center;
             transition: transform 0.5s ease;
+            &.animated {
+                animation: slide-in-right 0.5s ease both;
+            }
         }
         @include hover {
             &:hover {
+                background-color: var(--bg-contactsItem-color-hover);
                 .contact-item_body_img-wrapper {
-                    transform: translate(clamp(250px, 40cqmin, 600px), 0);
+                    transform: translate(82cqw, 0) rotate(720deg);
                 }
                 .contact-item_body_text {
-                    transform: translate(-10cqmin, 0);
+                    transform: translate(-15cqw, 0);
+                    font-weight: 500;
                 }
             }
         }

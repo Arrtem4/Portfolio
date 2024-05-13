@@ -392,3 +392,15 @@
         opacity: 1;
     }
 }
+@keyframes contacts-roll {
+    0% {
+        -webkit-transform: translateX(100cqw) rotate(720deg);
+        transform: translateX(100cqw) rotate(720deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
