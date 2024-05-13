@@ -1,4 +1,9 @@
-.about{
-    background-color: rgb(109, 230, 23);
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100%;
+    &_img {
+        width: 30cqmin;
+    }
 }

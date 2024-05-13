@@ -698,8 +698,13 @@ button {
 }
 
 .about {
-  background-color: rgb(109, 230, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100%;
+}
+.about_img {
+  width: 30cqmin;
 }
 
 .contacts {
