@@ -703,9 +703,6 @@ button {
   justify-content: center;
   min-height: 100%;
 }
-.about_img {
-  width: 30cqmin;
-}
 
 .contacts {
   display: flex;
@@ -1391,4 +1388,8 @@ button {
     transform: translate(-15cqw, 0);
     font-weight: 500;
   }
+}
+
+.about-card {
+  color: var(--text-main-color);
 }/*# sourceMappingURL=index.css.map */

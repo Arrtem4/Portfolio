@@ -1,11 +1,10 @@
+import { useTranslation } from "react-i18next";
+import AboutCard from "../components/AboutCard";
 export default function About() {
+    const { t } = useTranslation();
     return (
         <section className="about page-enter">
-            <img
-                className="about_img"
-                src="pictures/awesomeMan.png"
-                alt="man"
-            />
+            <AboutCard text={t("about.card1")} />
         </section>
     );
 }
