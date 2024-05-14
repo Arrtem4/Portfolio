@@ -10,6 +10,9 @@ export default function ContactItem({
     const [animated, setAnimated] = useState(true);
     return (
         <div className="contact-item">
+            {animated ? (
+                <div className="contact-item_blocked-wrapper"></div>
+            ) : null}
             <a
                 className="contact-item_body"
                 href={name === "mail" ? `mailto:${link}` : link}
