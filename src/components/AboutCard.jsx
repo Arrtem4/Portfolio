@@ -1,20 +1,26 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function AboutCard({ text = "", indexIn = 0 }) {
+export default function AboutCard({
+    text = "",
+    indexIn = 0,
+    animationInProgress,
+    setAnimationInProgress,
+}) {
     const [index, setIndex] = useState(indexIn);
     const [animationStarted, setAnimationStarted] = useState(false);
-    const cardRef = useRef(null);
 
     useEffect(() => {
         if (animationStarted) {
+            setAnimationInProgress(true);
             const timerIndex = setTimeout(() => {
                 setIndex((prevIndex) => prevIndex - 5);
-            }, 1000);
+                setAnimationInProgress(false);
+            }, 800);
             return () => {
                 clearTimeout(timerIndex);
             };
         }
-    }, [animationStarted]);
+    }, [animationStarted, setAnimationInProgress]);
 
     const startAnimation = () => {
         setAnimationStarted(true);
@@ -22,11 +28,13 @@ export default function AboutCard({ text = "", indexIn = 0 }) {
 
     return (
         <div
-            ref={cardRef}
             className={`about-card ${
                 animationStarted ? "in-motion" : ""
             } center`}
-            style={{ zIndex: index }}
+            style={{
+                zIndex: index,
+                pointerEvents: animationInProgress ? "none" : "auto",
+            }}
             onClick={startAnimation}
             onAnimationEnd={() => setAnimationStarted(false)}
         >

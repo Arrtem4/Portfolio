@@ -1,26 +1,31 @@
 import { useTranslation } from "react-i18next";
 import AboutCard from "../components/AboutCard";
-// import { useState } from "react";
+import { useState } from "react";
 
-// const cards = [
-//     {
-//         num: 1,
-//     },
-//     { num: 2 },
-//     { num: 3 },
-//     { num: 4 },
-//     { num: 5 },
-// ];
+const cards = [
+    {
+        num: 1,
+    },
+    { num: 2 },
+    { num: 3 },
+    { num: 4 },
+    { num: 5 },
+];
 export default function About() {
     const { t } = useTranslation();
+    const [animationInProgress, setAnimationInProgress] = useState(false);
 
     return (
         <section className="about page-enter">
-            <AboutCard text={t("about.card1")} indexIn={999} />
-            <AboutCard text={t("about.card2")} indexIn={998} />
-            <AboutCard text={t("about.card3")} indexIn={997} />
-            <AboutCard text={t("about.card4")} indexIn={996} />
-            <AboutCard text={t("about.card5")} indexIn={995} />
+            {cards.map((card) => (
+                <AboutCard
+                    key={card.num}
+                    text={t(`about.card${card.num}`)}
+                    indexIn={9999 - card.num}
+                    animationInProgress={animationInProgress}
+                    setAnimationInProgress={setAnimationInProgress}
+                />
+            ))}
         </section>
     );
 }
