@@ -702,6 +702,7 @@ button {
   align-items: center;
   justify-content: center;
   min-height: 100%;
+  position: relative;
 }
 
 .contacts {
@@ -1392,4 +1393,9 @@ button {
 
 .about-card {
   color: var(--text-main-color);
+  width: 60cqmin;
+  height: 40cqmin;
+  background-color: var(--bg-skills-card-color);
+  border-radius: 12px;
+  position: absolute;
 }/*# sourceMappingURL=index.css.map */
