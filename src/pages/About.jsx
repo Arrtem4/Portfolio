@@ -13,11 +13,6 @@ import AboutCard from "../components/AboutCard";
 // ];
 export default function About() {
     const { t } = useTranslation();
-    // const [index1, setIndex1] = useState(999);
-    // const [index2, setIndex2] = useState(998);
-    // const [index3, setIndex3] = useState(997);
-    // const [index4, setIndex4] = useState(996);
-    // const [index5, setIndex5] = useState(995);
 
     return (
         <section className="about page-enter">
