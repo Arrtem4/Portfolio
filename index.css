@@ -724,6 +724,7 @@ button {
   justify-content: center;
   min-height: 100%;
   position: relative;
+  background: url(pictures/aboutBack3.webp) center/cover no-repeat;
 }
 
 .contacts {
