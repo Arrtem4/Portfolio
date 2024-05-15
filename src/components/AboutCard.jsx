@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 export default function AboutCard({
     text = "",
     indexIn = 0,
+    indexTotal = 0,
     animationInProgress,
     setAnimationInProgress,
 }) {
@@ -13,14 +14,14 @@ export default function AboutCard({
         if (animationStarted) {
             setAnimationInProgress(true);
             const timerIndex = setTimeout(() => {
-                setIndex((prevIndex) => prevIndex - 5);
+                setIndex((prevIndex) => prevIndex - indexTotal);
                 setAnimationInProgress(false);
             }, 800);
             return () => {
                 clearTimeout(timerIndex);
             };
         }
-    }, [animationStarted, setAnimationInProgress]);
+    }, [animationStarted, setAnimationInProgress, indexTotal]);
 
     const startAnimation = () => {
         setAnimationStarted(true);
