@@ -36,14 +36,14 @@
     }
     &_name {
         flex-shrink: 0;
-        width: clamp(150px, 18cqmin, 40px);
+        width: clamp(150px, 18cqmin, 2000px);
         text-align: center;
         border-radius: 10px;
         background-color: var(--bg-skills-card-color);
         align-self: stretch;
         & p {
             font-weight: 600;
-            font-size: clamp(20px, 2.5cqmin, 40px);
+            font-size: clamp(20px, 2.5cqmin, 35px);
         }
     }
     &_description {
@@ -55,7 +55,7 @@
         border-radius: 10px;
         background-color: var(--bg-skills-card-color);
         & p {
-            font-size: clamp(15px, 1.8cqmin, 40px);
+            font-size: clamp(15px, 1.8cqmin, 35px);
             @include respond(l) {
                 text-align: center;
             }
