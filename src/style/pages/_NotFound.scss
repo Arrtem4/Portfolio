@@ -3,7 +3,6 @@
     background-color: var(--bg-main-color);
     flex-direction: column;
     user-select: none;
-
     &_text {
         font-family: "Noto Sans Display";
         font-weight: 500;
@@ -23,5 +22,6 @@
         padding: 1cqh 1cqw;
         margin-bottom: 4cqh;
         font-size: clamp(15px, 1.3cqw, 20px);
+        cursor: pointer;
     }
 }

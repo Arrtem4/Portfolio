@@ -26,10 +26,6 @@ body h6 {
   transition: color 1s;
 }
 
-button {
-  cursor: pointer;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -40,7 +36,7 @@ button {
   animation: enter-opacity 0.7s ease-out both;
 }
 
-.main-layout {
+.app {
   font-family: "Noto Sans Display", sans-serif;
   width: 100%;
   max-width: 3600px;
@@ -792,6 +788,7 @@ button {
   padding: 1cqh 1cqw;
   margin-bottom: 4cqh;
   font-size: clamp(15px, 1.3cqw, 20px);
+  cursor: pointer;
 }
 
 .header {
