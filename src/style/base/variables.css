@@ -11,6 +11,8 @@ html[data-theme="light"] {
     --bg-skills-card-color-hover: rgb(213, 213, 213);
     --bg-contactsItem-color: rgb(230, 230, 230);
     --bg-contactsItem-color-hover: rgb(212, 212, 212);
+    --color-shadow-about-card: rgba(0, 0, 0, 0.571);
+    --color-shadow-about-card-animation: rgba(0, 0, 0, 0.333);
 }
 
 html[data-theme="dark"] {
@@ -26,4 +28,6 @@ html[data-theme="dark"] {
     --bg-skills-card-color-hover: rgb(23, 23, 23);
     --bg-contactsItem-color: rgb(22, 22, 22);
     --bg-contactsItem-color-hover: rgb(38, 38, 38);
+    --color-shadow-about-card: rgba(0, 0, 0, 0.571);
+    --color-shadow-about-card-animation: rgba(0, 0, 0, 0.333);
 }

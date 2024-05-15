@@ -469,12 +469,16 @@ button {
   0% {
     -webkit-transform: translate(0, 0) rotate(0deg);
     transform: translate(0, 0) rotate(0deg);
-    box-shadow: -2px -2px 10px black;
   }
-  30% {
-    -webkit-transform: translate(50cqmin, -40cqmin) rotate(20deg);
-    transform: translate(50cqmin, -40cqmin) rotate(20deg);
-    box-shadow: -2px -2px 10px black;
+  20% {
+    box-shadow: 20cqmin 20cqmin 50px 30px var(--color-shadow-about-card-animation);
+  }
+  35% {
+    -webkit-transform: translate(25cqmin, -40cqmin) rotate(20deg);
+    transform: translate(50cqmin, -55cqmin) rotate(40deg);
+  }
+  60% {
+    box-shadow: 0px 0px 20px var(--color-shadow-about-card);
   }
   100% {
     -webkit-transform: translate(0, 0) rotate(0deg);
@@ -1421,12 +1425,12 @@ button {
 
 .about-card {
   color: var(--text-main-color);
-  width: 60cqmin;
-  height: 40cqmin;
+  width: 70cqmin;
+  height: 50cqmin;
   background-color: var(--bg-skills-card-color);
-  border-radius: 12px;
+  border-radius: 15px;
   position: absolute;
-  box-shadow: -2px -2px 10px black;
+  box-shadow: 0px 0px 20px var(--color-shadow-about-card);
   cursor: pointer;
 }
 .about-card.in-motion {

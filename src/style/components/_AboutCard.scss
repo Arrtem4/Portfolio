@@ -1,11 +1,11 @@
 .about-card {
     color: var(--text-main-color);
-    width: 60cqmin;
-    height: 40cqmin;
+    width: 70cqmin;
+    height: 50cqmin;
     background-color: var(--bg-skills-card-color);
-    border-radius: 12px;
+    border-radius: 15px;
     position: absolute;
-    box-shadow: -2px -2px 10px black;
+    box-shadow: 0px 0px 20px var(--color-shadow-about-card);
     cursor: pointer;
     &.in-motion {
         animation: card-in-motion 2s ease both;
