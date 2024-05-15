@@ -2,6 +2,8 @@
     color: black;
     width: 70cqmin;
     height: 50cqmin;
+    min-width: 400px;
+    min-height: 300px;
     background-image: url("pictures/about/cardBackground.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -22,6 +24,9 @@
     }
     &.in-motion {
         animation: card-in-motion 2s ease both;
+        @include respond(s) {
+            animation: card-in-motion-s 2s ease both;
+        }
         @include respond(cardsPoint) {
             animation: card-in-motion-mobile 2s ease both;
         }

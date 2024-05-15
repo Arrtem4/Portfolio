@@ -428,6 +428,30 @@
         box-shadow: -30px -10px 6px rgba(0, 0, 0, 0);
     }
 }
+@keyframes card-in-motion-s {
+    0% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+    }
+    20% {
+        box-shadow: -10cqmin 10cqmin 50px 70px rgba(0, 0, 0, 0.53);
+    }
+    35% {
+        -webkit-transform: translate(50cqmin, -55cqmin) rotate(40deg);
+        transform: translate(55cqmin, -60cqmin) rotate(40deg);
+    }
+    60% {
+        box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.344);
+    }
+    90% {
+        box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.075);
+    }
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform: translate(0, 0) rotate(0deg);
+        box-shadow: -30px -10px 6px rgba(0, 0, 0, 0);
+    }
+}
 @keyframes card-in-motion-mobile {
     0% {
         -webkit-transform: translate(0, 0) rotate(0deg);

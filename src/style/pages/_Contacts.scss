@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
+    flex-grow: 1;
     row-gap: 4cqmin;
     padding: 30px 20px;
+    overflow-y: auto;
 }
