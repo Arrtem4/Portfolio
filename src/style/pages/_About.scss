@@ -4,6 +4,14 @@
     justify-content: center;
     min-height: 100%;
     position: relative;
-    background: url(pictures/aboutBack3.webp) center / cover  no-repeat;
+    background: url(pictures/about/background.webp) center / cover no-repeat;
+    padding-right: 10%;
+    &_fake-card {
+        width: 70cqmin;
+        height: 50cqmin;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 0;
+        box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.344);
+    }
 }
-

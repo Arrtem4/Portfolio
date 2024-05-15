@@ -463,19 +463,22 @@ body h6 {
     transform: translate(0, 0) rotate(0deg);
   }
   20% {
-    box-shadow: 20cqmin 20cqmin 50px 30px var(--color-shadow-about-card-animation);
+    box-shadow: -10cqmin 10cqmin 50px 70px rgba(0, 0, 0, 0.53);
   }
   35% {
     -webkit-transform: translate(25cqmin, -40cqmin) rotate(20deg);
     transform: translate(50cqmin, -55cqmin) rotate(40deg);
   }
   60% {
-    box-shadow: 0px 0px 20px var(--color-shadow-about-card);
+    box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.344);
+  }
+  90% {
+    box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.075);
   }
   100% {
     -webkit-transform: translate(0, 0) rotate(0deg);
     transform: translate(0, 0) rotate(0deg);
-    box-shadow: none;
+    box-shadow: -30px -10px 6px rgba(0, 0, 0, 0);
   }
 }
 .main {
@@ -721,7 +724,16 @@ body h6 {
   justify-content: center;
   min-height: 100%;
   position: relative;
-  background: url(pictures/aboutBack3.webp) center/cover no-repeat;
+  background: url(pictures/about/background.webp) center/cover no-repeat;
+  padding-right: 10%;
+}
+.about_fake-card {
+  width: 70cqmin;
+  height: 50cqmin;
+  border-radius: 15px;
+  position: absolute;
+  z-index: 0;
+  box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.344);
 }
 
 .contacts {
@@ -1430,7 +1442,7 @@ body h6 {
   background-color: var(--bg-skills-card-color);
   border-radius: 15px;
   position: absolute;
-  box-shadow: 0px 0px 20px var(--color-shadow-about-card);
+  border: 4px solid black;
   cursor: pointer;
 }
 .about-card.in-motion {

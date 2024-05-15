@@ -9,6 +9,7 @@ export default function About() {
 
     return (
         <section className="about page-enter">
+            <div className="about_fake-card"></div>
             {cards.map((card) => (
                 <AboutCard
                     key={card.num}
