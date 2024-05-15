@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 
 export default function AboutCard({
     text = "",
+    h1 = "",
+    small = false,
     indexIn = 0,
     indexTotal = 0,
     animationInProgress,
@@ -39,7 +41,13 @@ export default function AboutCard({
             onClick={startAnimation}
             onAnimationEnd={() => setAnimationStarted(false)}
         >
-            {text}
+            <div className="about-card_filter"></div>
+            <div className="about-card_text center">
+                <p className="about-card_text_h1">{h1}</p>
+                <p className={`about-card_text_p ${small ? "small" : ""}`}>
+                    {text}
+                </p>
+            </div>
         </div>
     );
 }

@@ -1,13 +1,63 @@
 .about-card {
-    color: var(--text-main-color);
+    color: black;
     width: 70cqmin;
     height: 50cqmin;
-    background-color: var(--bg-skills-card-color);
+    background-image: url("pictures/about/cardBackground.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     border-radius: 15px;
     position: absolute;
     border: 4px solid black;
+    overflow: hidden;
     cursor: pointer;
+    container-type: inline-size;
+    @include respond(s) {
+        width: 85cqmin;
+        height: 60cqmin;
+    }
+    @include respond(cardsPoint) {
+        width: 90cqw;
+        height: 80cqh;
+        background-image: url("pictures/about/cardBackgroundMob.webp");
+    }
     &.in-motion {
         animation: card-in-motion 2s ease both;
+        @include respond(cardsPoint) {
+            animation: card-in-motion-mobile 2s ease both;
+        }
+    }
+    &_text {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 40px;
+        font-family: "Caveat";
+        font-size: 4.3cqw;
+        @include respond(cardsPoint) {
+            padding: 8cqw 9cqw;
+            font-size: 6.5cqw;
+        }
+        &_h1 {
+            font-size: 10cqw;
+            margin-bottom: 4cqw;
+            @include respond(cardsPoint) {
+                font-size: 14cqw;
+                margin-bottom: 6cqw;
+            }
+        }
+        &_p {
+            &.small {
+                font-size: 3.9cqw;
+                @include respond(cardsPoint) {
+                    font-size: 5.5cqw;
+                }
+            }
+        }
+    }
+    &_filter {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        background-color: var(--filter-card-about);
     }
 }
