@@ -54,10 +54,6 @@ button {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
-.main-layout .outlet {
-  flex-grow: 1;
-  overflow-y: auto;
-}
 
 @keyframes button-theme-in {
   0% {
@@ -718,6 +714,11 @@ button {
   }
 }
 
+.projects {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
 .about {
   display: flex;
   align-items: center;
@@ -738,7 +739,8 @@ button {
 }
 
 .skills {
-  background-color: var(--bg-main-color);
+  flex-grow: 1;
+  overflow-y: auto;
   padding: 2cqmin 5cqmin 10cqmin 5cqmin;
 }
 .skills_cards_block {

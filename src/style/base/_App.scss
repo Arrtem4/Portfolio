@@ -11,8 +11,4 @@
     flex-direction: column;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    & .outlet {
-        flex-grow: 1;
-        overflow-y: auto;
-    }
 }

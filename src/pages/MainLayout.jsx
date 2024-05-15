@@ -5,9 +5,7 @@ export default function MainLayout() {
     return (
         <section className="main-layout">
             <Header />
-            <section className="outlet">
-                <Outlet />
-            </section>
+            <Outlet />
         </section>
     );
 }
