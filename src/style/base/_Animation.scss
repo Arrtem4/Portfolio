@@ -456,10 +456,10 @@
 @keyframes cards-about-enter {
     0% {
         opacity: 0;
-        transform: rotate(-40deg) translate(-30cqw, 30cqw);
+        transform: rotate(-100deg) translate(-40cqw, 60cqw);
         box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.344);
     }
-    20% {
+    30% {
         opacity: 1;
     }
     100% {
