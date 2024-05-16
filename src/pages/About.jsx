@@ -7,11 +7,19 @@ export default function About() {
     const { t } = useTranslation();
     const [animationInProgress, setAnimationInProgress] = useState(false);
 
+    const animationFakeCardOff = () => {
+        let el = document.querySelector(".about_fake-card");
+        el.classList.remove("initial-animation");
+    };
+
     return (
         <section className="about page-enter">
             <div className="about_filter"></div>
             <div className="about_wrapper">
-                <div className="about_fake-card initial-animation"></div>
+                <div
+                    className="about_fake-card initial-animation"
+                    onAnimationEnd={animationFakeCardOff}
+                ></div>
                 {cards.map((card) => (
                     <AboutCard
                         key={card.num}
@@ -22,7 +30,7 @@ export default function About() {
                         indexTotal={cards.length}
                         animationInProgress={animationInProgress}
                         setAnimationInProgress={setAnimationInProgress}
-                        initialAnimationDelay={0.5 + card.num * 0.2}
+                        initialAnimationDelay={2 - card.num * 0.25}
                     />
                 ))}
             </div>

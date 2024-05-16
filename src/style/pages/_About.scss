@@ -27,7 +27,7 @@
             display: none;
         }
         &.initial-animation {
-            animation: cards-about-enter 2s ease 0.7s both;
+            animation: cards-about-enter-fake 1s ease 0.75s both;
         }
     }
     &_filter {

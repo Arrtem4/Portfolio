@@ -2,8 +2,8 @@
     color: black;
     width: 70cqmin;
     height: 50cqmin;
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 350px;
+    min-height: 250px;
     background-image: url(/pictures/about/cardBackground.webp);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -33,6 +33,9 @@
     }
     &.initial-animation {
         animation: cards-about-enter 1s ease both;
+        @include respond(cardsPoint) {
+            animation: cards-about-enter-mobile 1s ease both;
+        }
     }
     &_text {
         flex-direction: column;
