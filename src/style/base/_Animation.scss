@@ -28,11 +28,9 @@
 }
 @keyframes rotate-center {
     0% {
-        -webkit-transform: rotate(0);
         transform: rotate(0);
     }
     100% {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
@@ -56,12 +54,10 @@
 }
 @keyframes roll-in-left {
     0% {
-        -webkit-transform: translateX(-150px) rotate(-180deg);
         transform: translateX(-150px) rotate(-180deg);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translateX(0) rotate(0deg);
         transform: translateX(0) rotate(0deg);
         opacity: 1;
     }
@@ -341,7 +337,6 @@
 }
 @keyframes slide-in-top {
     0% {
-        -webkit-transform: translateY(-100dvh);
         transform: translateY(-100dvh);
         opacity: 0;
     }
@@ -349,71 +344,60 @@
         opacity: 1;
     }
     100% {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
         opacity: 1;
     }
 }
 @keyframes slide-out-top {
     0% {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
     50% {
         opacity: 1;
     }
     100% {
-        -webkit-transform: translateY(-100dvh);
         transform: translateY(-100dvh);
         opacity: 0;
     }
 }
 @keyframes slide-in-left {
     0% {
-        -webkit-transform: translateX(-30cqw);
         transform: translateX(-30cqw);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translateX(0);
         transform: translateX(0);
         opacity: 1;
     }
 }
 @keyframes slide-in-right {
     0% {
-        -webkit-transform: translateX(30cqw);
         transform: translateX(30cqw);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translateX(0);
         transform: translateX(0);
         opacity: 1;
     }
 }
 @keyframes contacts-roll {
     0% {
-        -webkit-transform: translateX(100cqw) rotate(720deg);
         transform: translateX(100cqw) rotate(720deg);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translateX(0) rotate(0deg);
         transform: translateX(0) rotate(0deg);
         opacity: 1;
     }
 }
 @keyframes card-in-motion {
     0% {
-        -webkit-transform: translate(0, 0) rotate(0deg);
         transform: translate(0, 0) rotate(0deg);
     }
     20% {
         box-shadow: -10cqmin 10cqmin 50px 70px rgba(0, 0, 0, 0.53);
     }
     35% {
-        -webkit-transform: translate(50cqmin, -55cqmin) rotate(40deg);
         transform: translate(50cqmin, -55cqmin) rotate(40deg);
     }
     60% {
@@ -423,21 +407,18 @@
         box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.075);
     }
     100% {
-        -webkit-transform: translate(0, 0) rotate(0deg);
         transform: translate(0, 0) rotate(0deg);
         box-shadow: -30px -10px 6px rgba(0, 0, 0, 0);
     }
 }
 @keyframes card-in-motion-s {
     0% {
-        -webkit-transform: translate(0, 0) rotate(0deg);
         transform: translate(0, 0) rotate(0deg);
     }
     20% {
         box-shadow: -10cqmin 10cqmin 50px 70px rgba(0, 0, 0, 0.53);
     }
     35% {
-        -webkit-transform: translate(50cqmin, -55cqmin) rotate(40deg);
         transform: translate(55cqmin, -60cqmin) rotate(40deg);
     }
     60% {
@@ -447,21 +428,18 @@
         box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.075);
     }
     100% {
-        -webkit-transform: translate(0, 0) rotate(0deg);
         transform: translate(0, 0) rotate(0deg);
         box-shadow: -30px -10px 6px rgba(0, 0, 0, 0);
     }
 }
 @keyframes card-in-motion-mobile {
     0% {
-        -webkit-transform: translate(0, 0) rotate(0deg);
         transform: translate(0, 0) rotate(0deg);
     }
     20% {
         box-shadow: -10cqmin 10cqmin 50px 70px rgba(0, 0, 0, 0.53);
     }
     35% {
-        -webkit-transform: translate(110cqw, -40cqw) rotate(10deg);
         transform: translate(110cqw, -40cqw) rotate(10deg);
     }
     60% {
@@ -471,8 +449,21 @@
         box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.075);
     }
     100% {
-        -webkit-transform: translate(0, 0) rotate(0deg);
         transform: translate(0, 0) rotate(0deg);
+        box-shadow: -30px -10px 6px rgba(0, 0, 0, 0);
+    }
+}
+@keyframes cards-about-enter {
+    0% {
+        opacity: 0;
+        transform: rotate(-40deg) translate(-30cqw, 30cqw);
+        box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.344);
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(0deg) translate(0, 0);
         box-shadow: -30px -10px 6px rgba(0, 0, 0, 0);
     }
 }

@@ -26,6 +26,9 @@
         @include respond(cardsPoint) {
             display: none;
         }
+        &.initial-animation {
+            animation: cards-about-enter 2s ease 0.7s both;
+        }
     }
     &_filter {
         position: absolute;

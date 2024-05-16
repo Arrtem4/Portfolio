@@ -31,6 +31,9 @@
             animation: card-in-motion-mobile 2s ease both;
         }
     }
+    &.initial-animation {
+        animation: cards-about-enter 1s ease both;
+    }
     &_text {
         flex-direction: column;
         text-align: center;

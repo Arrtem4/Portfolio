@@ -11,7 +11,7 @@ export default function About() {
         <section className="about page-enter">
             <div className="about_filter"></div>
             <div className="about_wrapper">
-                <div className="about_fake-card"></div>
+                <div className="about_fake-card initial-animation"></div>
                 {cards.map((card) => (
                     <AboutCard
                         key={card.num}
@@ -22,6 +22,7 @@ export default function About() {
                         indexTotal={cards.length}
                         animationInProgress={animationInProgress}
                         setAnimationInProgress={setAnimationInProgress}
+                        initialAnimationDelay={0.5 + card.num * 0.2}
                     />
                 ))}
             </div>
