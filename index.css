@@ -38,15 +38,14 @@ body h6 {
 
 .app {
   font-family: "Noto Sans Display", sans-serif;
-  width: 100%;
-  max-width: 3600px;
-  min-width: 330px;
-  margin: 0 auto;
-  height: 100dvh;
-  background-color: var(--bg-main-color);
-  container-type: inline-size;
   display: flex;
   flex-direction: column;
+  height: 100dvh;
+  max-width: 3600px;
+  min-width: 350px;
+  margin: 0 auto;
+  background-color: var(--bg-main-color);
+  container-type: inline-size;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -769,7 +768,7 @@ body h6 {
   position: relative;
   padding-right: 10%;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .about_wrapper {
     padding-right: 0;
   }
@@ -782,7 +781,7 @@ body h6 {
   z-index: 0;
   box-shadow: -30px -10px 6px rgba(0, 0, 0, 0.344);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .about_fake-card {
     width: 85cqmin;
     height: 60cqmin;
@@ -805,14 +804,19 @@ body h6 {
 }
 
 .contacts {
+  flex-grow: 1;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
+  row-gap: 4cqmin;
+  padding: 4cqmin 2cqmin;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
-  row-gap: 4cqmin;
-  padding: 30px 20px;
-  overflow-y: auto;
+}
+@media screen and (max-height: 540px) {
+  .contacts {
+    justify-content: space-evenly;
+  }
 }
 
 .skills {
@@ -873,12 +877,10 @@ body h6 {
 }
 
 .header {
-  width: 100%;
   display: flex;
   align-items: center;
   padding: clamp(10px, 1.5cqmin, 25px);
   padding-right: clamp(20px, 4cqmin, 40px);
-  min-width: max-content;
 }
 .header_space {
   flex-grow: 1;
@@ -1068,7 +1070,7 @@ body h6 {
   font-weight: 500;
   font-size: 15px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .button-language_value-text {
     font-size: 30px;
   }
@@ -1077,7 +1079,7 @@ body h6 {
   font-size: 11px;
   color: var(--text-main-color);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .button-language_caret {
     font-size: 12px;
   }
@@ -1093,7 +1095,7 @@ body h6 {
   font-size: 15px;
   z-index: 12;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .button-language_list {
     font-size: 30px;
     top: 40px;
@@ -1125,7 +1127,7 @@ body h6 {
   font-size: 20px;
   cursor: pointer;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .button-theme {
     font-size: 35px;
   }
@@ -1520,7 +1522,7 @@ body h6 {
   cursor: pointer;
   container-type: inline-size;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .about-card {
     width: 85cqmin;
     height: 60cqmin;
@@ -1536,7 +1538,7 @@ body h6 {
 .about-card.in-motion {
   animation: card-in-motion 2s ease both;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
   .about-card.in-motion {
     animation: card-in-motion-s 2s ease both;
   }

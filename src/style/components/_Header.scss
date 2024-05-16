@@ -1,10 +1,8 @@
 .header {
-    width: 100%;
     display: flex;
     align-items: center;
     padding: clamp(10px, 1.5cqmin, 25px);
     padding-right: clamp(20px, 4cqmin, 40px);
-    min-width: max-content;
     &_space {
         flex-grow: 1;
     }

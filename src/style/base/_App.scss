@@ -1,14 +1,13 @@
 .app {
     font-family: "Noto Sans Display", sans-serif;
-    width: 100%;
-    max-width: 3600px;
-    min-width: 330px;
-    margin: 0 auto;
-    height: 100dvh;
-    background-color: var(--bg-main-color);
-    container-type: inline-size;
     display: flex;
     flex-direction: column;
+    height: 100dvh;
+    max-width: 3600px;
+    min-width: 350px;
+    margin: 0 auto;
+    background-color: var(--bg-main-color);
+    container-type: inline-size;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
 }

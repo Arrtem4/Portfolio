@@ -1,10 +1,13 @@
 .contacts {
+    flex-grow: 1;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
+    row-gap: 4cqmin;
+    padding: 4cqmin 2cqmin;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
-    row-gap: 4cqmin;
-    padding: 30px 20px;
-    overflow-y: auto;
+    @media screen and (max-height: 540px) {
+        justify-content: space-evenly;
+    }
 }
