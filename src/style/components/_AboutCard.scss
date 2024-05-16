@@ -4,7 +4,7 @@
     height: 50cqmin;
     min-width: 400px;
     min-height: 300px;
-    background-image: url("pictures/about/cardBackground.webp");
+    background-image: url(/pictures/about/cardBackground.webp);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 15px;
@@ -20,7 +20,7 @@
     @include respond(cardsPoint) {
         width: 90cqw;
         height: 80cqh;
-        background-image: url("pictures/about/cardBackgroundMob.webp");
+        background-image: url(/pictures/about/cardBackgroundMob.webp);
     }
     &.in-motion {
         animation: card-in-motion 2s ease both;

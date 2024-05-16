@@ -758,7 +758,7 @@ body h6 {
 
 .about {
   flex-grow: 1;
-  background: url(pictures/about/background.webp) center/cover no-repeat;
+  background: url(/pictures/about/background.webp) center/cover no-repeat;
 }
 .about_wrapper {
   display: flex;
@@ -1512,7 +1512,7 @@ body h6 {
   height: 50cqmin;
   min-width: 400px;
   min-height: 300px;
-  background-image: url("pictures/about/cardBackground.webp");
+  background-image: url(/pictures/about/cardBackground.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 15px;
@@ -1532,7 +1532,7 @@ body h6 {
   .about-card {
     width: 90cqw;
     height: 80cqh;
-    background-image: url("pictures/about/cardBackgroundMob.webp");
+    background-image: url(/pictures/about/cardBackgroundMob.webp);
   }
 }
 .about-card.in-motion {
