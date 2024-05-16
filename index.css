@@ -543,12 +543,6 @@ body h6 {
 .main {
   flex-grow: 1;
 }
-@media only screen and (max-width: 1000px) {
-  .main {
-    position: relative;
-    z-index: -5;
-  }
-}
 .main_central {
   width: 100%;
   height: 100%;
@@ -570,6 +564,7 @@ body h6 {
   grid-column: 1/2;
   align-self: end;
   container-type: inline-size;
+  z-index: 1;
 }
 @media only screen and (max-width: 1000px) {
   .main_central_h1 {
@@ -646,7 +641,6 @@ body h6 {
   grid-column: 2/3;
   background-color: var(--bg-main-color);
   position: relative;
-  z-index: -3;
   container-type: inline-size;
 }
 @media only screen and (max-width: 1000px) {
@@ -662,7 +656,6 @@ body h6 {
 }
 .main_central_composition_circle-color {
   position: absolute;
-  z-index: -2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -43%);
@@ -678,30 +671,31 @@ body h6 {
 }
 .main_central_composition_circle-color.animation1 {
   background-color: rgba(228, 7, 7, 0.5);
-  animation: flicker-in-main 2s linear 1.5s both;
   -webkit-animation: flicker-in-main 2s linear 1.5s both;
+  animation: flicker-in-main 2s linear 1.5s both;
 }
 .main_central_composition_circle-color.animation2 {
-  animation: color-change-1 8s linear infinite alternate both;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: background-color;
   -webkit-animation: color-change-1 8s linear infinite alternate both;
+  animation: color-change-1 8s linear infinite alternate both;
 }
 @media only screen and (max-width: 1000px) {
   .main_central_composition_circle-color.animation2 {
-    animation: color-change-1-small 8s linear infinite alternate both;
     -webkit-animation: color-change-1-small 8s linear infinite alternate both;
+    animation: color-change-1-small 8s linear infinite alternate both;
   }
 }
 .main_central_composition_filter {
   position: absolute;
-  z-index: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(4cqmin);
   -webkit-backdrop-filter: blur(4cqmin);
+  backdrop-filter: blur(4cqmin);
 }
 .main_central_composition_circle-1 {
   position: absolute;
-  z-index: 4;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -43%);
@@ -711,8 +705,8 @@ body h6 {
   border-color: var(--bg-main-color);
   border-style: solid;
   border-radius: 50%;
-  backdrop-filter: invert(100%);
   -webkit-backdrop-filter: invert(100%);
+  backdrop-filter: invert(100%);
 }
 @media only screen and (max-width: 1000px) {
   .main_central_composition_circle-1 {
@@ -722,7 +716,7 @@ body h6 {
 }
 .main_central_composition_circle-2 {
   position: absolute;
-  z-index: 7;
+  z-index: 4;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -43%);
@@ -740,7 +734,7 @@ body h6 {
 }
 .main_central_composition_circle-3 {
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -43%);
@@ -759,7 +753,7 @@ body h6 {
 }
 .main_central_composition img {
   position: absolute;
-  z-index: 6;
+  z-index: 3;
   top: 50%;
   left: 50%;
   transform: translate(-45%, -58%);
