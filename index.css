@@ -781,7 +781,7 @@ body h6 {
   justify-content: center;
   min-height: 100%;
   position: relative;
-  padding-right: 10%;
+  padding-right: 8%;
 }
 @media only screen and (max-width: 730px) {
   .about_wrapper {
@@ -1523,8 +1523,8 @@ body h6 {
 
 .about-card {
   color: black;
-  width: 70cqmin;
-  height: 50cqmin;
+  width: 90cqmin;
+  height: 70cqmin;
   min-width: 350px;
   min-height: 250px;
   background-image: url(/pictures/about/cardBackground.webp);
@@ -1536,12 +1536,6 @@ body h6 {
   overflow: hidden;
   cursor: pointer;
   container-type: inline-size;
-}
-@media only screen and (max-width: 730px) {
-  .about-card {
-    width: 85cqmin;
-    height: 60cqmin;
-  }
 }
 @media only screen and (max-width: 510px) {
   .about-card {

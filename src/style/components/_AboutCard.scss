@@ -1,7 +1,7 @@
 .about-card {
     color: black;
-    width: 70cqmin;
-    height: 50cqmin;
+    width: 90cqmin;
+    height: 70cqmin;
     min-width: 350px;
     min-height: 250px;
     background-image: url(/pictures/about/cardBackground.webp);
@@ -13,10 +13,6 @@
     overflow: hidden;
     cursor: pointer;
     container-type: inline-size;
-    @include respond(s) {
-        width: 85cqmin;
-        height: 60cqmin;
-    }
     @include respond(cardsPoint) {
         width: 90cqw;
         height: 80cqh;
