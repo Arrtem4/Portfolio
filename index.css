@@ -649,6 +649,7 @@ body h6 {
     grid-row: 2/3;
     container-type: size;
     align-self: stretch;
+    padding-bottom: 3cqmin;
   }
 }
 .main_central_composition.animation {
