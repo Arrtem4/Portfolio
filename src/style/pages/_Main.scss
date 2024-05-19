@@ -10,7 +10,7 @@
         row-gap: 3cqmin;
         @include respond(l) {
             grid-template-columns: 100%;
-            grid-template-rows: 20% 57% 23%;
+            grid-template-rows: 20% 60% 20%;
             row-gap: 0;
         }
         &_h1 {
@@ -91,7 +91,7 @@
                 grid-row: 2 / 3;
                 container-type: size;
                 align-self: stretch;
-                padding-bottom: 3cqmin;
+                padding-bottom: 10cqmin;
             }
             &.animation {
                 animation: enter-opacity 2s ease 1.5s both;

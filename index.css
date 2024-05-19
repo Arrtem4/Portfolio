@@ -555,7 +555,7 @@ body h6 {
 @media only screen and (max-width: 1000px) {
   .main_central {
     grid-template-columns: 100%;
-    grid-template-rows: 20% 57% 23%;
+    grid-template-rows: 20% 60% 20%;
     row-gap: 0;
   }
 }
@@ -649,7 +649,7 @@ body h6 {
     grid-row: 2/3;
     container-type: size;
     align-self: stretch;
-    padding-bottom: 3cqmin;
+    padding-bottom: 10cqmin;
   }
 }
 .main_central_composition.animation {
