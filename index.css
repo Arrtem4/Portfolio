@@ -611,6 +611,7 @@ body h6 {
   container-type: inline-size;
   align-self: start;
   padding-left: 10cqmin;
+  text-align: center;
 }
 @media only screen and (max-width: 1000px) {
   .main_central_h2 {

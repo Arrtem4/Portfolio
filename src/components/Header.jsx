@@ -46,7 +46,7 @@ export default function Header() {
                         <p>IAKOVENKO ARTEM</p>
                     </div>
                     <div className="header_logo_title_subtitle">
-                        <p>FULLSTACK DEVELOPER</p>
+                        <p>FRONTEND DEVELOPER</p>
                     </div>
                 </div>
             </div>
