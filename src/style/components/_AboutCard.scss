@@ -36,11 +36,11 @@
     &_text {
         flex-direction: column;
         text-align: center;
-        padding: 20px 40px;
+        padding: 20px 50px;
         font-family: "Caveat";
-        font-size: 4.3cqw;
+        font-size: 4.1cqw;
         @include respond(cardsPoint) {
-            padding: 8cqw 9cqw;
+            padding: 8cqw 10cqw;
             font-size: 6.5cqw;
         }
         &_h1 {

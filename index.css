@@ -1570,13 +1570,13 @@ body h6 {
 .about-card_text {
   flex-direction: column;
   text-align: center;
-  padding: 20px 40px;
+  padding: 20px 50px;
   font-family: "Caveat";
-  font-size: 4.3cqw;
+  font-size: 4.1cqw;
 }
 @media only screen and (max-width: 510px) {
   .about-card_text {
-    padding: 8cqw 9cqw;
+    padding: 8cqw 10cqw;
     font-size: 6.5cqw;
   }
 }
