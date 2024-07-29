@@ -17,7 +17,7 @@ const contacts = [
     },
     {
         name: "cv",
-        link: "https://www.dropbox.com/scl/fo/b846zmikksuechpsq8t44/APq7cpOfk_jzO38ADHg3HRs?rlkey=xuciin2xuym3unfvgkwpk0dk6&st=yteuvduf&dl=0",
+        link: "https://www.dropbox.com/scl/fo/pu4jh2rekd68szjvxxy7a/AL4kjRCEdpk2Z0dUJ4vRXCs?rlkey=jbdvxv8y2ub0g61tvzshdjxd0&st=vcc46k38&dl=0",
     },
 ];
 
